@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import services from '../data/services.json';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Custom Peptide Synthesis',
+  provider: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+  description:
+    'From milligram to kilogram scale, high-purity custom peptides with purity ≥99%, supporting diverse modification types with fast turnaround.',
+};
+---
+
+<BaseLayout
+  title="Custom Peptide Synthesis Services | Shandong Shengyuan Peptide"
+  description="Custom peptide synthesis from milligram to kilogram scale — linear, cyclic and modified peptides at ≥99% HPLC purity, with HPLC + MS documentation on every batch."
+  jsonLd={jsonLd}
+>
+  <div class="wrap article-shell">
+    <div class="article-header">
+      <h1>Custom Peptide Synthesis</h1>
+      <p class="lede">
+        From milligram to kilogram scale, we deliver high-purity custom peptides with purity ≥99%,
+        supporting diverse modification types with fast turnaround.
+      </p>
+    </div>
+
+    <article>
+      <p>
+        Custom synthesis at Shandong Shengyuan Peptide begins with a free feasibility review of your
+        sequence. Our chemists assess synthesis difficulty, recommend a purity grade and timeline, and
+        confirm pricing before any work begins — so there are no surprises later in the project.
+      </p>
+
+      <h2 id="what-we-synthesize">What We Synthesize</h2>
+      <ul>
+        <li><strong>Linear peptides</strong> from 2 to 100+ residues</li>
+        <li><strong>Cyclic peptides</strong> — head-to-tail, disulfide-bridged, and stapled structures</li>
+        <li><strong>Difficult sequences</strong> — aggregation-prone, hydrophobic, and long-chain peptides</li>
+        <li><strong>Modified peptides</strong> — N-terminal acetylation, C-terminal amidation, D-amino acid substitution</li>
+        <li><strong>Conjugates and labels</strong> — PEGylation, biotinylation, fluorescent dyes, isotopic labels</li>
+      </ul>
+
+      <h2>The Workflow</h2>
+      <ol class="steps">
+        <li><strong>Feasibility review</strong> — sequence analysis, difficulty scoring, purity target, timeline, and quotation.</li>
+        <li><strong>Synthesis</strong> — automated SPPS with real-time coupling monitoring.</li>
+        <li><strong>Purification</strong> — preparative HPLC to your purity grade (crude to ≥99%).</li>
+        <li><strong>Analysis</strong> — RP-HPLC purity, ESI-MS identity, peptide content, water content.</li>
+        <li><strong>Lyophilization &amp; packaging</strong> — lyophilized to stable dry powder, packed to your vial specification.</li>
+        <li><strong>Release</strong> — QA-reviewed Certificate of Analysis with raw HPLC and MS data on request.</li>
+      </ol>
+
+      <h2>Scale and Turnaround</h2>
+      <table>
+        <tbody>
+          <tr><th>Research scale</th><td>1–100 mg, typically delivered in 2–3 weeks</td></tr>
+          <tr><th>Pilot scale</th><td>1–50 g, typically delivered in 4–6 weeks</td></tr>
+          <tr><th>Commercial scale</th><td>50 g–multi-kg, timeline agreed in the project plan</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How to Request a Quote</h2>
+      <p>
+        Send your <strong>sequence, quantity, purity grade, modifications, and target date</strong> via
+        the <a href="/contact/">contact form</a>. Include any special requirements — salt form
+        (acetate/TFA), vial filling spec, or private labeling — and we will respond with a technical
+        quotation within 24 hours.
+      </p>
+    </article>
+
+    <div class="notice">
+      <strong>Not sure about your sequence?</strong> Our chemists will review it free of charge and
+      flag any feasibility concerns before you commit.
+      <a href="/contact/" style="margin-left:0.5rem;">Get a free review →</a>
+    </div>
+  </div>
+</BaseLayout>

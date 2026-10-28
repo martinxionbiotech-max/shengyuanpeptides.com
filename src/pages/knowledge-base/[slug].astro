@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { readFileSync, readdirSync } from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const KB_DIR = path.join(process.cwd(), 'src/content/kb');
+  const files = readdirSync(KB_DIR).filter((f) => f.endsWith('.md'));
+  return files.map((f) => ({ params: { slug: f.replace(/\.md$/, '') } }));
+}
+
+const { slug } = Astro.params;
+const raw = readFileSync(path.join(process.cwd(), 'src/content/kb', `${slug}.md`), 'utf8');
+const fm = raw.match(/^---\n([\s\S]*?)\n---/);
+const body = raw.replace(/^---\n[\s\S]*?\n---/, '').trim();
+const meta = {};
+if (fm) {
+  for (const line of fm[1].split('\n')) {
+    const m = line.match(/^(\w+):\s*(.+)$/);
+    if (m) meta[m[1]] = m[2].replace(/^["']|["']$/g, '');
+  }
+}
+
+function mdToHtml(md) {
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  let html = md
+    .replace(/^#### (.*)$/gm, '<h4>$1</h4>')
+    .replace(/^### (.*)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.*)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.*)$/gm, '<h1>$1</h1>')
+    .replace(/^\- (.*)$/gm, '<li>$1</li>')
+    .replace(/^\d+\. (.*)$/gm, '<li>$1</li>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .split(/\n\n+/)
+    .map((block) => {
+      const t = block.trim();
+      if (!t) return '';
+      if (/^<li>/.test(t)) return `<ul>${t.replace(/<\/li>\n<li>/g, '</li><li>')}</ul>`;
+      if (/^<(h[1-4])>/.test(t)) return t;
+      if (t.startsWith('|')) {
+        const rows = t.split('\n').filter((r) => r.trim() && !/^\|[\s\-|]+\|$/.test(r));
+        const cells = (r) => r.replace(/^\||\|$/g, '').split('|').map((c) => c.trim());
+        if (!rows.length) return '';
+        const head = cells(rows[0]);
+        const body = rows.slice(1).map(cells);
+        return `<table><thead><tr>${head.map((c) => `<th>${c}</th>`).join('')}</tr></thead><tbody>${body.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+      }
+      return `<p>${t.replace(/\n/g, ' ')}</p>`;
+    })
+    .join('\n');
+  return html;
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: meta.title,
+  description: meta.description,
+  datePublished: meta.pubDate,
+  author: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+};
+---
+
+<BaseLayout title={`${meta.title} | Shandong Shengyuan Peptide`} description={meta.description} jsonLd={jsonLd}>
+  <div class="wrap article-shell">
+    <p class="crumbs"><a href="/knowledge-base/">Knowledge Base</a> / {meta.title}</p>
+    <article>
+      <div class="article-header">
+        <h1>{meta.title}</h1>
+        <p class="lede">{meta.description}</p>
+        <p class="faint">Published {meta.pubDate} · Shandong Shengyuan Peptide Technology Co., Ltd.</p>
+      </div>
+      <div set:html={mdToHtml(body)} />
+    </article>
+    <div class="disclaimer">
+      This article is provided for informational purposes for researchers and procurement
+      professionals. All peptide products are for research use only.
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import products from '../../data/products.json';
+
+const categories = [...new Set(products.map((p) => p.category))];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Research Peptide Catalog — Shandong Shengyuan Peptide',
+  description:
+    'Research-grade peptides with batch-verified COA data: GLP-1 analogs, GH secretagogues, healing peptides, longevity peptides, and more. ≥99% HPLC purity.',
+};
+---
+
+<BaseLayout
+  title="Research Peptide Catalog | Shandong Shengyuan Peptide"
+  description="Browse 24 research-grade peptides with batch-specific COA data — GLP-1 & metabolic, GH axis, healing & recovery, longevity, neuro, and melanocortin peptides. ≥99% HPLC purity, verified online."
+  jsonLd={jsonLd}
+>
+  <div class="wrap">
+    <h1>Research Peptide Catalog</h1>
+    <p class="lede">
+      Every catalog peptide is released with a batch-specific Certificate of Analysis covering HPLC
+      purity, mass spectrometry identity, peptide content, water content, and endotoxin. Verification
+      codes on each label can be checked online.
+    </p>
+
+    <div class="disclaimer">
+      <strong>Research use only.</strong> Products on this page are supplied for laboratory research
+      and development. They are not intended for human or veterinary use.
+    </div>
+
+    <div class="filter-bar" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin:1.2rem 0;">
+      <button class="cat-btn active" data-cat="All">All ({products.length})</button>
+      {categories.map((c) => (
+        <button class="cat-btn" data-cat={c}>
+          {c} ({products.filter((p) => p.category === c).length})
+        </button>
+      ))}
+    </div>
+    <div style="margin:0 0 1.2rem;">
+      <input id="product-search" type="search" placeholder="Search by name, sequence, or keyword…"
+        style="width:100%; max-width:420px; padding:0.6rem 0.95rem; border:1px solid var(--border-strong); border-radius:999px; font-size:0.95rem;" />
+    </div>
+
+    {categories.map((cat) => (
+      <section data-cat-section={cat}>
+        <h2 id={cat.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>{cat}</h2>
+        <div class="grid">
+          {products
+            .filter((p) => p.category === cat)
+            .map((p) => (
+              <a class="card" href={`/products/${p.slug}/`} id={p.slug} data-name={(p.name + ' ' + p.keywords.join(' ')).toLowerCase()}>
+                <img class="card-thumb" src={`/images/${p.image}`} alt={`${p.name} research peptide vial`} width="800" height="800" loading="lazy" />
+                <span class="badge">{p.purity} HPLC</span>
+                <strong class="card-title">{p.name}</strong>
+                <span class="meta">{p.summary}</span>
+                <span class="faint">CAS {p.cas} · MW {p.mw}</span>
+              </a>
+            ))}
+        </div>
+      </section>
+    ))}
+
+    <p style="margin-top:2rem;">
+      <a class="btn btn-ghost" href="/custom-peptide-synthesis/">Need a custom sequence? Start here →</a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .cat-btn {
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--bg);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .cat-btn.active, .cat-btn:hover {
+    background: var(--accent-tint);
+    border-color: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+  section[data-cat-section].hidden { display: none; }
+  .card.hidden { display: none; }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll('.cat-btn');
+  const sections = document.querySelectorAll('[data-cat-section]');
+  const cards = document.querySelectorAll('.card[data-name]');
+  const search = document.getElementById('product-search');
+  let activeCat = 'All';
+
+  function apply() {
+    const q = (search?.value || '').trim().toLowerCase();
+    sections.forEach((sec) => {
+      const show = activeCat === 'All' || sec.dataset.catSection === activeCat;
+      sec.classList.toggle('hidden', !show);
+    });
+    cards.forEach((card) => {
+      const inCat = activeCat === 'All' || card.closest('[data-cat-section]').dataset.catSection === activeCat;
+      const matches = !q || card.dataset.name.includes(q);
+      card.classList.toggle('hidden', !(inCat && matches));
+    });
+  }
+
+  buttons.forEach((b) =>
+    b.addEventListener('click', () => {
+      buttons.forEach((x) => x.classList.remove('active'));
+      b.classList.add('active');
+      activeCat = b.dataset.cat;
+      apply();
+    })
+  );
+  search?.addEventListener('input', apply);
+</script>

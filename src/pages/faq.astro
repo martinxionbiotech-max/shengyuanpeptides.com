@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import faq from '../data/faq.json';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<BaseLayout
+  title="Frequently Asked Questions | Shandong Shengyuan Peptide"
+  description="Answers on purity, turnaround, scale, OEM services, COA verification, shipping, documentation, and research-use policy from Shandong Shengyuan Peptide."
+  jsonLd={jsonLd}
+>
+  <div class="wrap">
+    <h1>Frequently Asked Questions</h1>
+    <p class="lede">Quick answers for researchers and buyers. Something not covered? Ask us directly.</p>
+
+    {faq.map((f) => (
+      <details style="border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.9rem 1.1rem; margin-bottom:0.7rem; background:var(--bg-soft);">
+        <summary style="font-weight:650; cursor:pointer; color:var(--text);">{f.q}</summary>
+        <p style="margin:0.7rem 0 0.2rem; color:var(--text-muted);">{f.a}</p>
+      </details>
+    ))}
+
+    <div class="notice" style="margin-top:2rem;">
+      <strong>Still have questions?</strong>
+      <a href="/contact/"> Contact our team</a> — we reply with a technical answer, usually within 24 hours.
+    </div>
+  </div>
+</BaseLayout>

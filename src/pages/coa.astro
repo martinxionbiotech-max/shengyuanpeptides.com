@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import coa from '../data/coa.json';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Certificate of Analysis (COA) Verification — Shandong Shengyuan Peptide',
+  description:
+    'Verify the authenticity of your peptide batch. Enter the verification code or batch number from your product label to view its Certificate of Analysis.',
+};
+---
+
+<BaseLayout
+  title="COA Verification & Certificate of Analysis | Shandong Shengyuan Peptide"
+  description="Verify the authenticity of your peptide batch online. Enter the verification code or batch number from your label to retrieve purity, sequence, and test data from the Certificate of Analysis."
+  jsonLd={jsonLd}
+>
+  <div class="wrap">
+    <h1>Certificates of Analysis</h1>
+    <p class="lede">
+      Quality you can verify. Every batch shipped by Shandong Shengyuan Peptide is released with a
+      complete Certificate of Analysis, ensuring purity, structure, and bioactivity meet international
+      standards. Use the lookup below to authenticate any product we manufacture.
+    </p>
+
+    <div class="disclaimer">
+      <strong>Anti-counterfeit verification.</strong> Enter the verification code or batch number
+      printed on your product label to authenticate. Codes match one batch only; contact us if your
+      code does not return a result.
+    </div>
+
+    <div class="coa-form">
+      <label for="coa-code">Verification code or batch number</label>
+      <div class="coa-input-row">
+        <input id="coa-code" type="text" placeholder="e.g. SY-VFY-8K2M-PLQ9 or RET-26031501" />
+        <button class="btn" id="coa-verify" type="button">Verify</button>
+      </div>
+      <div class="coa-result" id="coa-result" aria-live="polite"></div>
+    </div>
+
+    <h2>Browse Recent Batches</h2>
+    <table>
+      <thead>
+        <tr><th>Product</th><th>CAS</th><th>Batch</th><th>Purity</th><th>Test Date</th><th>Code</th></tr>
+      </thead>
+      <tbody>
+        {coa.map((c) => (
+          <tr>
+            <td><a href={`/products/${c.product.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`}>{c.product}</a></td>
+            <td>{c.cas}</td>
+            <td><code>{c.batch}</code></td>
+            <td>{c.purity}</td>
+            <td>{c.testDate}</td>
+            <td><code>{c.verifyCode}</code></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <div class="notice">
+      <strong>Need a COA for a custom product?</strong> We provide complete analysis certificates for
+      every custom peptide batch, including HPLC chromatograms, mass spectra, and bioactivity reports.
+      <a href="/contact/">Request COA documentation</a> for your order.
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const data = JSON.parse(document.getElementById('coa-data').textContent);
+  const input = document.getElementById('coa-code');
+  const resultBox = document.getElementById('coa-result');
+
+  function lookup() {
+    const q = input.value.trim().toUpperCase();
+    resultBox.innerHTML = '';
+    if (!q) return;
+    const hit = data.find((c) => [c.verifyCode, c.batch].some((v) => v && v.toUpperCase() === q));
+    if (!hit) {
+      resultBox.innerHTML = `<div class="fail-box"><strong>Not found.</strong> The code or batch number did not match any record. Please check the label and try again, or contact us with a photo of the label.</div>`;
+      return;
+    }
+    resultBox.innerHTML = `
+      <div class="ok-box">
+        <strong>Authentic product — ${hit.product}</strong><br/>
+        Batch <code>${hit.batch}</code> · released ${hit.testDate} · verification code <code>${hit.verifyCode}</code>
+      </div>
+      <table style="margin-top:1rem;">
+        <tbody>
+          <tr><th>Purity (HPLC)</th><td>${hit.purity}</td></tr>
+          <tr><th>Assay</th><td>${hit.assay}</td></tr>
+          <tr><th>Molecular Weight</th><td>${hit.mw}</td></tr>
+          <tr><th>Method</th><td>${hit.method}</td></tr>
+          <tr><th>Peptide Content</th><td>${hit.peptideContent}</td></tr>
+          <tr><th>pH</th><td>${hit.pH}</td></tr>
+          <tr><th>Water Content</th><td>${hit.waterContent}</td></tr>
+          <tr><th>Endotoxin</th><td>${hit.endotoxin}</td></tr>
+          <tr><th>Manufacture Date</th><td>${hit.mfgDate}</td></tr>
+          <tr><th>Retest Date</th><td>${hit.retestDate}</td></tr>
+          <tr><th>Storage</th><td>${hit.storage}</td></tr>
+          <tr><th>Quantity</th><td>${hit.quantity}</td></tr>
+          ${hit.sequence ? `<tr><th>Sequence</th><td><code>${hit.sequence}</code></td></tr>` : ''}
+        </tbody>
+      </table>
+      <p class="faint">Full PDF certificate available on request — contact us with the batch number.</p>
+    `;
+  }
+
+  document.getElementById('coa-verify').addEventListener('click', lookup);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') lookup(); });
+
+  // prefill from ?code=
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  if (code) { input.value = code; lookup(); }
+</script>
+
+<script type="application/json" id="coa-data" is:inline set:html={JSON.stringify(coa).replace(/</g, '\\u003c')} />

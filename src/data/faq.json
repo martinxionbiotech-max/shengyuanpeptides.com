@@ -1,0 +1,42 @@
+[
+  {
+    "q": "What purity level do your peptides reach?",
+    "a": "Standard catalog and custom peptides are delivered at 99% HPLC purity or higher, verified by reverse-phase HPLC and confirmed by mass spectrometry on every batch. The exact purity, peptide content, and identity data are printed on the batch-specific Certificate of Analysis that ships with every order."
+  },
+  {
+    "q": "What is the typical turnaround time?",
+    "a": "Stock catalog items ship within 24–48 hours of order confirmation. Custom synthesis typically takes 10–20 business days depending on sequence length, modification complexity, and scale; your feasibility review will include a firm timeline before you commit."
+  },
+  {
+    "q": "Do you support kilogram-scale production?",
+    "a": "Yes. Production scales from milligram research quantities through multi-gram pilot lots to kilogram commercial supply, using the same analytical release panel at every scale so data stays comparable across your program."
+  },
+  {
+    "q": "Can I verify the authenticity of my product?",
+    "a": "Every product label carries a verification code tied to its batch. Enter the code in the COA lookup section of this site to retrieve the batch's Certificate of Analysis, including purity, peptide content, sequence, and manufacturing dates."
+  },
+  {
+    "q": "Do you offer OEM and private label services?",
+    "a": "We provide end-to-end OEM support: formulation development, private-label packaging and filling, registration dossiers, and global logistics. A dedicated project manager coordinates the entire order, and a pilot sample is produced for your approval before commercial batches run."
+  },
+  {
+    "q": "How are shipments handled?",
+    "a": "Peptides are lyophilized and packed with cold-chain protection, then shipped through international express networks with full tracking. A shipping notice with the tracking number is sent the moment the parcel leaves our facility."
+  },
+  {
+    "q": "What documentation comes with each order?",
+    "a": "Every batch ships with a Certificate of Analysis containing HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin results. Raw HPLC chromatograms and MS spectra are available on request for your internal files."
+  },
+  {
+    "q": "Are your products suitable for clinical or human use?",
+    "a": "All products are manufactured and supplied exclusively for laboratory research and development use. They are not intended for human or veterinary administration, and we do not provide dosing guidance or medical advice of any kind."
+  },
+  {
+    "q": "Can you synthesize modified or difficult peptides?",
+    "a": "Yes — cyclic peptides, disulfide-bridged structures, D-amino acid substitutions, PEGylation, biotinylation, and fluorescent labels are all routine. For very long or aggregation-prone sequences we recommend a feasibility review, which is included free with every custom quote."
+  },
+  {
+    "q": "How do I request a quote?",
+    "a": "Send your sequence (or product name), required quantity, purity grade, and any modifications to our team through the contact form. You will receive a technical quotation — usually within 24 hours — including timeline, analytical package, and pricing."
+  }
+]

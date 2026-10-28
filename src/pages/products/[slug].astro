@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import products from '../../data/products.json';
+import coa from '../../data/coa.json';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+const coaEntries = coa.filter((c) => c.product.toLowerCase() === product.name.toLowerCase());
+const related = products.filter((p) => p.category === product.category && p.slug !== product.slug).slice(0, 3);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  description: product.summary,
+  brand: { '@type': 'Brand', name: 'Shandong Shengyuan Peptide' },
+  category: product.category,
+  ...(coaEntries[0]
+    ? { identifier: { '@type': 'PropertyValue', name: 'CAS', value: coaEntries[0].cas } }
+    : {}),
+};
+---
+
+<BaseLayout
+  title={`${product.name} (CAS ${product.cas}) | Research Peptide — Shandong Shengyuan`}
+  description={product.summary}
+  jsonLd={jsonLd}
+>
+  <div class="wrap">
+    <p class="crumbs"><a href="/products/">Catalog</a> / <a href={`/products/#${product.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{product.category}</a> / {product.name}</p>
+
+    <div class="product-layout">
+      <div class="product-media">
+        <img src={`/images/${product.image}`} alt={`${product.name} research peptide — ${product.category}`} width="800" height="800" />
+      </div>
+
+      <div>
+        <h1>{product.name}</h1>
+        <p class="lede">{product.summary}</p>
+
+        <table>
+          <tbody>
+            <tr><th>CAS Number</th><td>{product.cas}</td></tr>
+            <tr><th>Molecular Weight</th><td>{product.mw}</td></tr>
+            <tr><th>Purity</th><td>{product.purity} (HPLC / MS verified)</td></tr>
+            <tr><th>Category</th><td>{product.category}</td></tr>
+            {product.sequence && <tr><th>Sequence</th><td><code>{product.sequence}</code></td></tr>}
+            <tr><th>Storage</th><td>{product.storage}</td></tr>
+          </tbody>
+        </table>
+
+        <div class="disclaimer">
+          <strong>Research use only.</strong> Not for human or veterinary use. We do not provide
+          dosing guidance or medical advice.
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; gap:0.7rem;">
+          <a class="btn" href="/contact/">Request a Quote</a>
+          {coaEntries.length > 0 && <a class="btn btn-ghost" href={`/coa/?code=${encodeURIComponent(coaEntries[0].verifyCode)}`}>View Batch COA Data</a>}
+        </div>
+      </div>
+    </div>
+
+    <article>
+      <h2>About {product.name}</h2>
+      <p>{product.description}</p>
+
+      <h3>Research Applications</h3>
+      <ul>
+        {product.applications.map((a) => <li>{a}</li>)}
+      </ul>
+
+      <h3>Quality &amp; Documentation</h3>
+      <p>
+        Every batch of {product.name} is manufactured under our documented quality system and released
+        with a Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content,
+        water content, and endotoxin. The batch code on your vial can be verified online in the
+        <a href="/coa/"> COA lookup section</a> of this site.
+      </p>
+    </article>
+
+    {related.length > 0 && (
+      <>
+        <h2>Related Products</h2>
+        <div class="grid">
+          {related.map((r) => (
+            <a class="card" href={`/products/${r.slug}/`}>
+              <img class="card-thumb" src={`/images/${r.image}`} alt={r.name} width="800" height="800" loading="lazy" />
+              <strong class="card-title">{r.name}</strong>
+              <span class="meta">{r.summary}</span>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .product-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 400px) minmax(280px, 1fr);
+    gap: 1.6rem;
+    align-items: start;
+    margin: 1.4rem 0 2.2rem;
+  }
+  .product-media {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-media img { border-radius: var(--radius-sm); }
+  @media (max-width: 760px) {
+    .product-layout { grid-template-columns: 1fr; }
+  }
+</style>

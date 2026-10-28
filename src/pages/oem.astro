@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import oem from '../data/oem.json';
+
+const icons = {
+  flask: '<path d="M10 2v6L4 18v2h16v-2l-6-10V2"/>',
+  package: '<path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>',
+  'file-text': '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',
+  globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+  'shield-check': '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+  user: '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'OEM & Private Label Peptide Manufacturing',
+  provider: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+  description: oem.intro,
+};
+---
+
+<BaseLayout
+  title="OEM & Private Label Peptide Manufacturing | Shandong Shengyuan Peptide"
+  description="One-stop OEM peptide solutions for brands, distributors, and research institutions — custom formulation, private label packaging, registration dossiers, and global logistics."
+  jsonLd={jsonLd}
+>
+  <div class="wrap">
+    <h1>OEM Private Label Services</h1>
+    <p class="lede">{oem.intro}</p>
+
+    <img src="/images/oem-facility.webp" alt="GMP peptide manufacturing and filling line" width="1400" height="1738"
+      style="max-width:520px; border-radius:var(--radius); border:1px solid var(--border); margin:1rem 0;" loading="lazy" />
+
+    <div class="grid">
+      {oem.services.map((s) => (
+        <div class="card">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={icons[s.icon] || icons.flask} />
+          <strong class="card-title">{s.title}</strong>
+          <span class="meta">{s.description}</span>
+        </div>
+      ))}
+    </div>
+
+    <h2>OEM Collaboration Process</h2>
+    <p class="lede">A five-step workflow that takes your project from first contact to delivered, labeled product.</p>
+    <ol class="steps">
+      {oem.process.map((step) => (
+        <li>
+          <strong>{step.title}</strong>
+          <p class="meta" style="margin:0.2rem 0 0;">{step.description}</p>
+        </li>
+      ))}
+    </ol>
+
+    <div class="notice" style="display:flex; flex-wrap:wrap; align-items:center; gap:1rem; justify-content:space-between;">
+      <div>
+        <strong>Ready to start your OEM project?</strong>
+        <p style="margin:0.3rem 0 0;">{oem.cta}</p>
+      </div>
+      <a class="btn" href="/contact/">Contact OEM Specialists</a>
+    </div>
+  </div>
+</BaseLayout>

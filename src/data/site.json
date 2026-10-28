@@ -1,0 +1,18 @@
+{
+  "brand": "Shandong Shengyuan Peptide",
+  "company": "Shandong Shengyuan Peptide Technology Co., Ltd.",
+  "site": "https://shengyuanpeptides.com",
+  "email": "sales@shengyuanpeptides.com",
+  "location": "Shandong Province, China",
+  "founded": 2003,
+  "tagline": "Research · Technology · Peptide",
+  "heroTitle": "Precision. Purity. Performance.",
+  "stats": [
+    { "value": "20+", "label": "Years of peptide synthesis experience" },
+    { "value": "500+", "label": "Research institutions & companies served" },
+    { "value": "200+", "label": "Scientists, analysts & QC specialists" },
+    { "value": "99%+", "label": "Standard HPLC purity, every batch" },
+    { "value": "50+", "label": "Countries & regions supplied" },
+    { "value": "10,000+", "label": "Peptide raw materials in stock" }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "intro": "One-stop OEM peptide solutions for brands, distributors, and research institutions — from formulation to delivery, fully managed by a dedicated project team.",
+  "services": [
+    {
+      "icon": "flask",
+      "title": "Custom Formulation",
+      "description": "Sequence design, modification optimization, and formulation development tailored to your target product profile, with sample confirmation before production."
+    },
+    {
+      "icon": "package",
+      "title": "Private Label Packaging",
+      "description": "Your brand on the label, our quality inside the vial. Multi-spec filling (1mg to 100mg+ per vial), custom label and box design, and tamper-evident finishing."
+    },
+    {
+      "icon": "file-text",
+      "title": "Full Registration Dossier",
+      "description": "Complete regulatory support documentation — quality standards, testing protocols, and stability data — prepared to accelerate your market entry."
+    },
+    {
+      "icon": "globe",
+      "title": "Global Logistics",
+      "description": "Lyophilized products packed with cold-chain protection and shipped through international express networks with tracking from our dock to yours."
+    },
+    {
+      "icon": "shield-check",
+      "title": "Rigorous Quality Control",
+      "description": "Every OEM batch runs the full analytical panel — HPLC purity, MS identity, peptide content, water content, and endotoxin — before release."
+    },
+    {
+      "icon": "user",
+      "title": "Dedicated Account Service",
+      "description": "A single project manager tracks your OEM order from start to finish, providing technical consultation during development and after-sales support."
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Requirement discussion",
+      "description": "Share your target peptide, quantity, purity, and packaging needs. Our specialists review sequence feasibility and respond with a technical proposal."
+    },
+    {
+      "step": 2,
+      "title": "Sample confirmation",
+      "description": "We produce a pilot batch with your chosen formulation and packaging plan; you approve the sample before commercial production begins."
+    },
+    {
+      "step": 3,
+      "title": "Terms and kick-off",
+      "description": "Confirm technical and commercial terms, sign the supply agreement, and officially start the project with a dedicated project manager."
+    },
+    {
+      "step": 4,
+      "title": "Production and QC",
+      "description": "Synthesis, purification, lyophilization, filling, and full analytical QC run under batch-record control with QA-reviewed release."
+    },
+    {
+      "step": 5,
+      "title": "Delivery and support",
+      "description": "Cold-chain international shipping with tracking, complete COA documentation, and after-sales technical support for your customers."
+    }
+  ],
+  "cta": "Chat with our OEM specialists — get a custom proposal within 24 hours."
+}

@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+import team from '../data/team.json';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: `About ${site.company}`,
+  description:
+    'Founded in 2003, Shandong Shengyuan Peptide Technology Co., Ltd. is a peptide CDMO in Shandong, China — 200+ scientists, 500+ institutions served, ≥99% HPLC purity on every batch.',
+};
+---
+
+<BaseLayout
+  title={`About Us | ${site.company}`}
+  description="Shandong Shengyuan Peptide Technology Co., Ltd. — a Shandong-based peptide CDMO founded in 2003, with 200+ scientists serving 500+ research institutions worldwide."
+  jsonLd={jsonLd}
+>
+  <div class="wrap article-shell">
+    <div class="article-header">
+      <h1>About {site.company}</h1>
+      <p class="lede">Research. Technology. Peptide.</p>
+    </div>
+
+    <article>
+      <p>
+        <strong>{site.company}</strong> was founded in 2003 on a single conviction: that world-class
+        peptide research demands both uncompromising scientific rigor and the most advanced synthesis
+        technology available. What began as a small synthesis laboratory in Shandong has grown into a
+        full-service peptide CDMO serving pharmaceutical companies, universities, and research
+        institutes in more than 50 countries.
+      </p>
+
+      <h2>Who We Serve</h2>
+      <p>
+        Today, with over 200 dedicated scientists and our automated synthesis platform, we serve 500+
+        pharmaceutical companies, universities, and research organizations — supplying everything from
+        single research peptides to multi-kilogram OEM programs. Our customers rely on us for one
+        reason above all: every peptide we produce meets research-grade standards, validated by HPLC,
+        mass spectrometry, and amino acid analysis. Science you can trust.
+      </p>
+
+      <h2>Our Technology Platform</h2>
+      <p>
+        Our proprietary synthesis platform combines automated solid-phase peptide synthesis (SPPS) with
+        real-time QC monitoring at every stage — coupling, cleavage, purification, and lyophilization —
+        delivering precision at scale. From milligram feasibility studies to kilogram production runs,
+        the same analytical release panel applies, so data stays comparable across your entire program.
+      </p>
+
+      <h2>Our Team</h2>
+      <p class="lede">
+        Scientists behind every batch: over 200 chemists, analysts, and regulatory specialists working
+        across synthesis, QC, and global compliance.
+      </p>
+      <div class="grid">
+        {team.map((m) => (
+          <div class="card">
+            <strong class="card-title">{m.role}</strong>
+            <span class="badge">{m.focus}</span>
+            <span class="meta">{m.bio}</span>
+            <span class="faint">{m.years} experience</span>
+          </div>
+        ))}
+      </div>
+
+      <h2>Why Researchers Choose Shengyuan</h2>
+      <ul>
+        <li><strong>Verified quality:</strong> every batch ships with a complete, traceable Certificate of Analysis.</li>
+        <li><strong>Anti-counterfeit protection:</strong> label verification codes authenticated online in seconds.</li>
+        <li><strong>Scale continuity:</strong> milligram to kilogram from the same facility and the same QC panel.</li>
+        <li><strong>OEM capability:</strong> formulation, private labeling, registration dossiers, and cold-chain logistics.</li>
+      </ul>
+    </article>
+
+    <p style="margin-top:1.5rem;"><a class="btn" href="/contact/">Talk to Our Team</a></p>
+  </div>
+</BaseLayout>

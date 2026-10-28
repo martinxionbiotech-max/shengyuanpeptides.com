@@ -1,0 +1,98 @@
+[
+  {
+    "id": "custom-synthesis",
+    "cat": "Core Service",
+    "title": "Custom Peptide Synthesis",
+    "icon": "flask",
+    "image": "svc-synthesis.webp",
+    "summary": "From milligram feasibility studies to kilogram production runs, we build peptide sequences to your exact specification with HPLC-verified purity of 99% or higher.",
+    "description": "Our synthesis laboratory runs fully automated solid-phase peptide synthesis (SPPS) across a broad difficulty range: linear and cyclic structures, long chains beyond 60 residues, and sequences rich in difficult coupling regions. Every order starts with a feasibility review of your sequence, so you receive a realistic timeline and purity target before synthesis begins. Modification chemistries available include N-terminal acetylation, C-terminal amidation, cyclization, D-amino acid substitution, PEGylation, biotinylation, and fluorescent or isotopic labelling. Each batch is purified by preparative HPLC, lyophilized, and released with a complete analytical package: HPLC chromatogram, mass spectrum, and Certificate of Analysis. Turnaround starts at two weeks for standard sequences.",
+    "tags": ["Drug discovery", "Biomarker development", "Vaccine adjuvants"],
+    "points": [
+      "Purity grades from crude to ≥99% HPLC",
+      "Linear, cyclic, modified and long peptides",
+      "HPLC + MS analysis on every batch",
+      "Milligram to kilogram scale"
+    ]
+  },
+  {
+    "id": "drug-development",
+    "cat": "R&D Services",
+    "title": "Peptide Drug Development",
+    "icon": "molecule",
+    "image": "svc-drug-dev.webp",
+    "summary": "Full-pipeline peptide drug development support, from target validation through candidate screening to pre-clinical material supply.",
+    "description": "Moving a peptide candidate forward demands more than synthesis capacity; it requires stability data, impurity profiling, and scale-up know-how. Our R&D team partners with sponsors on target validation, analog design, and candidate screening, then carries the lead sequence through process development, forced degradation studies, and pre-clinical batch manufacture. We deliver reference standards, stability samples, and the CMC-style documentation needed for regulatory discussions, while keeping research-use material clearly separated from any clinical supply.",
+    "tags": ["Target validation", "Candidate screening", "Lead optimization"],
+    "points": [
+      "Analogue design and SAR support",
+      "Process development and scale-up",
+      "Forced degradation and stability studies",
+      "Pre-clinical research material supply"
+    ]
+  },
+  {
+    "id": "bioactivity-testing",
+    "cat": "Analytics",
+    "title": "Bioactivity Testing",
+    "icon": "chart",
+    "image": "svc-bioactivity.webp",
+    "summary": "In-house analytical laboratory providing purity characterization, bioactivity assessment, and stability studies for peptide products.",
+    "description": "A peptide can be chemically pure yet biologically inactive, which is why our analytical laboratory combines chromatographic characterization with functional assessment. Instrumentation includes high-resolution HPLC with diode-array detection, LC-MS/MS for sequence confirmation, and cell-based assays for potency and bioactivity screening. Standard test panels cover appearance, identity, purity, peptide content, water content (Karl Fischer), endotoxin, and residual solvent analysis, with results compiled into a single traceable report for each batch. Stability programs can be designed around your storage conditions, including accelerated studies with retest dating.",
+    "tags": ["Purity characterization", "Bioactivity assays", "Stability programs"],
+    "points": [
+      "HPLC, LC-MS/MS and cell-based assays",
+      "Endotoxin and residual solvent testing",
+      "Accelerated stability with retest dating",
+      "Single traceable report per batch"
+    ]
+  },
+  {
+    "id": "gmp-manufacturing",
+    "cat": "Quality Assurance",
+    "title": "GMP-Compliant Manufacturing",
+    "icon": "shield",
+    "image": "svc-gmp.webp",
+    "summary": "GMP-grade production environment with complete quality documentation, clean-room handling, and batch release control.",
+    "description": "Quality systems, not just chemistry, determine whether a peptide batch is fit for its intended research program. Our manufacturing operation runs under a documented quality management system aligned with ISO 9001 principles and ICH analytical guidelines, with controlled clean-room areas for filling and lyophilization. Every batch is manufactured against a written batch record, reviewed by an independent quality assurance function, and released only after analytical results meet specification. Documentation available with every order includes the Certificate of Analysis, HPLC and MS raw data, and, on request, a full quality dossier for your procurement files.",
+    "tags": ["Batch record control", "Clean-room filling", "QA-reviewed release"],
+    "points": [
+      "QMS aligned with ISO 9001 and ICH guidance",
+      "Written batch records, QA-reviewed release",
+      "Clean-room filling and lyophilization",
+      "Full documentation dossier on request"
+    ]
+  },
+  {
+    "id": "raw-material-library",
+    "cat": "Raw Materials",
+    "title": "Peptide Raw Material Library",
+    "icon": "library",
+    "image": "svc-raw-materials.webp",
+    "summary": "More than 10,000 in-stock peptide raw materials, from amino acid derivatives and resins to catalog peptides and reagents.",
+    "description": "A reliable synthesis program starts with a dependable raw material chain. We maintain a stocked library of over 10,000 items: Fmoc- and Boc-protected amino acids, coupling reagents, synthesis resins, protecting-group reagents, and a broad catalog of finished peptides. Each stocked item carries a documented certificate of conformity, and our procurement team runs supplier qualification on every critical reagent. The library supports our own production lines and is available to external laboratories looking for a single accountable source for research reagents.",
+    "tags": ["Fmoc amino acids", "Synthesis resins", "Coupling reagents"],
+    "points": [
+      "10,000+ stocked items",
+      "Supplier-qualified critical reagents",
+      "CoC documentation per item",
+      "Same-week dispatch on stock items"
+    ]
+  },
+  {
+    "id": "research-partnership",
+    "cat": "Collaboration",
+    "title": "Research Partnership",
+    "icon": "handshake",
+    "image": "svc-partnership.webp",
+    "summary": "Joint R&D programs, technology transfer, and commercialization partnerships with universities and biotech companies worldwide.",
+    "description": "Long-term research relationships compound in value: shared methods, aligned quality expectations, and faster problem-solving when chemistry gets difficult. We structure partnerships around joint R&D projects, technology transfer, and commercialization support, working with university laboratories, biotech incubators, and industrial R&D groups in more than 50 countries. Partnership terms can include dedicated synthesis capacity, priority analytical slots, co-authored method development, and preferential pricing on repeat programs.",
+    "tags": ["Joint R&D", "Technology transfer", "Commercialization support"],
+    "points": [
+      "Dedicated synthesis capacity for partners",
+      "Priority analytical scheduling",
+      "Joint method development programs",
+      "Preferential repeat-program pricing"
+    ]
+  }
+]

@@ -1,0 +1,421 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  jsonLd?: object;
+}
+const { title, description, jsonLd } = Astro.props;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/products/', label: 'Products' },
+  { href: '/oem/', label: 'OEM' },
+  { href: '/coa/', label: 'COA Lookup' },
+  { href: '/quality/', label: 'Quality' },
+  { href: '/about/', label: 'About' },
+  { href: '/faq/', label: 'FAQ' },
+  { href: '/contact/', label: 'Contact' },
+];
+const isActive = (href: string) => (href === '/' ? path === '/' : path === href || path.startsWith(href));
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description || title} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Shandong Shengyuan Peptide Technology Co., Ltd." />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <style is:global>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f8fafc;
+        --bg-tint: #f1f5f9;
+        --text: #0f172a;
+        --text-muted: #526079;
+        --text-faint: #7b869d;
+        --accent: #047857;
+        --accent-strong: #065f46;
+        --accent-soft: #a7f3d0;
+        --accent-tint: #ecfdf5;
+        --teal: #0d9488;
+        --teal-soft: #ccfbf1;
+        --border: #e2e8f0;
+        --border-strong: #cbd5e1;
+        --ok: #047857;
+        --ok-soft: #ecfdf5;
+        --ok-border: #a7f3d0;
+        --warn-bg: #fffbeb;
+        --warn-border: #fde68a;
+        --warn-text: #92400e;
+        --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+        --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.07);
+        --shadow-lg: 0 12px 30px rgba(15, 23, 42, 0.1);
+        --radius: 12px;
+        --radius-sm: 8px;
+        --font:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif;
+        --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 1rem;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      img, svg, video { display: block; max-width: 100%; height: auto; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; text-underline-offset: 3px; }
+      ::selection { background: var(--accent-soft); }
+      :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+      .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+      .skip {
+        position: absolute; left: -9999px; top: 0; z-index: 100;
+        background: var(--accent); color: #fff; padding: 0.6rem 1rem; border-radius: 0 0 8px 0;
+      }
+      .skip:focus { left: 0; }
+
+      /* ---------- Header ---------- */
+      header.site {
+        position: sticky; top: 0; z-index: 50;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+      }
+      .site-inner {
+        display: flex; align-items: center; justify-content: space-between;
+        flex-wrap: wrap; gap: 0.6rem 1.5rem; padding-top: 0.8rem; padding-bottom: 0.8rem;
+      }
+      .brand {
+        display: inline-flex; align-items: center; gap: 0.55rem;
+        font-weight: 800; font-size: 1.08rem; color: var(--text);
+        letter-spacing: -0.01em;
+      }
+      .brand:hover { text-decoration: none; }
+      .brand-mark { width: 26px; height: 26px; flex: none; }
+      nav.main { display: flex; gap: 0.25rem; flex-wrap: wrap; font-size: 0.9rem; }
+      nav.main a {
+        color: var(--text-muted); font-weight: 500;
+        padding: 0.35rem 0.7rem; border-radius: 999px;
+      }
+      nav.main a:hover { color: var(--accent-strong); background: var(--accent-tint); text-decoration: none; }
+      nav.main a[aria-current="page"] { color: var(--accent-strong); background: var(--accent-soft); font-weight: 600; }
+
+      /* ---------- Layout ---------- */
+      main { min-height: 60vh; }
+      main > .wrap { padding-top: 2.25rem; padding-bottom: 3rem; }
+
+      /* ---------- Typography ---------- */
+      h1 {
+        font-size: clamp(1.7rem, 1.1rem + 2.4vw, 2.4rem);
+        line-height: 1.18; letter-spacing: -0.02em;
+        margin-bottom: 0.9rem; color: var(--text); font-weight: 800;
+      }
+      h2 {
+        font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.55rem);
+        line-height: 1.3; letter-spacing: -0.015em;
+        margin: 2.4rem 0 0.9rem; color: var(--text); font-weight: 700;
+      }
+      h3 { font-size: 1.12rem; margin: 1.6rem 0 0.6rem; font-weight: 650; }
+      h4 { font-size: 1rem; margin: 1.3rem 0 0.5rem; font-weight: 650; }
+      p { margin-bottom: 0.95rem; }
+      ul, ol { margin: 0 0 1.1rem 1.45rem; }
+      li { margin-bottom: 0.4rem; padding-left: 0.15rem; }
+      li::marker { color: var(--accent); font-weight: 600; }
+      strong { font-weight: 650; color: var(--text); }
+      hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+      blockquote {
+        border-left: 3px solid var(--accent-soft); background: var(--bg-soft);
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        padding: 0.9rem 1.1rem; margin: 1.2rem 0; color: var(--text-muted);
+      }
+      code {
+        font-family: var(--font-mono); font-size: 0.88em;
+        background: var(--bg-tint); border: 1px solid var(--border);
+        padding: 0.08em 0.38em; border-radius: 5px; color: var(--accent-strong);
+      }
+      pre {
+        background: #0f172a; color: #e2e8f0; border-radius: var(--radius-sm);
+        padding: 1rem 1.15rem; overflow-x: auto; margin: 1.1rem 0; font-size: 0.88rem;
+      }
+      pre code { background: none; border: 0; color: inherit; padding: 0; }
+      table {
+        width: 100%; border-collapse: collapse; margin: 1.1rem 0 1.5rem; font-size: 0.93rem;
+        border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden;
+      }
+      th, td { border-bottom: 1px solid var(--border); padding: 0.6rem 0.8rem; text-align: left; vertical-align: top; }
+      th { background: var(--bg-soft); font-weight: 650; }
+      tr:last-child td { border-bottom: 0; }
+      tbody tr:nth-child(even) { background: var(--bg-soft); }
+
+      /* ---------- Components ---------- */
+      .grid {
+        display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 1rem; margin: 1.3rem 0;
+      }
+      .card {
+        background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+        padding: 1.1rem 1.15rem; display: flex; flex-direction: column; gap: 0.4rem;
+        box-shadow: var(--shadow-sm); transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+      }
+      a.card { color: var(--text); }
+      a.card:hover {
+        text-decoration: none; border-color: var(--accent-soft);
+        box-shadow: var(--shadow-md); transform: translateY(-2px);
+      }
+      a.card:hover > strong, a.card:hover .card-title { color: var(--accent-strong); }
+      .card .price { color: var(--ok); font-weight: 700; }
+      .card .meta { color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+      .card-thumb {
+        width: 100%; aspect-ratio: 1; object-fit: cover;
+        background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius-sm);
+        margin-bottom: 0.35rem;
+      }
+      .badge {
+        display: inline-flex; align-items: center; gap: 0.35rem; width: fit-content;
+        background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok-border);
+        border-radius: 999px; padding: 0.12rem 0.6rem; font-size: 0.74rem; font-weight: 650;
+        letter-spacing: 0.01em;
+      }
+      .badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #10b981; }
+      .muted { color: var(--text-muted); }
+      .faint { color: var(--text-faint); font-size: 0.85rem; }
+      .notice {
+        background: var(--accent-tint); border: 1px solid var(--accent-soft);
+        border-left: 4px solid var(--accent); border-radius: var(--radius-sm);
+        padding: 0.9rem 1.1rem; margin: 1.3rem 0; font-size: 0.95rem;
+      }
+      .disclaimer {
+        background: var(--warn-bg); border: 1px solid var(--warn-border);
+        border-radius: var(--radius-sm); padding: 0.85rem 1.05rem; margin: 1.5rem 0;
+        font-size: 0.88rem; color: var(--warn-text);
+      }
+      .crumbs { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 1.1rem; }
+      .crumbs a { color: var(--text-muted); }
+      .crumbs a:hover { color: var(--accent); }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+        background: var(--accent); color: #fff; font-weight: 650; font-size: 0.95rem;
+        padding: 0.62rem 1.25rem; border-radius: 999px; border: 1px solid var(--accent);
+        transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        box-shadow: var(--shadow-sm);
+      }
+      .btn:hover { background: var(--accent-strong); border-color: var(--accent-strong); text-decoration: none; transform: translateY(-1px); box-shadow: var(--shadow-md); }
+      .btn-ghost { background: var(--bg); color: var(--accent-strong); border-color: var(--border-strong); box-shadow: none; }
+      .btn-ghost:hover { background: var(--accent-tint); border-color: var(--accent-soft); }
+      .btn-sm { padding: 0.4rem 0.9rem; font-size: 0.85rem; }
+
+      /* ---------- Section headers ---------- */
+      .section-head { margin: 2.6rem 0 1rem; }
+      .section-head h2 { margin: 0 0 0.4rem; }
+      .section-head p { margin: 0; color: var(--text-muted); max-width: 70ch; }
+      .lede { font-size: 1.06rem; color: var(--text-muted); max-width: 70ch; }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        position: relative;
+        display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+        gap: 2rem; align-items: center;
+        border: 1px solid var(--border); border-radius: 18px;
+        padding: clamp(1.6rem, 4vw, 3rem); margin-bottom: 2rem; overflow: hidden;
+        background: #052e2b;
+        color: #f0fdfa;
+      }
+      .hero h1 { color: #fff; font-size: clamp(1.85rem, 1.2rem + 2.8vw, 2.85rem); margin-bottom: 0.8rem; }
+      .hero .hero-lede { font-size: 1.05rem; color: #a7f3d0; max-width: 62ch; margin-bottom: 1.3rem; }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+      .hero .btn { background: #10b981; border-color: #10b981; color: #052e2b; }
+      .hero .btn:hover { background: #34d399; border-color: #34d399; }
+      .hero .btn-ghost { background: transparent; color: #ecfdf5; border-color: rgba(236, 253, 245, 0.45); }
+      .hero .btn-ghost:hover { background: rgba(16, 185, 129, 0.18); border-color: #34d399; }
+      .hero-art { display: flex; justify-content: center; }
+      .hero-art img { border-radius: var(--radius); max-width: 100%; height: auto; border: 1px solid rgba(167, 243, 208, 0.35); }
+      .hero-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem; }
+      .hero-badges span {
+        background: rgba(16, 185, 129, 0.16); color: #a7f3d0; border: 1px solid rgba(52, 211, 153, 0.4);
+        border-radius: 999px; padding: 0.22rem 0.75rem; font-size: 0.8rem; font-weight: 600;
+      }
+
+      /* ---------- Stat cards ---------- */
+      .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin: 1.4rem 0; }
+      .stat {
+        display: flex; gap: 0.85rem; align-items: flex-start;
+        background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+        padding: 1.05rem 1.15rem; box-shadow: var(--shadow-sm);
+      }
+      .stat-icon {
+        flex: none; width: 38px; height: 38px; border-radius: 10px;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--accent-tint); color: var(--accent);
+      }
+      .stat-icon.teal { background: var(--teal-soft); color: var(--teal); }
+      .stat strong { display: block; font-size: 1.02rem; }
+      .stat span { color: var(--text-muted); font-size: 0.85rem; line-height: 1.45; }
+
+      /* ---------- Ordered steps ---------- */
+      ol.steps { list-style: none; margin: 1.2rem 0; padding: 0; counter-reset: step; display: grid; gap: 0.7rem; }
+      ol.steps li {
+        counter-increment: step; position: relative;
+        background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius);
+        padding: 0.9rem 1.1rem 0.9rem 3.2rem; margin: 0;
+      }
+      ol.steps li::before {
+        content: counter(step);
+        position: absolute; left: 0.85rem; top: 0.85rem;
+        width: 1.7rem; height: 1.7rem; border-radius: 50%;
+        background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem;
+        display: flex; align-items: center; justify-content: center;
+      }
+      ol.steps li::marker { content: none; }
+
+      /* ---------- Article body ---------- */
+      article { font-size: 1rem; }
+      .article-shell { max-width: 78ch; }
+      .article-header { border-bottom: 1px solid var(--border); padding-bottom: 1.1rem; margin-bottom: 1.6rem; }
+      .article-header h1 { margin-bottom: 0.5rem; }
+      .article-header .lede { margin-bottom: 0; }
+      article h2 { padding-bottom: 0.45rem; border-bottom: 1px solid var(--border); margin-top: 2.2rem; }
+      article h3 { color: var(--accent-strong); }
+      article a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--accent-soft); }
+      article a:hover { text-decoration-color: var(--accent); }
+
+      /* ---------- COA lookup ---------- */
+      .coa-form {
+        background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+        padding: 1.4rem 1.5rem; box-shadow: var(--shadow-md); margin: 1.3rem 0; max-width: 640px;
+      }
+      .coa-form label { display: block; font-weight: 650; margin-bottom: 0.4rem; font-size: 0.92rem; }
+      .coa-input-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+      .coa-input-row input {
+        flex: 1 1 240px; padding: 0.65rem 0.95rem; font-size: 0.95rem;
+        border: 1px solid var(--border-strong); border-radius: 999px; background: var(--bg);
+        font-family: var(--font-mono);
+      }
+      .coa-input-row input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+      .coa-result { margin-top: 1.1rem; }
+      .coa-result .ok-box {
+        background: var(--ok-soft); border: 1px solid var(--ok-border); border-radius: var(--radius-sm);
+        padding: 1rem 1.15rem; color: var(--ok);
+      }
+      .coa-result .fail-box {
+        background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-sm);
+        padding: 1rem 1.15rem; color: #991b1b;
+      }
+
+      /* ---------- Footer ---------- */
+      footer.site {
+        border-top: 1px solid var(--border);
+        background: var(--bg-soft);
+        margin-top: 2.5rem;
+      }
+      .footer-grid {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem; padding: 2.4rem 0 1.8rem;
+      }
+      .footer-col h4 { margin: 0 0 0.7rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+      .footer-col ul { list-style: none; margin: 0; }
+      .footer-col li { margin-bottom: 0.4rem; }
+      .footer-col a { color: var(--text-muted); font-size: 0.92rem; }
+      .footer-col a:hover { color: var(--accent-strong); }
+      .footer-legal {
+        border-top: 1px solid var(--border); padding: 1.1rem 0 1.4rem;
+        font-size: 0.82rem; color: var(--text-faint);
+      }
+      .footer-legal p { margin-bottom: 0.5rem; }
+
+      @media (max-width: 760px) {
+        .hero { grid-template-columns: 1fr; }
+        .hero-art { order: -1; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="wrap site-inner">
+        <a class="brand" href="/">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#047857"/>
+            <path d="M9 21c1.5-4 2.5-6.5 5-9.5 1.5 2 2.6 3.7 3.8 6.2.8-2.6 1.7-4.6 4.2-7.2 1.3 3.4 1.9 6.8 1.9 10.2" stroke="#ecfdf5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Shengyuan Peptides
+        </a>
+        <nav class="main" aria-label="Main navigation">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <p class="muted" style="font-size: 0.92rem">
+              Shandong Shengyuan Peptide Technology Co., Ltd. — a peptide CDMO based in Shandong, China, serving researchers and OEM partners worldwide since 2003.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Products & Services</h4>
+            <ul>
+              <li><a href="/products/">Product Catalog</a></li>
+              <li><a href="/custom-peptide-synthesis/">Custom Synthesis</a></li>
+              <li><a href="/oem/">OEM & Private Label</a></li>
+              <li><a href="/coa/">COA Lookup</a></li>
+              <li><a href="/quality/">Quality Control</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/faq/">FAQ</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/knowledge-base/">Knowledge Base</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+              <li><a href="/research-use-disclaimer/">Research Use Disclaimer</a></li>
+              <li><a href="/shipping/">Shipping Policy</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/terms/">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <p><strong>© {new Date().getFullYear()} Shandong Shengyuan Peptide Technology Co., Ltd.</strong> All rights reserved.</p>
+          <p>
+            All products on this website are supplied strictly for laboratory research and development use.
+            They are not intended for human or veterinary use, diagnosis, or treatment of any disease.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

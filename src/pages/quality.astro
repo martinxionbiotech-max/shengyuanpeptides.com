@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import services from '../data/services.json';
+
+const qc = services.find((s) => s.id === 'gmp-manufacturing');
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Quality Control — Shandong Shengyuan Peptide',
+  description:
+    'How Shandong Shengyuan Peptide controls quality: HPLC, LC-MS/MS, peptide content, water content, endotoxin testing, batch records, and QA-reviewed release for every batch.',
+};
+---
+
+<BaseLayout
+  title="Quality Control & Analytical Standards | Shandong Shengyuan Peptide"
+  description="Our quality system: HPLC purity, MS identity, peptide content, water content and endotoxin testing on every batch, with QA-reviewed release and full documentation."
+  jsonLd={jsonLd}
+>
+  <div class="wrap article-shell">
+    <div class="article-header">
+      <h1>Quality Control &amp; Analytical Standards</h1>
+      <p class="lede">Quality you can verify — the analytical program behind every batch we ship.</p>
+    </div>
+
+    <article>
+      <p>
+        A peptide's certificate is only as credible as the laboratory behind it. Our quality system is
+        built around a simple rule: <strong>no batch ships without a complete, traceable analytical
+        record</strong>. Every release undergoes the full panel below, and the results are printed on
+        the Certificate of Analysis that travels with your order.
+      </p>
+
+      <h2 id="the-standard-release-panel">The Standard Release Panel</h2>
+      <table>
+        <thead>
+          <tr><th>Test</th><th>Method</th><th>What It Confirms</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Appearance</td><td>Visual inspection</td><td>Lyophilized cake integrity, no discoloration or foreign matter</td></tr>
+          <tr><td>Identity</td><td>ESI-MS / MALDI-TOF</td><td>Molecular weight matches the theoretical mass of the sequence</td></tr>
+          <tr><td>Purity</td><td>RP-HPLC (C18, 214/220 nm)</td><td>Target peak ≥99% of integrated UV-absorbing material</td></tr>
+          <tr><td>Peptide content</td><td>Nitrogen / amino acid analysis</td><td>Net peptide weight, distinct from purity</td></tr>
+          <tr><td>Water content</td><td>Karl Fischer titration</td><td>Residual moisture after lyophilization</td></tr>
+          <tr><td>Endotoxin</td><td>LAL assay</td><td>Below specification (typically &lt;3 EU/mg)</td></tr>
+          <tr><td>pH</td><td>Potentiometry</td><td>Reconstitution behavior within specification</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why Purity and Content Are Both Reported</h2>
+      <p>
+        HPLC purity describes the proportion of UV-absorbing material that is the target peptide; it
+        does not describe how much of the powder is peptide. Counter-ions (such as acetate or TFA) and
+        residual water account for the difference. That is why our COAs report purity, peptide content,
+        and water content side by side — so your dosing and budgeting calculations for research use
+        rest on complete data.
+      </p>
+
+      <h2>Batch Records and QA-Reviewed Release</h2>
+      <p>
+        {qc.description}
+      </p>
+
+      <h2>Analytical Instrumentation</h2>
+      <ul>
+        <li>High-resolution HPLC systems with diode-array detection, C18 columns, and validated gradient methods</li>
+        <li>LC-MS/MS and MALDI-TOF mass spectrometers for sequence and molecular-weight confirmation</li>
+        <li>Karl Fischer titrators for residual water determination</li>
+        <li>LAL endotoxin testing capability on every production batch</li>
+      </ul>
+
+      <h2>Verify Any Batch</h2>
+      <p>
+        Every product label carries a verification code tied to its batch record. Enter the code in our
+        <a href="/coa/">online COA lookup</a> to see the batch's release data — purity, assay, content,
+        and manufacturing dates — in seconds.
+      </p>
+    </article>
+
+    <p style="margin-top:1.5rem;">
+      <a class="btn" href="/coa/">Verify a Batch COA</a>
+      <a class="btn btn-ghost" href="/knowledge-base/peptide-purity-guide/" style="margin-left:0.6rem;">Read the Purity Guide</a>
+    </p>
+  </div>
+</BaseLayout>
