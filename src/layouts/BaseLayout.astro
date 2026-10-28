@@ -335,7 +335,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       .footer-col li { margin-bottom: 0.4rem; }
       .footer-col a { color: var(--text-muted); font-size: 0.92rem; }
       .footer-col a:hover { color: var(--accent-strong); }
-      .footer-legal {
+            .footer-contact { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1rem; }
+      .btn-whatsapp { background: #25d366; color: #fff !important; }
+      .btn-whatsapp:hover { background: #1ebe5b; }
+      .btn-ghost { background: transparent; border: 1px solid var(--border-strong); color: var(--text); }
+.footer-legal {
         border-top: 1px solid var(--border); padding: 1.1rem 0 1.4rem;
         font-size: 0.82rem; color: var(--text-faint);
       }
@@ -407,6 +411,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
               <li><a href="/terms/">Terms & Conditions</a></li>
             </ul>
           </div>
+        </div>
+        <div class="footer-contact">
+          <a class="btn btn-whatsapp" href="https://wa.me/642102668969" target="_blank" rel="noopener">📱 WhatsApp: +64 2102668969</a>
+          <a class="btn btn-ghost" href="mailto:aaron@shengyuanpeptides.com">✉️ aaron@shengyuanpeptides.com</a>
         </div>
         <div class="footer-legal">
           <p><strong>© {new Date().getFullYear()} Shandong Shengyuan Peptide Technology Co., Ltd.</strong> All rights reserved.</p>
