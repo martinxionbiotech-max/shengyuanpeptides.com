@@ -48,6 +48,7 @@ const jsonLd = {
             <tr><th>Purity</th><td>{product.purity} (HPLC / MS verified)</td></tr>
             <tr><th>Category</th><td>{product.category}</td></tr>
             {product.sequence && <tr><th>Sequence</th><td><code>{product.sequence}</code></td></tr>}
+            <tr><th>Quality metrics</th><td>HPLC purity, peptide content, and identity are reported separately on the batch COA — see the purity guide.</td></tr>
             <tr><th>Storage</th><td>{product.storage}</td></tr>
           </tbody>
         </table>
