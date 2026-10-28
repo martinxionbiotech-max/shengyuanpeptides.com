@@ -188,3 +188,5 @@ A reliable peptide supplier can explain what it supplies, who is responsible for
 A structured qualification process makes procurement decisions defensible, catches gaps before they become costly problems, and builds supply relationships that hold up over time.
 
 For a working checklist version of this framework, see our [peptide supplier due diligence checklist](/knowledge-base/peptide-supplier-due-diligence-checklist/). For the distinctions between quality systems and certificates, read [quality systems vs. certifications](/knowledge-base/peptide-quality-systems-vs-certifications/).
+
+The framework also extends into dedicated guides for the remaining stages: [peptide batch traceability](/knowledge-base/peptide-batch-traceability/) for connecting material to records, the [supplier audit process](/knowledge-base/how-to-audit-a-peptide-supplier/) for document, remote, and on-site audits, and [verifying independent peptide testing](/knowledge-base/how-to-verify-independent-peptide-testing-records/) for third-party report checks.
