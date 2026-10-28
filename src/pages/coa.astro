@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import coa from '../data/coa.json';
+import products from '../data/products.json';
+
+const slugByName = Object.fromEntries(products.map((p) => [p.name.toLowerCase(), p.slug]));
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -45,16 +48,19 @@ const jsonLd = {
         <tr><th>Product</th><th>CAS</th><th>Batch</th><th>Purity</th><th>Test Date</th><th>Code</th></tr>
       </thead>
       <tbody>
-        {coa.map((c) => (
-          <tr>
-            <td><a href={`/products/${c.product.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`}>{c.product}</a></td>
-            <td>{c.cas}</td>
-            <td><code>{c.batch}</code></td>
-            <td>{c.purity}</td>
-            <td>{c.testDate}</td>
-            <td><code>{c.verifyCode}</code></td>
-          </tr>
-        ))}
+        {coa.map((c) => {
+          const slug = slugByName[c.product.toLowerCase()];
+          return (
+            <tr>
+              <td>{slug ? <a href={`/products/${slug}/`}>{c.product}</a> : c.product}</td>
+              <td>{c.cas}</td>
+              <td><code>{c.batch}</code></td>
+              <td>{c.purity}</td>
+              <td>{c.testDate}</td>
+              <td><code>{c.verifyCode}</code></td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
 

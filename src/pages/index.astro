@@ -5,7 +5,7 @@ import services from '../data/services.json';
 import faq from '../data/faq.json';
 import products from '../data/products.json';
 
-const featuredSlugs = ['retatrutide', 'tirzepatide', 'bpc157', 'tb-500', 'ghk-cu', 'nad', 'ipamorelin', 'selank'];
+const featuredSlugs = ['retatrutide', 'tirzepatide', 'bpc-157', 'tb-500', 'ghk-cu', 'nad-plus', 'ipamorelin', 'selank'];
 const featured = featuredSlugs
   .map((s) => products.find((p) => p.slug === s))
   .filter(Boolean);

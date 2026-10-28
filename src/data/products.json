@@ -1,602 +1,362 @@
 [
- {
-  "slug": "retatrutide",
-  "name": "Retatrutide",
-  "cas": "2381089-83-2",
-  "mw": "4731.4 Da",
-  "purity": "99.2%",
-  "category": "GLP-1 & Metabolic Research",
-  "image": "p-retatrutide.webp",
-  "summary": "Retatrutide is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.2% HPLC purity.",
-  "description": "Retatrutide is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.2% (HPLC / MS), with molecular weight 4731.4 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Tyr-Aib-Gln-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Ile-αMeLeu-Leu-Asp-Lys-Lys(PEG2-Glu-Eicosanedioic acid)-Ala-Gln-Aib-Ala-Phe-Ile-Glu-Tyr-Leu-Leu-Glu-Gly-Gly-Pro-Ser-Ser-Gly-Ala-Pro-Pro-Pro-Ser-NH₂",
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "retatrutide",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "tirzepatide",
-  "name": "Tirzepatide",
-  "cas": "2023788-19-2",
-  "mw": "4813.5 Da",
-  "purity": "99.2%",
-  "category": "GLP-1 & Metabolic Research",
-  "image": "p-tirzepatide.webp",
-  "summary": "Tirzepatide is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.2% HPLC purity.",
-  "description": "Tirzepatide is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.2% (HPLC / MS), with molecular weight 4813.5 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Tyr-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Ile-Aib-Leu-Asp-Lys-Ile-Ala-Gln-Lys(PEG2-PEG2-Glu-Eicosanedioic acid)-Ala-Phe-Val-Gln-Trp-Leu-Ile-Ala-Gly-Gly-Pro-Ser-Ser-Gly-Ala-Pro-Pro-Pro-Ser-NH₂",
-  "storage": "-20±5°C, protect from light, keep in tight container",
-  "keywords": [
-   "tirzepatide",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "tesamorelin",
-  "name": "Tesamorelin",
-  "cas": "218949-48-5",
-  "mw": "5135.9 Da",
-  "purity": "99.2%",
-  "category": "GH Axis Peptides",
-  "image": "p-tesamorelin.webp",
-  "summary": "Tesamorelin is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.2% HPLC purity.",
-  "description": "Tesamorelin is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.2% (HPLC / MS), with molecular weight 5135.9 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "His-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-Gln-Gln-Gly-Glu-Ser-Asn-Gln-Glu-Arg-Gly-Ala-Arg-Ala-Arg-Leu-NH₂",
-  "storage": "-20±5°C, protect from light, keep in tight container",
-  "keywords": [
-   "tesamorelin",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "tb-500",
-  "name": "TB-500",
-  "cas": "77591-33-4",
-  "mw": "4963.5 Da",
-  "purity": "99.3%",
-  "category": "Healing & Recovery",
-  "image": "p-tb500.webp",
-  "summary": "TB-500 is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "TB-500 is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 4963.5 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": null,
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "tb 500",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "ss-31-elamipretide",
-  "name": "SS-31 Elamipretide",
-  "cas": "736992-21-5",
-  "mw": "639.8 Da",
-  "purity": "99.8%",
-  "category": "Longevity & Cellular Health",
-  "image": "p-ss31.webp",
-  "summary": "SS-31 Elamipretide is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.8% HPLC purity.",
-  "description": "SS-31 Elamipretide is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.8% (HPLC / MS), with molecular weight 639.8 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": null,
-  "storage": "In an air tight container, protected from light; Short Term: 2-8°C; Long Term: below -10°C",
-  "keywords": [
-   "ss 31 elamipretide",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "sermorelin-acetate",
-  "name": "Sermorelin Acetate",
-  "cas": "86168-78-7",
-  "mw": "3357.9 Da",
-  "purity": "99.3%",
-  "category": "GH Axis Peptides",
-  "image": "p-sermorelin.webp",
-  "summary": "Sermorelin Acetate is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "Sermorelin Acetate is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 3357.9 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-NH₂",
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "sermorelin acetate",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "selank",
-  "name": "Selank",
-  "cas": "129954-34-3",
-  "mw": "751.9 Da",
-  "purity": "99.8%",
-  "category": "Cognitive & Neuro",
-  "image": "p-selank.webp",
-  "summary": "Selank is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.8% HPLC purity.",
-  "description": "Selank is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.8% (HPLC / MS), with molecular weight 751.9 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Thr-Lys-Pro-Arg-Pro-Gly-Pro-Gln-Pro",
-  "storage": "In an air tight container, protected from light; Short Term: 2-8°C; Long Term: below -10°C",
-  "keywords": [
-   "selank",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "pt-141",
-  "name": "PT-141",
-  "cas": "189691-06-3",
-  "mw": "1025.2 Da",
-  "purity": "99.3%",
-  "category": "Melanocortin Peptides",
-  "image": "p-pt141.webp",
-  "summary": "PT-141 is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "PT-141 is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 1025.2 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-NH₂",
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "pt 141",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "nad",
-  "name": "NAD+",
-  "cas": "53-84-9",
-  "mw": "663.4 Da",
-  "purity": "99.5%",
-  "category": "Longevity & Cellular Health",
-  "image": "p-nad.webp",
-  "summary": "NAD+ is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.5% HPLC purity.",
-  "description": "NAD+ is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.5% (HPLC / MS), with molecular weight 663.4 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": null,
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "nad",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "melanotan-2-acetate",
-  "name": "Melanotan 2 Acetate",
-  "cas": "121062-08-6",
-  "mw": "1024.2 Da",
-  "purity": "99.5%",
-  "category": "Melanocortin Peptides",
-  "image": "p-melanotan2.webp",
-  "summary": "Melanotan 2 Acetate is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.5% HPLC purity.",
-  "description": "Melanotan 2 Acetate is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.5% (HPLC / MS), with molecular weight 1024.2 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-NH₂",
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "melanotan 2 acetate",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "mots-c",
-  "name": "MOTS-C",
-  "cas": "N/A",
-  "mw": "1637.8 Da",
-  "purity": "99.4%",
-  "category": "Longevity & Cellular Health",
-  "image": "p-mots-c.webp",
-  "summary": "MOTS-C is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.4% HPLC purity.",
-  "description": "MOTS-C is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.4% (HPLC / MS), with molecular weight 1637.8 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Ile-Phe-Tyr-Pro-Arg-Lys-Leu-Arg",
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "mots c",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "ipamorelin",
-  "name": "Ipamorelin",
-  "cas": "170851-70-4",
-  "mw": "711.9 Da",
-  "purity": "99.8%",
-  "category": "GH Axis Peptides",
-  "image": "p-ipamorelin.webp",
-  "summary": "Ipamorelin is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.8% HPLC purity.",
-  "description": "Ipamorelin is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.8% (HPLC / MS), with molecular weight 711.9 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Aib-His-D-2-Nal-D-Phe-Lys-NH₂",
-  "storage": "In an air tight container, protected from light; Short Term: 2-8°C; Long Term: below -10°C",
-  "keywords": [
-   "ipamorelin",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "kpv",
-  "name": "KPV",
-  "cas": "67727-97-3",
-  "mw": "342.4 Da",
-  "purity": "99.3%",
-  "category": "Healing & Recovery",
-  "image": "p-kpv.webp",
-  "summary": "KPV is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "KPV is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 342.4 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Lys-Pro-Val",
-  "storage": "In an air tight container, protected from light; Short Term: 2-8°C; Long Term: below -10°C",
-  "keywords": [
-   "kpv",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "igf-1-lr3",
-  "name": "IGF-1 LR3",
-  "cas": "946870-92-4",
-  "mw": "9117.5 Da",
-  "purity": "99.2%",
-  "category": "GH Axis Peptides",
-  "image": "p-igf1-lr3.webp",
-  "summary": "IGF-1 LR3 is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.2% HPLC purity.",
-  "description": "IGF-1 LR3 is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.2% (HPLC / MS), with molecular weight 9117.5 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": null,
-  "storage": "-20±5°C, protect from light",
-  "keywords": [
-   "igf 1 lr3",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "ghk-cu",
-  "name": "GHK-CU",
-  "cas": "49557-75-7",
-  "mw": "403.9 Da",
-  "purity": "99.5%",
-  "category": "Longevity & Cellular Health",
-  "image": "p-ghk-cu.webp",
-  "summary": "GHK-CU is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.5% HPLC purity.",
-  "description": "GHK-CU is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.5% (HPLC / MS), with molecular weight 403.9 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Gly-His-Lys-Cu",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "ghk cu",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "epithalon",
-  "name": "Epithalon",
-  "cas": "307297-39-8",
-  "mw": "390.4 Da",
-  "purity": "99.5%",
-  "category": "Longevity & Cellular Health",
-  "image": "p-epithalon.webp",
-  "summary": "Epithalon is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.5% HPLC purity.",
-  "description": "Epithalon is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.5% (HPLC / MS), with molecular weight 390.4 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Ala-Glu-Asp-Gly",
-  "storage": "In an air tight container, protected from light; Short Term: 2-8°C; Long Term: below -10°C",
-  "keywords": [
-   "epithalon",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "cjc-1295-with-dac",
-  "name": "CJC-1295 with DAC",
-  "cas": "863288-34-0",
-  "mw": "3647.2 Da",
-  "purity": "99.4%",
-  "category": "GH Axis Peptides",
-  "image": "p-cjc-dac.webp",
-  "summary": "CJC-1295 with DAC is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.4% HPLC purity.",
-  "description": "CJC-1295 with DAC is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.4% (HPLC / MS), with molecular weight 3647.2 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Tyr-D-Ala-Asp-Ala-Ile-Phe-Thr-Gln-Ser-Tyr-Arg-Lys-Val-Leu-Ala-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Leu-Ser-Arg-Lys-Lys(D-Ala-Gln-Gly-Ala-Tyr-D-Ser-Nle-Asp-Ser-Nle-DAC)-Gln-NH₂",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "cjc 1295 with dac",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "cjc-1295-no-dac",
-  "name": "CJC-1295 NO DAC",
-  "cas": "863288-34-0",
-  "mw": "3368.0 Da",
-  "purity": "99.7%",
-  "category": "GH Axis Peptides",
-  "image": "p-cjc-nodac.webp",
-  "summary": "CJC-1295 NO DAC is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.7% HPLC purity.",
-  "description": "CJC-1295 NO DAC is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.7% (HPLC / MS), with molecular weight 3368.0 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Tyr-D-Ala-Asp-Ala-Ile-Phe-Thr-Gln-Ser-Tyr-Arg-Lys-Val-Leu-Ala-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Leu-Ser-Arg-Lys-NH₂",
-  "storage": "In an air tight container, protected from light; Short Term: 2-8°C; Long Term: below -10°C",
-  "keywords": [
-   "cjc 1295 no dac",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "cjc-1295-no-dac-ipamorelin",
-  "name": "CJC-1295 NO DAC + Ipamorelin",
-  "cas": "N/A",
-  "mw": "4079.8 Da",
-  "purity": "99.3%",
-  "category": "GH Axis Peptides",
-  "image": "p-cjc-ipa.webp",
-  "summary": "CJC-1295 NO DAC + Ipamorelin is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "CJC-1295 NO DAC + Ipamorelin is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 4079.8 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "CJC: Tyr-D-Ala-Asp-Ala-Ile-Phe-Thr-Gln-Ser-Tyr-Arg-Lys-Val-Leu-Ala-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Leu-Ser-Arg-Lys-NH₂ | IPA: Aib-His-D-2-Nal-D-Phe-Lys-NH₂",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "cjc 1295 no dac ipamorelin",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "bpc157",
-  "name": "BPC157",
-  "cas": "137525-51-0",
-  "mw": "1419.6 Da",
-  "purity": "99.4%",
-  "category": "Healing & Recovery",
-  "image": "p-bpc157.webp",
-  "summary": "BPC157 is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.4% HPLC purity.",
-  "description": "BPC157 is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.4% (HPLC / MS), with molecular weight 1419.6 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "bpc157",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "bbkg80",
-  "name": "BBKG80",
-  "cas": "N/A",
-  "mw": "7460.2 Da",
-  "purity": "99.3%",
-  "category": "Healing & Recovery",
-  "image": "p-bbkg80.webp",
-  "summary": "BBKG80 is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "BBKG80 is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 7460.2 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "BPC157: Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val | GHK-CU: Gly-His-Lys-Cu | TB500: Lys-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Leu-Gln-Ala-Gly-Asp-Lys-Glu-Gly-Gly-Leu-Val | KPV: Lys-Pro-Val",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "bbkg80",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "bpc-157-10mg-ghk-cu-50mg-tb500-10mg",
-  "name": "BPC 157 10mg+GHK-CU 50mg+TB500 10mg",
-  "cas": "N/A",
-  "mw": "6787.0 Da",
-  "purity": "99.3%",
-  "category": "Healing & Recovery",
-  "image": "p-bpc-ghk-tb.webp",
-  "summary": "BPC 157 10mg+GHK-CU 50mg+TB500 10mg is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "BPC 157 10mg+GHK-CU 50mg+TB500 10mg is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 6787.0 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "BPC157: Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val | GHK-CU: Gly-His-Lys-Cu | TB500: Lys-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Leu-Gln-Ala-Gly-Asp-Lys-Glu-Gly-Gly-Leu-Val",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "bpc 157 10mg ghk cu 50mg tb500 10mg",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "bpc-5mg-tb-5mg",
-  "name": "BPC 5mg + TB 5mg",
-  "cas": "N/A",
-  "mw": "6383.1 Da",
-  "purity": "99.3%",
-  "category": "Healing & Recovery",
-  "image": "p-bpc-tb.webp",
-  "summary": "BPC 5mg + TB 5mg is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "BPC 5mg + TB 5mg is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 6383.1 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "BPC157: Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val | TB500: Lys-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Leu-Gln-Ala-Gly-Asp-Lys-Glu-Gly-Gly-Leu-Val",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "bpc 5mg tb 5mg",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- },
- {
-  "slug": "aod9604",
-  "name": "AOD9604",
-  "cas": "221231-10-3",
-  "mw": "1815.1 Da",
-  "purity": "99.3%",
-  "category": "GLP-1 & Metabolic Research",
-  "image": "p-aod9604.webp",
-  "summary": "AOD9604 is a research-grade peptide supplied with batch-specific Certificate of Analysis data at 99.3% HPLC purity.",
-  "description": "AOD9604 is supplied by Shandong Shengyuan Peptide Technology Co., Ltd. for laboratory research use. Each batch is purified by preparative HPLC and released with a complete Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content, water content, and endotoxin. Researchers select this product for its consistent analytical profile and the traceability of every batch: the verification code on each label can be authenticated online in the COA lookup section of this site. Standard release purity is 99.3% (HPLC / MS), with molecular weight 1815.1 Da confirmed by mass spectrometry.",
-  "applications": [
-   "Biomedical research studies",
-   "In vitro and in vivo laboratory models",
-   "Assay development and validation",
-   "Reference material for analytical method development"
-  ],
-  "sequence": "Tyr-Leu-Arg-Ile-Val-Gln-Cys-Arg-Ser-Val-Glu-Gly-Arg-Val",
-  "storage": "-20±5°C, protect from light, keep dry",
-  "keywords": [
-   "aod9604",
-   "research peptide",
-   "custom peptide manufacturer",
-   "peptide with COA"
-  ]
- }
+  {
+    "slug": "retatrutide",
+    "name": "Retatrutide",
+    "cas": "2381089-83-2",
+    "mw": "4731.4 Da",
+    "purity": "99.2%",
+    "category": "GLP-1 & Metabolic Research",
+    "image": "p-retatrutide.webp",
+    "summary": "Triple-agonist research peptide targeting GLP-1, GIP, and glucagon receptors, used to study integrated metabolic signaling and energy balance regulation.",
+    "description": "Retatrutide is a synthetic multi-receptor agonist peptide engineered to engage the glucagon-like peptide-1 (GLP-1), glucose-dependent insulinotropic polypeptide (GIP), and glucagon receptors simultaneously. Its design places it in the incretin-mimetic structural class, with a backbone and fatty-acid conjugation pattern suited to prolonged receptor interaction in experimental systems. Because it activates three signaling axes at once, it is of interest for research into how combined incretin and glucagon signaling coordinates energy intake, glucose handling, lipid oxidation, and body-composition outcomes in preclinical models. Investigators use it to map receptor crosstalk, downstream cAMP pathways, and tissue-specific responses across pancreas, liver, and adipose tissue. Purity is critical here: trace truncation or deamidation products can shift receptor selectivity and confound dose-response data, so Shandong Shengyuan verifies each batch by RP-HPLC, LC-MS identity confirmation, and peptide-content assay before release. All material is supplied lyophilized for research use only and is not intended for human or veterinary applications.",
+    "applications": ["GLP-1, GIP, and glucagon receptor pharmacology", "Energy expenditure and body-composition models", "Nutrient-stimulated hormone secretion studies", "Incretin signaling crosstalk assays", "Preclinical metabolic disease research"],
+    "sequence": null,
+    "storage": "Store the lyophilized powder at -20\u00b0C in a dry, light-protected container; allow it to reach room temperature before opening to prevent condensation.",
+    "keywords": ["retatrutide peptide", "triple incretin agonist", "GLP-1 GIP glucagon peptide", "retatrutide research grade"]
+  },
+  {
+    "slug": "tirzepatide",
+    "name": "Tirzepatide",
+    "cas": "2023788-19-2",
+    "mw": "4813.5 Da",
+    "purity": "99.2%",
+    "category": "GLP-1 & Metabolic Research",
+    "image": "p-tirzepatide.webp",
+    "summary": "Dual GIP and GLP-1 receptor agonist peptide for studying incretin synergy, nutrient metabolism, and body-weight regulation in laboratory models.",
+    "description": "Tirzepatide is a synthetic dual-agonist peptide derived from a GIP scaffold with engineered GLP-1 receptor activity, carrying a C20 fatty-diacid moiety for albumin association in experimental settings. This hybrid design makes it a useful tool for dissecting how simultaneous GIPR and GLP-1R engagement shapes insulin secretion dynamics, glucagon regulation, gastric-emptying physiology, and energy metabolism. Preclinical researchers employ it to compare single- versus dual-receptor pharmacology, to interrogate downstream signaling in pancreatic beta cells and adipocytes, and to model incretin-based strategies in metabolic disease. Because potency across the two receptors depends on precise sequence fidelity, impurities from incomplete deprotection, oxidation of methionine and tryptophan residues, or backbone isomerization can distort assay readouts. Shandong Shengyuan therefore characterizes every lot by high-resolution LC-MS, reports RP-HPLC purity of at least 99.2%, and provides batch-specific certificates of analysis. Lyophilized product is offered strictly for research use only, not for human or veterinary use.",
+    "applications": ["Dual incretin receptor signaling assays", "Insulin and glucagon secretion studies", "Gastric emptying physiology models", "Adipocyte and hepatocyte metabolism research", "Preclinical obesity and diabetes research"],
+    "sequence": null,
+    "storage": "Keep lyophilized tirzepatide at -20\u00b0C protected from light and humidity, and handle opened vials under dry conditions to preserve integrity.",
+    "keywords": ["tirzepatide peptide", "dual GIP GLP-1 agonist", "tirzepatide for research", "incretin peptide manufacturer"]
+  },
+  {
+    "slug": "tesamorelin",
+    "name": "Tesamorelin",
+    "cas": "218949-48-5",
+    "mw": "5135.9 Da",
+    "purity": "99.2%",
+    "category": "GH Axis Peptides",
+    "image": "p-tesamorelin.webp",
+    "summary": "Growth hormone-releasing factor analogue used to investigate pituitary GH secretion, IGF-1 axis signaling, and related metabolic endpoints in research models.",
+    "description": "Tesamorelin is a synthetic analogue of growth hormone-releasing factor (GRF 1\u201344) distinguished by a trans-3-hexenoyl modification at its N-terminus, which stabilizes the peptide against rapid enzymatic degradation. As a GRF analogue it engages GHRH receptors on pituitary somatotrophs, making it a reference compound for studies of growth hormone (GH) pulsatility, the GH/IGF-1 axis, and downstream hepatic and metabolic signaling. Researchers use it to probe receptor-ligand kinetics, to compare stability profiles of modified versus native GRF sequences, and to model GH-related outcomes such as substrate metabolism and body-composition changes in preclinical systems. Sequence fidelity is especially important because small truncations or oxidation at methionine positions can attenuate receptor activation without obvious chromatographic shifts. Shandong Shengyuan supports such work with orthogonal QC, including RP-HPLC purity of at least 99.2%, LC-MS sequence verification, and residual-solvent and water-content testing on every batch. Supplied lyophilized, for research use only; not for human or veterinary use.",
+    "applications": ["Pituitary GH secretion studies", "GH/IGF-1 axis characterization", "GRF analogue stability comparisons", "Hepatic metabolism research", "Preclinical body-composition studies"],
+    "sequence": null,
+    "storage": "Store lyophilized material at -20\u00b0C in a desiccated, light-protected environment; brief handling at ambient temperature is acceptable.",
+    "keywords": ["tesamorelin peptide", "growth hormone releasing factor analogue", "tesamorelin research grade", "GRF analogue supplier"]
+  },
+  {
+    "slug": "tb-500",
+    "name": "TB-500",
+    "cas": "77591-33-4",
+    "mw": "4963.5 Da",
+    "purity": "99.3%",
+    "category": "Healing & Recovery",
+    "image": "p-tb-500.webp",
+    "summary": "Synthetic thymosin beta-4 fragment for studying actin dynamics, cell migration, and tissue-repair processes in laboratory research.",
+    "description": "TB-500 is a synthetic peptide corresponding to the actin-binding region of thymosin beta-4, built on the 16-amino-acid sequence LKKTETQEKQAGDAGE. This fragment retains the key actin-sequestering motif of the parent protein, making it a convenient probe for cytoskeletal research. Investigators study it in assays of actin polymerization, endothelial and fibroblast migration, angiogenesis-related cell behavior, and wound-closure models, where actin remodeling is a central readout. Because the peptide is short and rich in charged and polar residues, its biological activity is sensitive to oxidation, aggregation, and salt-form variability; low-purity material may contain deletion peptides that bind actin weakly or produce inconsistent dose-response curves. Shandong Shengyuan mitigates this with strict lyophilization controls, RP-HPLC purity testing to 99.3% or higher, accurate peptide-content and trifluoroacetate quantification, and LC-MS mass confirmation for every production lot. The product is provided as lyophilized powder for research use only and is not for human or veterinary application.",
+    "applications": ["Actin polymerization assays", "Cell migration and wound-closure models", "Angiogenesis research", "Cytoskeletal dynamics studies", "Tissue repair preclinical models"],
+    "sequence": "LKKTETQEKQAGDAGE",
+    "storage": "Store at -20\u00b0C in a sealed, desiccated container away from light; minimize freeze-thaw cycles of any reconstituted solution.",
+    "keywords": ["TB-500 peptide", "thymosin beta-4 fragment", "TB-500 research grade", "actin-binding peptide"]
+  },
+  {
+    "slug": "ss-31-elamipretide",
+    "name": "SS-31 Elamipretide",
+    "cas": "736992-21-5",
+    "mw": "639.8 Da",
+    "purity": "99.8%",
+    "category": "Longevity & Cellular Health",
+    "image": "p-ss-31-elamipretide.webp",
+    "summary": "Mitochondria-targeted tetrapeptide studied for its interactions with cardiolipin and its effects on mitochondrial bioenergetics and oxidative stress.",
+    "description": "SS-31, also known as elamipretide, is a small mitochondria-directed tetrapeptide with the sequence D-Arg-Dmt-Lys-Phe-NH2, in which the dimethyltyrosine (Dmt) residue confers antioxidant character and membrane affinity. Its unusual D-amino-acid composition resists conventional proteolysis and supports selective uptake by mitochondria in cell-based experiments. Researchers employ SS-31 to explore cardiolipin remodeling, electron-transport-chain function, reactive-oxygen-species generation, and mitochondrial morphology under metabolic or ischemic stress conditions. The molecule has become a standard tool in mitochondrial research because it links physical membrane interactions to measurable bioenergetic outcomes. Purity demands are exacting: diastereomeric contamination, incomplete amidation, or residual coupling reagents can alter membrane localization and confound oxygen-consumption measurements. Shandong Shengyuan manufactures SS-31 under documented processes and releases each batch only after RP-HPLC purity of 99.8% or higher, LC-MS identity confirmation, and impurity profiling. Lyophilized product is supplied for research use only; not for human or veterinary use.",
+    "applications": ["Mitochondrial bioenergetics assays", "Cardiolipin interaction studies", "Oxidative stress and ROS research", "Ischemia-reperfusion cell models", "Mitochondrial morphology imaging"],
+    "sequence": "D-Arg-Dmt-Lys-Phe-NH2",
+    "storage": "Store lyophilized SS-31 at -20\u00b0C, protected from light and moisture; the peptide is stable for extended periods when kept dry.",
+    "keywords": ["SS-31 elamipretide", "mitochondria-targeted peptide", "elamipretide research grade", "cardiolipin peptide"]
+  },
+  {
+    "slug": "sermorelin-acetate",
+    "name": "Sermorelin Acetate",
+    "cas": "86168-78-7",
+    "mw": "3357.9 Da",
+    "purity": "99.3%",
+    "category": "GH Axis Peptides",
+    "image": "p-sermorelin-acetate.webp",
+    "summary": "Synthetic GHRH(1\u201329) analogue for investigating pituitary growth hormone release and GH/IGF-1 axis regulation in preclinical research.",
+    "description": "Sermorelin is a synthetic peptide comprising the first 29 amino acids of growth hormone-releasing hormone (GHRH), the minimal sequence that retains receptor-activating capability at the pituitary GHRH receptor. Supplied as an acetate salt, it offers favorable handling and solubility characteristics for laboratory formulation work. Researchers use sermorelin as a reference agonist in assays of growth hormone (GH) secretion, to characterize GHRH-receptor pharmacology, and to study how GH pulsatility feeds back on hepatic IGF-1 production and downstream metabolic pathways. Because receptor engagement maps to specific residues within the 1\u201329 region, sequence deletions, oxidation of methionine, or deamidation can reduce potency measurably; chromatographically invisible impurities are a known source of assay variability. Shandong Shengyuan addresses this through RP-HPLC purity certification at 99.3% or higher, LC-MS sequence and mass confirmation, and peptide-content normalization so that reported concentrations reflect active peptide rather than salt and moisture. For research use only; not intended for human or veterinary use.",
+    "applications": ["GHRH receptor pharmacology", "Growth hormone release assays", "IGF-1 axis studies", "Pituitary cell signaling research", "Preclinical metabolic studies"],
+    "sequence": "YADAIFTNSYRKVLGQLSARKLLQDIMSR",
+    "storage": "Keep lyophilized powder at -20\u00b0C in a moisture-barrier container; reconstituted aliquots should be kept cold and used promptly.",
+    "keywords": ["sermorelin acetate", "GHRH 1-29 peptide", "sermorelin research grade", "growth hormone releasing hormone analogue"]
+  },
+  {
+    "slug": "selank",
+    "name": "Selank",
+    "cas": "129954-34-3",
+    "mw": "751.9 Da",
+    "purity": "99.8%",
+    "category": "Cognitive & Neuro",
+    "image": "p-selank.webp",
+    "summary": "Synthetic tuftsin-derived heptapeptide widely investigated in studies of anxiety-related behavior, cognitive function, and neuroimmune signaling.",
+    "description": "Selank is a synthetic heptapeptide (Thr-Lys-Pro-Arg-Pro-Gly-Pro) designed from the natural immunomodulatory tetrapeptide tuftsin, with an extended chain intended to improve metabolic stability. Its proline-rich structure resists peptidase degradation and gives it distinctive conformational flexibility, which researchers exploit when studying peptide penetration into brain tissue and modulation of central signaling systems. Preclinical work with selank has focused on anxiety-related behavior models, memory and learning paradigms, and the interface between immune mediators and neurotransmission, including effects attributed to changes in monoamine and neurotrophic signaling. Because the peptide is small and heavily proline-based, subtle synthesis artifacts such as incomplete proline coupling, diketopiperazine formation, or isomerized residues can go unnoticed in simple HPLC yet alter biological outcomes. Shandong Shengyuan supplies selank with RP-HPLC purity of 99.8% or higher, verified mass by LC-MS, and full batch documentation. Lyophilized material is offered strictly for research use only; not for human or veterinary use.",
+    "applications": ["Anxiety-related behavior models", "Memory and cognition research", "Neuroimmune signaling studies", "Monoamine pathway investigations", "Peptide brain-distribution research"],
+    "sequence": "Thr-Lys-Pro-Arg-Pro-Gly-Pro",
+    "storage": "Store at -20\u00b0C in a dry, light-protected vial; avoid repeated warming and refreezing of stock solutions.",
+    "keywords": ["selank peptide", "tuftsin-derived heptapeptide", "selank research grade", "cognitive research peptide"]
+  },
+  {
+    "slug": "pt-141",
+    "name": "PT-141",
+    "cas": "189691-06-3",
+    "mw": "1025.2 Da",
+    "purity": "99.3%",
+    "category": "Melanocortin Peptides",
+    "image": "p-pt-141.webp",
+    "summary": "Cyclic melanocortin receptor agonist peptide used to study MC4R signaling and melanocortin-related behavioral pathways in laboratory models.",
+    "description": "PT-141 (bremelanotide) is a cyclic heptapeptide melanocortin agonist built on an Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-NH2 scaffold, a modification of the alpha-MSH sequence designed for receptor subtype selectivity and stability. Its cyclic, lactam-bridged structure confers resistance to aminopeptidases and favors interaction with melanocortin receptors, particularly MC4R. Researchers employ PT-141 in receptor-binding studies, cAMP signaling assays, structure-activity comparisons across melanocortin subtypes, and behavioral models of melanocortin circuit function in experimental animals. The constrained ring structure makes synthesis demanding: incorrect cyclization, epimerization at histidine or phenylalanine, or incomplete acetylation and amidation can each produce close-mass impurities that co-elute under standard conditions. Shandong Shengyuan therefore applies orthogonal purity analysis, including RP-HPLC at 99.3% or higher and high-resolution LC-MS, to confirm both covalent structure and stereochemical integrity. Supplied lyophilized for research use only; not intended for human or veterinary use.",
+    "applications": ["MC4R binding and cAMP assays", "Melanocortin receptor subtype profiling", "Appetite and energy balance models", "Melanocortin circuit studies", "Behavioral neuroscience research"],
+    "sequence": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-NH2",
+    "storage": "Store the lyophilized peptide at -20\u00b0C, shielded from light; handle under low-humidity conditions and reseal promptly.",
+    "keywords": ["PT-141 peptide", "bremelanotide research peptide", "melanocortin MC4R agonist", "PT-141 research grade"]
+  },
+  {
+    "slug": "nad-plus",
+    "name": "NAD+",
+    "cas": "53-84-9",
+    "mw": "663.4 Da",
+    "purity": "99.5%",
+    "category": "Longevity & Cellular Health",
+    "image": "p-nad-plus.webp",
+    "summary": "Oxidized nicotinamide adenine dinucleotide coenzyme for studying cellular redox metabolism, sirtuin activity, and energy homeostasis in research applications.",
+    "description": "NAD+ (beta-nicotinamide adenine dinucleotide) is the oxidized form of a central metabolic coenzyme that carries reducing equivalents between enzymatic reactions. Rather than a conventional peptide, it is a dinucleotide composed of nicotinamide and adenine joined through two ribose-phosphate bridges, a structure that underpins its role as an electron acceptor in glycolysis, the tricarboxylic acid cycle, and oxidative phosphorylation. Investigators use NAD+ to reconstitute dehydrogenase assays, to study sirtuin-catalyzed deacylation reactions, to monitor cellular redox state with biosensors, and to examine how NAD+ pools influence PARP activity, DNA repair pathways, and aging-related cell biology. Because the molecule is hygroscopic and prone to slow hydrolysis into nicotinamide and ADP-ribose, researchers depend on dry, high-purity material for reproducible enzyme kinetics. Shandong Shengyuan supplies NAD+ at 99.5% purity by RP-HPLC or higher, with water content controlled by lyophilization and Karl Fischer analysis, plus LC-MS confirmation and batch traceability. For research use only; not for human or veterinary use.",
+    "applications": ["Dehydrogenase enzyme assays", "Sirtuin activity studies", "Redox and bioenergetics research", "PARP and DNA repair experiments", "Aging and senescence cell models"],
+    "sequence": null,
+    "storage": "Store at -20\u00b0C in a sealed, desiccated container protected from light; NAD+ is hygroscopic, so limit exposure to ambient air.",
+    "keywords": ["NAD+ powder", "nicotinamide adenine dinucleotide", "NAD+ research grade", "cellular metabolism coenzyme"]
+  },
+  {
+    "slug": "melanotan-2-acetate",
+    "name": "Melanotan 2 Acetate",
+    "cas": "121062-08-6",
+    "mw": "1024.2 Da",
+    "purity": "99.5%",
+    "category": "Melanocortin Peptides",
+    "image": "p-melanotan-2-acetate.webp",
+    "summary": "Cyclic alpha-MSH analogue for researching melanocortin receptor activation, pigmentation pathways, and related physiological processes in the laboratory.",
+    "description": "Melanotan 2 is a cyclic heptapeptide melanocortin agonist with the sequence Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-NH2, supplied here as the acetate salt. Developed as an alpha-MSH analogue, it exhibits affinity across several melanocortin receptor subtypes and has become a workhorse reagent for melanocortin pharmacology. Researchers apply it in cell-based cAMP assays to rank receptor subtype activation, in studies of melanocyte signaling and pigmentation biology, and in experiments exploring melanocortin control of appetite and energy balance in animal models. The macrocyclic lactam ring is both a strength and a synthesis challenge: epimerization at the D-Phe position, oligomeric by-products, or incomplete N-terminal acetylation can generate impurities with near-identical masses that only orthogonal methods separate reliably. Shandong Shengyuan confirms each batch by RP-HPLC at 99.5% purity or higher, LC-MS sequence and mass verification, and counter-ion quantification to ensure consistent acetate content. Lyophilized material is provided for research use only and is not for human or veterinary use.",
+    "applications": ["Melanocortin receptor pharmacology", "Pigmentation biology research", "Melanocyte signaling assays", "Appetite regulation models", "Structure-activity relationship studies"],
+    "sequence": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-NH2",
+    "storage": "Keep lyophilized melanotan 2 at -20\u00b0C in a dry, light-protected environment; reseal vials immediately after weighing.",
+    "keywords": ["melanotan 2 acetate", "melanotan II research peptide", "alpha-MSH analogue", "melanocortin agonist peptide"]
+  },
+  {
+    "slug": "mots-c",
+    "name": "MOTS-C",
+    "cas": "N/A",
+    "mw": "1637.8 Da",
+    "purity": "99.4%",
+    "category": "Longevity & Cellular Health",
+    "image": "p-mots-c.webp",
+    "summary": "Mitochondrial-derived 16-amino-acid peptide studied for its proposed roles in metabolic regulation, exercise adaptation, and cellular stress signaling.",
+    "description": "MOTS-c is a 16-amino-acid peptide encoded within the mitochondrial 12S ribosomal RNA region, placing it in the emerging class of mitochondrial-derived peptides that link organelle function to systemic metabolism. Its sequence, MRWQEMGYIFYPRKLR, is conserved across species and contains motifs that interact with cellular stress and nutrient-sensing pathways, including those downstream of AMPK and folate metabolism. Preclinical studies have examined MOTS-c in models of insulin sensitivity, exercise-induced metabolic adaptation, muscle oxidative capacity, and age-related metabolic decline. Because the peptide is moderately hydrophobic and contains both methionine and tryptophan residues, it is vulnerable to oxidation during synthesis and storage; oxidized forms can lose activity while remaining difficult to detect by routine HPLC alone. Shandong Shengyuan mitigates these risks through inert-atmosphere handling, RP-HPLC purity certification at 99.4% or higher, LC-MS identity confirmation, and stability-oriented lyophilization. Offered for research use only; not intended for human or veterinary use.",
+    "applications": ["Mitochondrial-derived peptide research", "AMPK and nutrient-sensing studies", "Exercise metabolism models", "Insulin sensitivity research", "Aging-related metabolic studies"],
+    "sequence": "MRWQEMGYIFYPRKLR",
+    "storage": "Store lyophilized MOTS-c at -20\u00b0C protected from light and oxygen; inert-atmosphere handling is recommended for long-term retention.",
+    "keywords": ["MOTS-c peptide", "mitochondrial-derived peptide", "MOTS-c research grade", "12S rRNA encoded peptide"]
+  },
+  {
+    "slug": "ipamorelin",
+    "name": "Ipamorelin",
+    "cas": "170851-70-4",
+    "mw": "711.9 Da",
+    "purity": "99.8%",
+    "category": "GH Axis Peptides",
+    "image": "p-ipamorelin.webp",
+    "summary": "Selective growth hormone secretagogue pentapeptide for studying ghrelin-receptor signaling and GH release without pronounced effects on other pituitary hormones.",
+    "description": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue with the sequence Aib-His-D-2-Nal-D-Phe-Lys-NH2, notable for the alpha-aminoisobutyric acid (Aib) residue that confers proteolytic resistance. It binds and activates the ghrelin receptor (GHS-R1a), stimulating growth hormone release in experimental systems, and is valued in research for its relatively selective secretagogue profile compared with broader ghrelin mimetics. Investigators use ipamorelin to dissect GHS-R1a pharmacology, to study growth hormone pulsatility and downstream IGF-1 responses, and to explore ghrelin-receptor involvement in feeding and energy homeostasis. The molecule's unusual residues demand careful synthesis control: enantiomeric contamination of the D-2-Nal and D-Phe positions, or incomplete C-terminal amidation, can dramatically change receptor affinity while producing only subtle mass or retention-time differences. Shandong Shengyuan verifies ipamorelin by RP-HPLC at 99.8% purity or higher, chiral and LC-MS analyses, and peptide-content determination for every batch. Supplied lyophilized, for research use only; not for human or veterinary use.",
+    "applications": ["GHS-R1a receptor pharmacology", "Growth hormone secretagogue assays", "IGF-1 pathway research", "Feeding behavior models", "Pituitary cell secretion research"],
+    "sequence": "Aib-His-D-2-Nal-D-Phe-Lys-NH2",
+    "storage": "Store at -20\u00b0C in a sealed container with desiccant, away from light; allow vials to equilibrate to room temperature before opening.",
+    "keywords": ["ipamorelin peptide", "ghrelin receptor agonist", "GHS-R1a agonist peptide", "ipamorelin research grade"]
+  },
+  {
+    "slug": "kpv",
+    "name": "KPV",
+    "cas": "67727-97-3",
+    "mw": "342.4 Da",
+    "purity": "99.3%",
+    "category": "Healing & Recovery",
+    "image": "p-kpv.webp",
+    "summary": "C-terminal alpha-MSH tripeptide investigated for anti-inflammatory and epithelial barrier effects in cellular and preclinical research models.",
+    "description": "KPV (Lys-Pro-Val) is the C-terminal tripeptide of alpha-melanocyte-stimulating hormone, a minimal sequence investigated for anti-inflammatory effects in cellular models while lacking the melanotropic activity of the parent hormone. Its small size makes it a practical tool for studying how short peptides modulate inflammatory signaling in intestinal epithelial cells, immune cells, and preclinical models of colitis or barrier dysfunction. Researchers also employ KPV in structure-activity studies that map which elements of alpha-MSH contribute to specific receptor-independent responses. For a tripeptide, quality control centers on coupling completeness and salt form: deletion peptides such as Lys-Pro or Pro-Val, residual trifluoroacetate, and counter-ion mismatches can skew cell-based assays and solubility behavior. Shandong Shengyuan produces KPV under controlled solid-phase conditions and releases material only after RP-HPLC purity of 99.3% or higher, LC-MS mass confirmation, and quantitative peptide-content analysis. The lyophilized product is intended for research use only, not for human or veterinary use.",
+    "applications": ["Intestinal epithelial barrier research", "Inflammatory signaling assays", "Colitis and gut inflammation models", "Alpha-MSH structure-activity studies", "Immune cell cytokine research"],
+    "sequence": "Lys-Pro-Val",
+    "storage": "Store lyophilized KPV at -20\u00b0C in a dry, light-protected vial; keep the container tightly closed between uses.",
+    "keywords": ["KPV peptide", "alpha-MSH tripeptide", "KPV research grade", "anti-inflammatory peptide research"]
+  },
+  {
+    "slug": "igf-1-lr3",
+    "name": "IGF-1 LR3",
+    "cas": "946870-92-4",
+    "mw": "9117.5 Da",
+    "purity": "99.2%",
+    "category": "GH Axis Peptides",
+    "image": "p-igf-1-lr3.webp",
+    "summary": "Long-acting insulin-like growth factor 1 analogue used to investigate growth-factor signaling, cell proliferation, and anabolic pathways in research systems.",
+    "description": "IGF-1 LR3 is an 83-amino-acid analogue of human insulin-like growth factor 1 engineered with a glutamic-acid-to-arginine substitution at position 3 and a 13-residue N-terminal extension. These modifications weaken binding to IGF-binding proteins and prolong the peptide's availability in culture and preclinical systems, making LR3 a preferred reagent when sustained IGF-1 receptor activation is required. Investigators use it to study IGF-1R signaling cascades, PI3K/Akt and MAPK pathway activation, myoblast proliferation and differentiation, and growth-factor biology in cell and tissue models. Given its size and disulfide architecture, quality control must confirm correct folding alongside purity: misfolded isomers, truncated chains, and methionine oxidation can all alter receptor engagement without being resolved by simple HPLC. Shandong Shengyuan validates IGF-1 LR3 by RP-HPLC purity of 99.2% or higher, LC-MS mass confirmation, and functional reference data, and ships each lot lyophilized with a certificate of analysis. For research use only; not for human or veterinary use.",
+    "applications": ["IGF-1R signaling studies", "Myoblast proliferation assays", "PI3K/Akt pathway research", "Growth-factor cell culture work", "Muscle biology models"],
+    "sequence": null,
+    "storage": "Store lyophilized IGF-1 LR3 at -20\u00b0C in a desiccated, light-protected environment; avoid mechanical agitation of stock solutions.",
+    "keywords": ["IGF-1 LR3", "long R3 IGF-1", "IGF-1 LR3 research grade", "insulin-like growth factor analogue"]
+  },
+  {
+    "slug": "ghk-cu",
+    "name": "GHK-CU",
+    "cas": "49557-75-7",
+    "mw": "403.9 Da",
+    "purity": "99.5%",
+    "category": "Longevity & Cellular Health",
+    "image": "p-ghk-cu.webp",
+    "summary": "Copper-binding tripeptide complex studied for roles in tissue remodeling, collagen synthesis, and copper-dependent cell signaling in research models.",
+    "description": "GHK-Cu is the copper(II) coordination complex of the tripeptide glycyl-L-histidyl-L-lysine, a naturally occurring copper-binding sequence whose plasma concentrations have been reported to decline with age. The copper ion is chelated by the peptide in a defined planar geometry, and this metal-peptide coordination is central to its biological activity. Researchers study GHK-Cu in models of dermal and connective-tissue remodeling, collagen and glycosaminoglycan synthesis, angiogenesis-related signaling, and gene-expression changes associated with wound repair. Its applications also extend to copper-homeostasis research, since the complex delivers copper in a controlled manner compared with free copper salts. Quality control must address both peptide purity and stoichiometric metal content: excess free copper, incomplete complexation, or decomposition during lyophilization can change cellular responses. Shandong Shengyuan supplies GHK-Cu at 99.5% peptide purity by RP-HPLC or higher, with copper content confirmed analytically and LC-MS verification of the peptide backbone. Lyophilized product is for research use only; not for human or veterinary use.",
+    "applications": ["Dermal remodeling research", "Collagen synthesis assays", "Copper homeostasis studies", "Angiogenesis models", "Wound repair biology"],
+    "sequence": "Gly-His-Lys-Cu",
+    "storage": "Store at -20\u00b0C protected from light and moisture; the copper complex remains stable for extended periods when kept dry and sealed.",
+    "keywords": ["GHK-Cu", "copper tripeptide", "GHK-Cu research grade", "glycyl-histidyl-lysine copper complex"]
+  },
+  {
+    "slug": "epithalon",
+    "name": "Epithalon",
+    "cas": "307297-39-8",
+    "mw": "390.4 Da",
+    "purity": "99.5%",
+    "category": "Longevity & Cellular Health",
+    "image": "p-epithalon.webp",
+    "summary": "Synthetic tetrapeptide studied in aging research for proposed effects on telomere biology and pineal-related regulatory pathways.",
+    "description": "Epithalon (Ala-Glu-Asp-Gly) is a short synthetic tetrapeptide modeled after the natural pineal peptide epithalamin. Interest in the compound stems from aging research, where it has been investigated in cell and animal models for effects on telomerase activity, telomere length maintenance, and age-associated changes in neuroendocrine regulation. Its simple four-residue structure makes it a convenient scaffold for structure-function studies and for comparing short-peptide stability under physiological conditions. Researchers also use epithalon as a reference compound when evaluating peptide-based interventions in longevity-related endpoints, including gene-expression profiles linked to cellular senescence. Despite its small size, synthesis quality matters: incomplete coupling yields abundant deletion sequences, and aspartic acid is prone to side reactions such as aspartimide formation, which can produce beta-linked isomers with altered properties. Shandong Shengyuan releases epithalon only after RP-HPLC purity of 99.5% or higher, LC-MS sequence confirmation, and residual-solvent testing. Supplied lyophilized for research use only; not for human or veterinary use.",
+    "applications": ["Telomere biology research", "Telomerase activity studies", "Cellular senescence models", "Aging-related gene expression analysis", "Pineal peptide research"],
+    "sequence": "Ala-Glu-Asp-Gly",
+    "storage": "Keep lyophilized epithalon at -20\u00b0C in a sealed, moisture-barrier container away from light; handle briefly at ambient temperature.",
+    "keywords": ["epithalon peptide", "epithalon research grade", "telomere research peptide", "pineal tetrapeptide"]
+  },
+  {
+    "slug": "cjc-1295-with-dac",
+    "name": "CJC-1295 with DAC",
+    "cas": "863288-34-0",
+    "mw": "3647.2 Da",
+    "purity": "99.4%",
+    "category": "GH Axis Peptides",
+    "image": "p-cjc-1295-with-dac.webp",
+    "summary": "Long-acting GHRH analogue with a drug-affinity complex for studying sustained growth hormone axis stimulation in laboratory research.",
+    "description": "CJC-1295 with DAC is a 30-amino-acid analogue of growth hormone-releasing hormone modified at the N-terminus for proteolytic resistance and carrying a Drug Affinity Complex, a maleimidopropionyl linker that can conjugate to serum albumin in biological systems. This conjugation markedly extends its circulating presence in experimental animals, making it a preferred tool when researchers need prolonged GHRH-receptor engagement rather than transient stimulation. Applications include studies of growth hormone pulsatility, IGF-1 production over extended time courses, and comparisons of acute versus sustained secretagogue exposure on metabolic endpoints. Synthesis and characterization of the DAC-bearing peptide are demanding: incomplete linker incorporation, maleimide hydrolysis, or albumin-conjugate instability can alter apparent potency. Shandong Shengyuan controls these variables through RP-HPLC purity certification at 99.4% or higher, LC-MS confirmation of the intact conjugate-forming peptide, and stability-directed lyophilization. The material is supplied for research use only and is not intended for human or veterinary use.",
+    "applications": ["Sustained GHRH receptor studies", "GH pulsatility models", "IGF-1 time-course research", "Albumin conjugation studies", "Secretagogue comparison assays"],
+    "sequence": null,
+    "storage": "Store at -20\u00b0C in a dry, light-protected container; avoid repeated freeze-thaw cycling of reconstituted material.",
+    "keywords": ["CJC-1295 with DAC", "CJC-1295 DAC peptide", "long-acting GHRH analogue", "drug affinity complex peptide"]
+  },
+  {
+    "slug": "cjc-1295-no-dac",
+    "name": "CJC-1295 NO DAC",
+    "cas": "863288-34-0",
+    "mw": "3368.0 Da",
+    "purity": "99.7%",
+    "category": "GH Axis Peptides",
+    "image": "p-cjc-1295-no-dac.webp",
+    "summary": "Modified GRF(1\u201329) peptide for short-acting growth hormone secretagogue studies and GH axis pharmacology research in the laboratory.",
+    "description": "CJC-1295 NO DAC is the non-conjugated form of the CJC-1295 series, a 29-amino-acid growth hormone-releasing hormone analogue sometimes referred to as modified GRF(1\u201329). Engineered substitutions in the native sequence protect against rapid enzymatic breakdown, giving the peptide improved stability relative to native GRF while retaining a comparatively short duration of action. Researchers select it for studies of acute GHRH-receptor signaling, growth hormone release kinetics, and dose-response mapping in pituitary cell assays and small-animal models. It is also used as a control alongside the DAC-conjugated variant to compare the pharmacodynamic consequences of albumin conjugation. Quality considerations include deamidation of asparagine residues during synthesis or storage, oxidation of methionine, and truncation products that alter receptor activation. Shandong Shengyuan verifies every batch by RP-HPLC at 99.7% purity or higher, high-resolution LC-MS, and peptide-content quantification, shipping each lot lyophilized with complete batch documentation. For research use only; not for human or veterinary use.",
+    "applications": ["Acute GHRH signaling assays", "GH release kinetics studies", "Dose-response mapping", "Modified GRF stability research", "Pituitary pharmacology"],
+    "sequence": null,
+    "storage": "Store lyophilized powder at -20\u00b0C under desiccant and away from light; equilibrate to room temperature before opening to prevent condensation.",
+    "keywords": ["CJC-1295 no DAC", "modified GRF 1-29", "CJC-1295 without DAC", "GHRH analogue research peptide"]
+  },
+  {
+    "slug": "cjc-1295-no-dac-plus-ipamorelin",
+    "name": "CJC-1295 NO DAC + Ipamorelin",
+    "cas": "N/A",
+    "mw": "4079.8 Da",
+    "purity": "99.3%",
+    "category": "GH Axis Peptides",
+    "image": "p-cjc-1295-no-dac-plus-ipamorelin.webp",
+    "summary": "Research blend of modified GRF(1\u201329) and the ghrelin-receptor agonist ipamorelin for combined growth hormone secretagogue studies.",
+    "description": "This blend combines CJC-1295 NO DAC (modified GRF 1\u201329), a GHRH-receptor agonist, with ipamorelin, a ghrelin-receptor (GHS-R1a) agonist. The two peptides stimulate growth hormone release through complementary receptor mechanisms: GHRH-receptor activation primes somatotrophs, while ghrelin-receptor signaling adds a parallel secretagogue input, a combination commonly studied for additive effects on growth hormone output and downstream IGF-1 responses. Researchers use this fixed-ratio blend to simplify formulation logistics in long-term preclinical protocols and to examine synergy between the two pathways. Blend quality requires more than individual peptide purity: accurate stoichiometry, absence of cross-contamination, and physical compatibility after lyophilization all affect reproducibility. Shandong Shengyuan prepares the blend from individually certified components, confirms component identity and ratio by LC-MS, and reports 99.3% combined RP-HPLC purity or higher. The lyophilized product is provided for research use only and is not intended for human or veterinary use.",
+    "applications": ["Combined GHS-R1a and GHRH assays", "GH synergy studies", "Longitudinal IGF-1 research", "Secretagogue pathway crosstalk", "Preclinical GH axis protocols"],
+    "sequence": null,
+    "storage": "Store the lyophilized blend at -20\u00b0C in a dry, light-protected container; keep sealed between uses to preserve ratio integrity.",
+    "keywords": ["CJC-1295 ipamorelin blend", "modified GRF ipamorelin blend", "GH secretagogue blend", "CJC ipamorelin research"]
+  },
+  {
+    "slug": "bpc-157",
+    "name": "BPC157",
+    "cas": "137525-51-0",
+    "mw": "1419.6 Da",
+    "purity": "99.4%",
+    "category": "Healing & Recovery",
+    "image": "p-bpc-157.webp",
+    "summary": "Synthetic gastric-juice-derived pentadecapeptide widely investigated for tissue-repair, angiogenesis, and gastrointestinal research applications in laboratory models.",
+    "description": "BPC-157 is a synthetic pentadecapeptide with the sequence Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val, derived from a protective protein found in gastric juice. It has become one of the most extensively studied short peptides in tissue-repair research, with preclinical publications examining its influence on tendon and ligament healing, angiogenesis, gastrointestinal mucosal integrity, and recovery from experimental tissue injury. The peptide is water-soluble and stable across a wide pH range, properties researchers attribute to its proline-rich, charge-balanced design. Nevertheless, synthesis purity remains decisive: the sequence contains repeated proline and glycine units that favor deletion products, diketopiperazine formation, and chain-extension errors, all of which can contaminate material without obvious visual cues. Shandong Shengyuan manufactures BPC-157 under validated solid-phase conditions and releases each batch after RP-HPLC purity of 99.4% or higher, LC-MS sequence verification, and residual-solvent analysis. Lyophilized powder is supplied for research use only; not for human or veterinary use.",
+    "applications": ["Tendon and ligament healing models", "Angiogenesis research", "Gastrointestinal mucosal studies", "Wound repair assays", "Cytoprotection research"],
+    "sequence": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val",
+    "storage": "Store at -20\u00b0C in a sealed, desiccated vial protected from light; the peptide remains stable across a wide pH range once in solution.",
+    "keywords": ["BPC-157 peptide", "pentadecapeptide BPC-157", "BPC-157 research grade", "gastric juice peptide research"]
+  },
+  {
+    "slug": "bbkg80",
+    "name": "BBKG80",
+    "cas": "N/A",
+    "mw": "7460.2 Da",
+    "purity": "99.3%",
+    "category": "Healing & Recovery",
+    "image": "p-bbkg80.webp",
+    "summary": "Four-peptide research blend combining BPC-157, GHK-Cu, TB-500, and KPV for multi-target studies of tissue repair and inflammatory signaling.",
+    "description": "BBKG80 is a defined four-peptide blend composed of BPC-157 (Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val), GHK-Cu (Gly-His-Lys-Cu), TB-500 (LKKTETQEKQAGDAGE), and KPV (Lys-Pro-Val). The combination brings together peptides associated with complementary mechanisms in tissue-repair research: BPC-157 for angiogenic and mucosal-healing studies, GHK-Cu for copper-dependent tissue remodeling, TB-500 for actin-cytoskeleton and cell-migration work, and KPV for studies of inflammatory signaling. Researchers adopt blends like this to reduce handling steps in multi-analyte preclinical protocols and to test whether co-administration produces distinct outcomes from single-peptide administration. Reproducibility depends on verified component ratios, absence of cross-reactivity, and consistent lyophilization across four distinct chemistries. Shandong Shengyuan formulates BBKG80 from individually certified components and reports 99.3% combined purity or higher with LC-MS confirmation of all four species. Provided for research use only; not for human or veterinary use.",
+    "applications": ["Multi-peptide tissue repair protocols", "Angiogenesis and migration studies", "Inflammatory signaling research", "Copper-dependent remodeling assays", "Combinatorial peptide studies"],
+    "sequence": "BPC157: Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val | GHK-CU: Gly-His-Lys-Cu | TB500: LKKTETQEKQAGDAGE | KPV: Lys-Pro-Val",
+    "storage": "Store the lyophilized blend at -20\u00b0C in a moisture-barrier, light-protected container; reseal immediately after use to protect the copper component.",
+    "keywords": ["BBKG80 blend", "BPC-157 TB-500 GHK-Cu KPV blend", "four-peptide blend", "peptide blend research"]
+  },
+  {
+    "slug": "bpc-157-ghk-cu-tb500-blend",
+    "name": "BPC 157 10mg+GHK-CU 50mg+TB500 10mg",
+    "cas": "N/A",
+    "mw": "6787.0 Da",
+    "purity": "99.3%",
+    "category": "Healing & Recovery",
+    "image": "p-bpc-157-ghk-cu-tb500-blend.webp",
+    "summary": "Fixed-ratio research blend of BPC-157, GHK-Cu, and TB-500 for combined tissue-repair and regenerative biology studies.",
+    "description": "This fixed-ratio blend supplies BPC-157, GHK-Cu, and TB-500 in a 10:50:10 milligram ratio for researchers examining combinatorial effects in tissue-repair and regenerative biology. Each component contributes a distinct mechanistic angle: BPC-157 is studied for angiogenesis and mucosal healing, GHK-Cu for copper-dependent matrix remodeling and collagen-related signaling, and TB-500 for actin dynamics and cell migration. Blending the three peptides allows laboratories to standardize multi-peptide study arms without per-peptide weighing, reducing variability across experimental cohorts. Because GHK-Cu is a metallated complex while BPC-157 and TB-500 are linear peptides, the formulation must control metal-peptide interactions, moisture uptake, and ratio accuracy during lyophilization. Shandong Shengyuan prepares this blend in a controlled environment, verifies component identities by LC-MS, confirms ratio and 99.3% combined RP-HPLC purity or higher, and documents each batch on its certificate of analysis. For research use only; not intended for human or veterinary use.",
+    "applications": ["Tissue repair research", "Vascular remodeling studies", "Cell migration assays", "Regenerative biology models", "Multi-peptide protocol standardization"],
+    "sequence": "blend: BPC157, GHK-Cu, TB500",
+    "storage": "Store at -20\u00b0C in a sealed, desiccated container away from light; protect the GHK-Cu component from moisture uptake between uses.",
+    "keywords": ["BPC-157 GHK-Cu TB-500 blend", "triple peptide blend", "tissue repair peptide blend", "peptide combination research"]
+  },
+  {
+    "slug": "bpc-157-tb500-blend",
+    "name": "BPC 5mg + TB 5mg",
+    "cas": "N/A",
+    "mw": "6383.1 Da",
+    "purity": "99.3%",
+    "category": "Healing & Recovery",
+    "image": "p-bpc-157-tb500-blend.webp",
+    "summary": "Two-peptide research blend of BPC-157 and TB-500 for coordinated studies of tissue healing and cytoskeleton-related repair processes.",
+    "description": "This two-component blend combines BPC-157 and TB-500 in equal milligram amounts, offering a ready-to-use format for laboratories studying tissue repair across complementary endpoints. BPC-157 is investigated for its effects on angiogenesis, mucosal integrity, and connective-tissue healing, while TB-500, the thymosin beta-4 fragment, is studied for actin-cytoskeleton regulation, cell migration, and wound-closure behavior. Used together, the pair is of interest for protocols that track both vascular remodeling and cellular motility within the same experimental model. Formulation quality is the main technical challenge: the two peptides differ in solubility and hygroscopicity, and co-lyophilization must preserve accurate ratios without aggregation or moisture-driven degradation. Shandong Shengyuan manufactures this blend from individually qualified components, confirms both molecular species by LC-MS, and releases lots at 99.3% combined RP-HPLC purity or higher with batch-specific documentation. Supplied lyophilized for research use only; not for human or veterinary use.",
+    "applications": ["Wound-healing research", "Cytoskeleton and motility studies", "Vascular regeneration models", "Tissue recovery protocols", "Peptide combination studies"],
+    "sequence": "blend: BPC157, TB500",
+    "storage": "Keep lyophilized powder at -20\u00b0C in a dry, light-protected vial; handle under low humidity to preserve the co-lyophilized ratio.",
+    "keywords": ["BPC-157 TB-500 blend", "dual peptide blend", "healing research blend", "BPC TB-500 research"]
+  },
+  {
+    "slug": "aod9604",
+    "name": "AOD9604",
+    "cas": "221231-10-3",
+    "mw": "1815.1 Da",
+    "purity": "99.3%",
+    "category": "GLP-1 & Metabolic Research",
+    "image": "p-aod9604.webp",
+    "summary": "Modified human growth hormone fragment (177\u2013191) investigated for lipolytic activity and metabolic pathway research in laboratory models.",
+    "description": "AOD9604 is a synthetic peptide based on the C-terminal 177\u2013191 region of human growth hormone, modified with a tyrosine addition at the N-terminus to improve stability and handling. Its design was guided by the observation that the lipolytic activity of growth hormone can be separated from its growth-promoting activity, and AOD9604 has consequently been studied as a probe for fat-mobilization pathways in adipose tissue. Preclinical research has examined its effects on lipolysis, fatty-acid oxidation, insulin-sensitivity parameters, and body-composition endpoints in diet-induced models of metabolic dysfunction. Structural fidelity is essential for interpreting such work: oxidation of methionine, deamidation, or loss of the terminal tyrosine can alter both stability and apparent activity. Shandong Shengyuan supplies AOD9604 at 99.3% RP-HPLC purity or higher, with LC-MS confirmation of the correct molecular mass and peptide-content analysis to normalize bioassay concentrations. The lyophilized peptide is offered strictly for research use only; not intended for human or veterinary use.",
+    "applications": ["Lipolysis and fat-mobilization research", "Adipocyte metabolism studies", "Fatty-acid oxidation assays", "Insulin sensitivity models", "hGH fragment structure-function research"],
+    "sequence": null,
+    "storage": "Store lyophilized AOD9604 at -20\u00b0C in a sealed container with desiccant, protected from light; brief ambient handling during weighing is acceptable.",
+    "keywords": ["AOD9604 peptide", "hGH 177-191 fragment", "AOD9604 research grade", "lipolytic peptide research"]
+  }
 ]
