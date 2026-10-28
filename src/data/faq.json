@@ -1,7 +1,7 @@
 [
   {
-    "q": "What purity level do your peptides reach?",
-    "a": "Standard catalog and custom peptides are delivered at 99% HPLC purity or higher, verified by reverse-phase HPLC and confirmed by mass spectrometry on every batch. The exact purity, peptide content, and identity data are printed on the batch-specific Certificate of Analysis that ships with every order."
+    "q": "What purity can I expect on delivery?",
+    "a": "Catalog items and custom projects alike ship at 99% HPLC purity or above. Each batch is checked by reversed-phase HPLC and cross-confirmed by mass spectrometry; the per-batch certificate of analysis in every shipment lists the measured purity, peptide content, and identity data."
   },
   {
     "q": "What is the typical turnaround time?",
@@ -12,12 +12,12 @@
     "a": "Yes. Production scales from milligram research quantities through multi-gram pilot lots to kilogram commercial supply, using the same analytical release panel at every scale so data stays comparable across your program."
   },
   {
-    "q": "Can I verify the authenticity of my product?",
-    "a": "Every product label carries a verification code tied to its batch. Enter the code in the COA lookup section of this site to retrieve the batch's Certificate of Analysis, including purity, peptide content, sequence, and manufacturing dates."
+    "q": "How do I confirm a product is genuine?",
+    "a": "Each label carries a batch-linked verification code. Entering that code in the COA lookup on this site returns the batch's certificate — purity, peptide content, sequence, and production dates — so authenticity is checkable in under a minute."
   },
   {
-    "q": "Do you offer OEM and private label services?",
-    "a": "We provide end-to-end OEM support: formulation development, private-label packaging and filling, registration dossiers, and global logistics. A dedicated project manager coordinates the entire order, and a pilot sample is produced for your approval before commercial batches run."
+    "q": "Can you run OEM and private-label programs?",
+    "a": "OEM is a core service line: formulation development, private-label filling and packaging, dossier preparation, and worldwide logistics. A dedicated project manager runs the program end to end, and a pilot batch is produced for your approval before commercial production starts."
   },
   {
     "q": "How are shipments handled?",
