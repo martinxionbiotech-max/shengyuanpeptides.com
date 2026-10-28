@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Terms of Service',
+  description: 'Terms governing use of shengyuanpeptides.com',
+};
+
 ---
 
 <BaseLayout
+  jsonLd={jsonLd}
   title="Terms & Conditions | Shandong Shengyuan Peptide"
   description="Terms and conditions for purchasing research peptides from Shandong Shengyuan Peptide Technology Co., Ltd."
 >

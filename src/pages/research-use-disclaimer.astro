@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Research Use Disclaimer',
+  description: 'Research-use restrictions for products supplied by Shandong Shengyuan Peptide',
+};
+
 ---
 
 <BaseLayout
+  jsonLd={jsonLd}
   title="Research Use Disclaimer | Shandong Shengyuan Peptide"
   description="All products supplied by Shandong Shengyuan Peptide Technology Co., Ltd. are strictly for laboratory research and development use."
 >

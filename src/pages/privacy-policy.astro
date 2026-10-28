@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Privacy Policy',
+  description: 'Privacy policy of shengyuanpeptides.com',
+};
+
 ---
 
 <BaseLayout
+  jsonLd={jsonLd}
   title="Privacy Policy | Shandong Shengyuan Peptide"
   description="Privacy policy of shengyuanpeptides.com — what data we collect, how it is used, and your rights."
 >

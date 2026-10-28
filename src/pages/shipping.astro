@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Shipping Policy',
+  description: 'Shipping and delivery policy of shengyuanpeptides.com',
+};
+
 ---
 
 <BaseLayout
+  jsonLd={jsonLd}
   title="Shipping Policy | Shandong Shengyuan Peptide"
   description="How Shandong Shengyuan Peptide ships research peptides: cold-chain packaging, international express, tracking, and delivery timelines."
 >
