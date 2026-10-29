@@ -189,4 +189,6 @@ A structured qualification process makes procurement decisions defensible, catch
 
 For a working checklist version of this framework, see our [peptide supplier due diligence checklist](/knowledge-base/peptide-supplier-due-diligence-checklist/). For the distinctions between quality systems and certificates, read [quality systems vs. certifications](/knowledge-base/peptide-quality-systems-vs-certifications/).
 
+Two companion pillars cover the analytical and manufacturing sides in depth: [peptide purity, content, and COA verification](/knowledge-base/peptide-purity-guide/) and [custom peptide synthesis with OEM quality management](/knowledge-base/custom-peptide-synthesis-guide/).
+
 The framework also extends into dedicated guides for the remaining stages: [peptide batch traceability](/knowledge-base/peptide-batch-traceability/) for connecting material to records, the [supplier audit process](/knowledge-base/how-to-audit-a-peptide-supplier/) for document, remote, and on-site audits, and [verifying independent peptide testing](/knowledge-base/how-to-verify-independent-peptide-testing-records/) for third-party report checks.

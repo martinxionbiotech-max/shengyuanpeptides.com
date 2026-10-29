@@ -63,3 +63,20 @@ A complete inquiry produces an accurate quote on the first pass:
 ## How Shandong Shengyuan Runs This Workflow
 
 Shandong Shengyuan Peptide Technology Co., Ltd. is a peptide manufacturer based in Shandong, China. Its workflow follows the sequence above: feasibility review and quotation, synthesis, preparative HPLC purification, QC release with a COA and analytical data, lyophilization, and packaging for shipment, with communication at key milestones. Technical staff can advise on feasibility, modifications, and the purity tier appropriate to your assay. Products remain research materials for laboratory use only, never for human or veterinary use.
+
+## OEM Quality Management
+
+Custom synthesis for a private-label or OEM program adds a layer on top of the synthesis workflow:
+the quality agreement. Before production starts, responsibilities are split in writing — the
+manufacturer executes synthesis, QC, and batch-record retention; the brand owner owns label content,
+destination-market compliance, and final specification approval. Material changes to specification,
+site, or method are notified and approved before implementation, and a pilot batch ships for buyer
+approval before commercial production runs.
+
+Batch release under an OEM program follows the same QC panel as any custom order — HPLC purity, MS
+identity, peptide content, counter-ion, and water content, with the COA tied to the batch number —
+plus program-level documentation: batch records, stability data where agreed, and the quality
+dossier your procurement files need. The responsibility split is laid out in detail on the
+[OEM page](/oem/), and the verification side — how a buyer checks those records — is covered in
+[how to evaluate a peptide supplier](/knowledge-base/how-to-evaluate-a-peptide-supplier/) and
+[peptide batch traceability](/knowledge-base/peptide-batch-traceability/).

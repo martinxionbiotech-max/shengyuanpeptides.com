@@ -63,3 +63,17 @@ Closely related impurities can co-elute on HPLC, so MS and additional separation
 ## How Shandong Shengyuan Reports Purity on Every Batch
 
 Shandong Shengyuan Peptide Technology Co., Ltd. is a peptide manufacturer based in Shandong, China. Every research peptide batch it ships is accompanied by a batch-specific COA together with the HPLC chromatogram and mass spectrum used for release. Purity is reported as area-percent at a stated wavelength, with peptide content, counter-ion, and residual water also reported so researchers can work from net peptide weight. QC data is retained for batch traceability. These products remain research materials for laboratory use only.
+
+## Purity in the Supplier Evaluation Context
+
+Purity is one evidence stream among several. A 98% area-percent figure supports a claim about
+chromatographic purity — it does not establish identity, quantity, sterility, or suitability for a
+regulated application. When you assess a supplier's documentation, read the purity figure against
+the method that produced it, the batch it describes, and the other attributes your application
+requires. The full decision framework is in [how to evaluate a peptide supplier](/knowledge-base/how-to-evaluate-a-peptide-supplier/),
+the certificate categories in [quality systems vs. certifications](/knowledge-base/peptide-quality-systems-vs-certifications/),
+and the laboratory-report checks in [how to verify independent peptide testing records](/knowledge-base/how-to-verify-independent-peptide-testing-records/).
+
+On this site, release data is batch-specific: the [COA lookup](/coa/) returns purity, peptide
+content, and identity for the verification code on the label — the same fields this guide explains,
+reported separately for products such as [Tirzepatide](/products/tirzepatide/).
