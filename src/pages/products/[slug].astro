@@ -29,12 +29,22 @@ const jsonLd = {
     ? { identifier: { '@type': 'PropertyValue', name: 'CAS', value: coaEntries[0].cas } }
     : {}),
 };
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Catalog', item: 'https://shengyuanpeptides.com/products/' },
+    { '@type': 'ListItem', position: 2, name: product.category, item: `https://shengyuanpeptides.com/products/#${product.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}` },
+    { '@type': 'ListItem', position: 3, name: product.name, item: `https://shengyuanpeptides.com/products/${product.slug}/` },
+  ],
+};
 ---
 
 <BaseLayout
-  title={`${product.name} (CAS ${product.cas}) | Research Peptide — Shandong Shengyuan`}
+  title={`${product.name} (${product.cas}) | Shengyuan Peptide`}
   description={product.summary}
-  jsonLd={jsonLd}
+  jsonLd={[jsonLd, breadcrumbLd]}
 >
   <div class="wrap">
     <p class="crumbs"><a href="/products/">Catalog</a> / <a href={`/products/#${product.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{product.category}</a> / {product.name}</p>

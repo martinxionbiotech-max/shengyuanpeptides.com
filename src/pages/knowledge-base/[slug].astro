@@ -59,13 +59,29 @@ const jsonLd = {
   headline: meta.title,
   description: meta.description,
   datePublished: meta.pubDate,
+  dateModified: meta.pubDate,
   author: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+  publisher: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+  reviewedBy: { '@type': 'Organization', name: 'Quality & Analytical Review Panel, Shandong Shengyuan Peptide Technology Co., Ltd.' },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Knowledge Base', item: 'https://shengyuanpeptides.com/knowledge-base/' },
+    { '@type': 'ListItem', position: 2, name: meta.title, item: `https://shengyuanpeptides.com/knowledge-base/${slug}/` },
+  ],
 };
 ---
 
-<BaseLayout title={`${meta.title} | Shandong Shengyuan Peptide`} description={meta.description} jsonLd={jsonLd}>
+<BaseLayout title={`${meta.title} | Shengyuan Peptide`} description={meta.description} jsonLd={[jsonLd, breadcrumbLd]}>
   <div class="wrap article-shell">
     <p class="crumbs"><a href="/knowledge-base/">Knowledge Base</a> / {meta.title}</p>
+    <p class="byline">
+      Written by the <strong>Technical Content Team</strong> · Reviewed by the
+      <strong>Quality &amp; Analytical Review Panel</strong>, Shandong Shengyuan Peptide Technology Co., Ltd.
+    </p>
     <article>
       <div class="article-header">
         <h1>{meta.title}</h1>

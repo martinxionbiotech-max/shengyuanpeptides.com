@@ -77,3 +77,9 @@ and the laboratory-report checks in [how to verify independent peptide testing r
 On this site, release data is batch-specific: the [COA lookup](/coa/) returns purity, peptide
 content, and identity for the verification code on the label — the same fields this guide explains,
 reported separately for products such as [Tirzepatide](/products/tirzepatide/).
+
+## References
+
+- [ICH Quality Guidelines](https://www.ich.org/page/quality-guidelines) — International Council for Harmonisation, analytical validation framework (Q2) referenced for chromatographic method qualification.
+- [US Pharmacopeia: Chromatography](https://www.usp.org/chemical-medicines/chromatography) — general chapter resources on HPLC system suitability and purity assessment.
+- [PubMed](https://pubmed.ncbi.nlm.nih.gov/) — primary literature for peptide analysis; search "RP-HPLC peptide purity" for method-level studies.

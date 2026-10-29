@@ -128,3 +128,9 @@ Request the certificate scope, issuer, and validity. If the supplier cannot or w
 Quality documentation works when it is read precisely. An ISO 9001 certificate supports a claim about a quality management system, not about a peptide. A CoA supports a claim about a batch, not about an organization. Laboratory accreditation supports a claim about competence within a scope, not about every test offered.
 
 Buyers who keep these distinctions straight can evaluate suppliers on evidence rather than on the presence of logos and certificates — and that is what separates a defensible procurement decision from a leap of faith.
+
+## References
+
+- [ISO 9001 — Quality management](https://www.iso.org/iso-9001-quality-management.html) — International Organization for Standardization, standard overview and certification scope.
+- [ISO/IEC 17025 — Testing and calibration laboratories](https://www.iso.org/ISO-IEC-17025-testing-and-calibration-laboratories.html) — competence requirements for laboratories.
+- [ICH Quality Guidelines](https://www.ich.org/page/quality-guidelines) — including Q7, Good Manufacturing Practice guide for active pharmaceutical ingredients.
