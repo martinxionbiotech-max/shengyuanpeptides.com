@@ -4,15 +4,15 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Research Use Disclaimer',
-  description: 'Research-use restrictions for products supplied by Shandong Shengyuan Peptide',
+  description: 'Research-use restrictions and website-information disclaimer for products supplied by Shandong Shengyuan Peptide Technology Co., Ltd.',
 };
 
 ---
 
 <BaseLayout
   jsonLd={jsonLd}
-  title="Research Use Disclaimer | Shandong Shengyuan Peptide"
-  description="All products supplied by Shandong Shengyuan Peptide Technology Co., Ltd. are strictly for laboratory research and development use."
+  title="Research Use Disclaimer | Shengyuan Peptide"
+  description="All products supplied by Shandong Shengyuan Peptide Technology Co., Ltd. are strictly for laboratory research and development — prohibited uses, buyer responsibilities, and the limits of quality documentation."
 >
   <div class="wrap article-shell">
     <div class="article-header">
@@ -26,24 +26,69 @@ const jsonLd = {
         supplied <strong>strictly for laboratory research and development use</strong>. They are not
         intended for human or veterinary use, nor for diagnostic or therapeutic purposes.
       </p>
-      <h2>No Medical Advice</h2>
+
+      <h2>Prohibited Uses</h2>
+      <p>The following uses are prohibited for every product listed on this platform:</p>
+      <ul>
+        <li>Human consumption, injection, or topical application</li>
+        <li>Veterinary use outside approved laboratory protocols</li>
+        <li>Compounding, dispensing, or resale as a medicine, supplement, cosmetic, or food ingredient</li>
+        <li>Use in any clinical or diagnostic setting involving humans or animals</li>
+        <li>Any use violating applicable law in the buyer's or destination jurisdiction</li>
+      </ul>
       <p>
-        Nothing on this website constitutes medical advice, and our team does not provide dosing
-        guidance, usage instructions for human application, or recommendations of any kind regarding
-        self-administration. By purchasing, you confirm that you are a qualified researcher or
-        institution acquiring materials for legitimate scientific purposes.
+        Orders placed for prohibited uses will not be processed, and confirmed orders found to violate
+        these restrictions are subject to the resolution terms in the
+        <a href="/terms/">Terms &amp; Conditions</a>.
       </p>
+
+      <h2>No Medical or Professional Advice</h2>
+      <p>
+        Nothing on this website constitutes medical, clinical, legal, regulatory, or professional
+        advice, and our team does not provide dosing guidance, usage instructions for human
+        application, or recommendations of any kind regarding self-administration. By purchasing, you
+        confirm that you are a qualified researcher or institution acquiring materials for legitimate
+        scientific purposes.
+      </p>
+
       <h2>Buyer Responsibilities</h2>
       <ul>
         <li>Ensure your use complies with all applicable laws and regulations in your jurisdiction.</li>
         <li>Handle, store, and dispose of products in accordance with your institution's safety protocols.</li>
         <li>Hold the appropriate licenses and import permits where required.</li>
+        <li>Maintain suitable facilities, qualified personnel, and recordkeeping for your research.</li>
       </ul>
-      <h2>Quality Commitment</h2>
+
+      <h2>Regulatory Status</h2>
       <p>
-        While our products are manufactured to research-grade standards and released with a Certificate
-        of Analysis, they are not produced under pharmaceutical GMP for clinical use, and no warranty of
-        fitness for any particular purpose is made beyond the analytical data provided.
+        Products listed on this website are research compounds. They are not medicines, not approved
+        therapeutics, and not dietary supplements. References to research literature or chemical
+        properties are provided for compound identification only and do not imply fitness for any
+        human or veterinary application.
+      </p>
+
+      <h2>Quality Documentation and Its Limits</h2>
+      <p>
+        Products are manufactured to research-grade standards and released with a Certificate of
+        Analysis covering HPLC purity, mass spectrometry identity, and peptide content. Research-grade
+        production is not produced under pharmaceutical GMP for clinical use, and no warranty of
+        fitness for any particular purpose is made beyond the analytical data provided. A purity
+        result does not establish sterility, endotoxin status, biological activity, or suitability for
+        any clinical application.
+      </p>
+
+      <h2>Specifications and Availability</h2>
+      <p>
+        Products are supplied against the specification shown on the applicable product page. The
+        standard catalog purity specification is ≥98% unless otherwise stated. Product-specific
+        specifications and quality-control information may vary by compound and batch; batch release
+        data can be verified through the <a href="/coa/">COA lookup</a>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this disclaimer: <a href="mailto:aaron@shengyuanpeptides.com">aaron@shengyuanpeptides.com</a>
+        or WhatsApp +64 2102668969.
       </p>
     </article>
   </div>

@@ -4,15 +4,15 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Shipping Policy',
-  description: 'Shipping and delivery policy of shengyuanpeptides.com',
+  description: 'Shipping and delivery policy of shengyuanpeptides.com — packaging, dispatch times, carriers, tracking, customs, and loss handling.',
 };
 
 ---
 
 <BaseLayout
   jsonLd={jsonLd}
-  title="Shipping Policy | Shandong Shengyuan Peptide"
-  description="How Shandong Shengyuan Peptide ships research peptides: cold-chain packaging, international express, tracking, and delivery timelines."
+  title="Shipping Policy | Shengyuan Peptide"
+  description="How Shandong Shengyuan Peptide ships research peptides: cold-chain packaging, dispatch times, international express carriers, tracking, customs responsibilities, and loss handling."
 >
   <div class="wrap article-shell">
     <div class="article-header">
@@ -24,8 +24,10 @@ const jsonLd = {
       <p>
         Peptides are lyophilized and sealed in sterile vials, then packed with cold-chain protection —
         insulated packaging with temperature buffers where needed — so that products remain stable
-        during transit. Each parcel ships with its batch Certificate of Analysis.
+        during transit. Oxidation-sensitive peptides are packaged under inert atmosphere in amber
+        vials. Each parcel ships with its batch Certificate of Analysis.
       </p>
+
       <h2>Dispatch Times</h2>
       <table>
         <tbody>
@@ -34,22 +36,57 @@ const jsonLd = {
           <tr><th>OEM programs</th><td>Timeline agreed in the project plan</td></tr>
         </tbody>
       </table>
+
       <h2>Carriers and Tracking</h2>
       <p>
         We ship through international express networks (FedEx, DHL, UPS, and equivalents) to 50+
-        countries. A tracking number is emailed the moment your parcel leaves our facility, and transit
-        typically takes 3–7 business days depending on destination.
+        countries. A tracking number is emailed the moment your parcel leaves our facility, and
+        transit typically takes 3–7 business days depending on destination. Estimates are not
+        guaranteed delivery dates; customs handling times are outside our control.
       </p>
-      <h2>Customs</h2>
+
+      <h2>Address Accuracy</h2>
+      <p>
+        You are responsible for providing a complete and accurate recipient name, address, phone
+        number, and postal code. If a parcel is not delivered because of an error in the address you
+        provided, no reshipment is provided. If you discover an error after confirming an order,
+        contact us immediately with your order reference.
+      </p>
+
+      <h2>Customs and Import</h2>
       <p>
         The buyer is responsible for confirming that the ordered materials may lawfully be imported
-        into the destination country and for any duties or clearance requirements. We provide
-        documentation support (COA, commercial invoice) with every shipment.
+        into the destination country and for any duties, taxes, or clearance requirements. We provide
+        documentation support (COA, commercial invoice) with every shipment. A product's availability
+        for shipment does not constitute advice that it may lawfully be imported into a particular
+        destination.
       </p>
-      <h2>Damaged or Lost Shipments</h2>
+
+      <h2>Damaged Shipments</h2>
       <p>
         Report any damage within 48 hours of receipt with photographs; we will investigate and arrange
-        replacement. Lost shipments are re-sent once the carrier confirms non-delivery.
+        replacement of affected items. Photographs and an unboxing video are recommended so the issue
+        can be assessed quickly.
+      </p>
+
+      <h2>Lost Shipments</h2>
+      <p>
+        Lost shipments are re-sent once the carrier confirms non-delivery. We monitor tracking on
+        confirmed orders; you do not need to submit a separate claim when we have already identified
+        the issue.
+      </p>
+
+      <h2>Customs Returns and Reshipment</h2>
+      <p>
+        Where a parcel is returned by customs or the carrier, we coordinate reshipment or a
+        resolution with the buyer individually. Each case is reviewed on its tracking record,
+        destination, and circumstances.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about shipping: <a href="mailto:aaron@shengyuanpeptides.com">aaron@shengyuanpeptides.com</a>
+        or WhatsApp +64 2102668969.
       </p>
     </article>
   </div>
