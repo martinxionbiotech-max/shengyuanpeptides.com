@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Refund Policy',
+  description: 'Refund and cancellation policy of shengyuanpeptides.com — eligibility, timelines, non-refundable items, and how refunds are processed.',
+};
+
+---
+
+<BaseLayout
+  jsonLd={jsonLd}
+  title="Refund Policy | Shengyuan Peptide"
+  description="Refund and cancellation policy for Shandong Shengyuan Peptide orders: refund eligibility, the 30-day COA deviation guarantee, non-refundable items, and how refunds are processed."
+>
+  <div class="wrap article-shell">
+    <div class="article-header">
+      <h1>Refund Policy</h1>
+      <p class="lede">When we refund, when we replace, and how the process works.</p>
+    </div>
+    <article>
+      <h2>Refund Eligibility</h2>
+      <p>A refund or replacement is available in the following cases:</p>
+      <table>
+        <tbody>
+          <tr><th>Case</th><th>Handling</th></tr>
+          <tr><td>COA deviation</td><td>Replacement or refund if an accredited third-party laboratory shows a material deviation from the batch COA, claimed within 30 days of receipt, product sealed and properly stored</td></tr>
+          <tr><td>Damaged in transit</td><td>Replacement of affected items; reported within 48 hours of receipt with photographs</td></tr>
+          <tr><td>Lost shipment</td><td>Re-sent once the carrier confirms non-delivery</td></tr>
+          <tr><td>Wrong item shipped</td><td>Replacement or refund of the affected items</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Non-Refundable Items and Situations</h2>
+      <p>The following are not eligible for refund:</p>
+      <ul>
+        <li>Custom synthesis and OEM programs after synthesis work has begun, except where the product deviates from the agreed specification</li>
+        <li>Products that have been opened, reconstituted, or stored outside the stated conditions</li>
+        <li>Non-delivery caused by an error in the address the buyer provided</li>
+        <li>Orders cancelled by the buyer after production or dispatch has started</li>
+        <li>Claims submitted outside the stated windows above</li>
+      </ul>
+
+      <h2>Order Cancellation</h2>
+      <p>
+        Stock catalog orders may be cancelled before dispatch without charge. Once a stock order has
+        shipped, it cannot be cancelled; the resolution paths above apply. Custom synthesis and OEM
+        orders follow the cancellation terms stated in the quotation, including any deposit terms.
+      </p>
+
+      <h2>How to Request a Refund or Replacement</h2>
+      <ol>
+        <li>Contact us at <a href="mailto:aaron@shengyuanpeptides.com">aaron@shengyuanpeptides.com</a> or WhatsApp +64 2102668969 with your order reference and batch number.</li>
+        <li>Include photographs (and an unboxing video where applicable) for damage claims.</li>
+        <li>For COA deviation claims, attach the third-party laboratory report identifying the batch.</li>
+        <li>We review the claim and respond with a resolution within a reasonable time.</li>
+      </ol>
+
+      <h2>How Refunds Are Processed</h2>
+      <p>
+        Approved refunds are returned by the same payment method used for the order where possible.
+        For bank transfers, refunds are sent to the account from which payment was received; where
+        this is not possible, we will agree an alternative with you in writing. Additional verification
+        may be required before any refund destination is accepted. Refund timing depends on the
+        payment method and may take several business days to appear.
+      </p>
+
+      <h2>Relationship to Other Policies</h2>
+      <p>
+        Delivery issues are handled under the <a href="/shipping/">Shipping Policy</a>. The quality
+        terms behind COA deviation claims are set out in the
+        <a href="/terms/">Terms &amp; Conditions</a>. The 30-day window runs from the delivery date
+        recorded by the carrier.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Refund questions: <a href="mailto:aaron@shengyuanpeptides.com">aaron@shengyuanpeptides.com</a>
+        or WhatsApp +64 2102668969.
+      </p>
+    </article>
+  </div>
+</BaseLayout>

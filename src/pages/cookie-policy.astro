@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Cookie Policy',
+  description: 'Cookie policy of shengyuanpeptides.com — this website does not use tracking cookies.',
+};
+
+---
+
+<BaseLayout
+  jsonLd={jsonLd}
+  title="Cookie Policy | Shengyuan Peptide"
+  description="Cookie policy of shengyuanpeptides.com: this website does not use tracking cookies, analytics scripts, or advertising pixels."
+>
+  <div class="wrap article-shell">
+    <div class="article-header">
+      <h1>Cookie Policy</h1>
+      <p class="lede">Last updated: October 2026</p>
+    </div>
+    <article>
+      <h2>Our Approach in One Sentence</h2>
+      <p>
+        <strong>This website does not use tracking cookies, analytics cookies, advertising cookies,
+        or third-party tracking of any kind.</strong> There is no cookie banner because there are no
+        cookies to declare.
+      </p>
+
+      <h2>What This Covers</h2>
+      <p>
+        This policy applies to shengyuanpeptides.com, operated by Shandong Shengyuan Peptide
+        Technology Co., Ltd. We have verified the site codebase: no analytics scripts (such as Google
+        Analytics), no advertising pixels, no social-media trackers, and no preference or marketing
+        cookies are loaded on any page.
+      </p>
+
+      <h2>Strictly Necessary Functionality</h2>
+      <p>
+        The website's functionality — page browsing, the COA lookup, and the price list download —
+        does not depend on cookies. Where a browser stores temporary technical state (for example,
+        cached page assets), this is browser-level behavior and does not identify you or track your
+        activity across sessions or sites.
+      </p>
+
+      <h2>Third-Party Links</h2>
+      <p>
+        Pages may link to external services you choose to open yourself, such as WhatsApp or your
+        email client. When you leave shengyuanpeptides.com, those services apply their own privacy
+        and cookie practices, which we do not control. Review their policies before using them.
+      </p>
+
+      <h2>If This Changes</h2>
+      <p>
+        If we introduce any cookies or tracking in the future, we will update this policy first,
+        disclose the specific cookies involved, their purpose, and duration, and provide a mechanism
+        for your choices. The version you are reading reflects the current state of the website.
+      </p>
+
+      <h2>Related Policies</h2>
+      <p>
+        How we handle the information you send us is covered in the
+        <a href="/privacy-policy/">Privacy Policy</a>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy: <a href="mailto:aaron@shengyuanpeptides.com">aaron@shengyuanpeptides.com</a>
+        or WhatsApp +64 2102668969.
+      </p>
+    </article>
+  </div>
+</BaseLayout>
