@@ -1,20 +1,34 @@
 # Shandong Shengyuan Peptide Technology Co., Ltd.
 
-> Research-grade custom peptide synthesis, OEM private label manufacturing, and batch-verified quality — from Shandong, China, to research institutions in 50+ countries.
+> Research-grade custom peptide synthesis, OEM private label manufacturing, and batch-verified quality — from Shandong, China, to research institutions in 50+ countries. All products are laboratory research materials only.
 
-Key pages:
+## Key Pages
 
 - [Home](https://shengyuanpeptides.com/): Company overview, core services, featured products.
 - [Product Catalog](https://shengyuanpeptides.com/products/): 24 research peptides with batch-specific COA data.
 - [Custom Peptide Synthesis](https://shengyuanpeptides.com/custom-peptide-synthesis/): Workflow, scales, modifications, turnaround.
-- [OEM & Private Label](https://shengyuanpeptides.com/oem/): Formulation, private label packaging, registration dossiers, global logistics.
+- [OEM & Private Label](https://shengyuanpeptides.com/oem/): Formulation, private label packaging, dossiers, global logistics.
 - [COA Lookup](https://shengyuanpeptides.com/coa/): Verify any batch by verification code or batch number.
 - [Quality Control](https://shengyuanpeptides.com/quality/): Release panel — HPLC, MS, peptide content, water content, endotoxin.
 - [About](https://shengyuanpeptides.com/about/): Company story and team.
 - [FAQ](https://shengyuanpeptides.com/faq/)
-- [Contact](https://shengyuanpeptides.com/contact/)
-- [Knowledge Base](https://shengyuanpeptides.com/knowledge-base/): Purity guide, custom synthesis guide, sourcing checklist.
+- [Contact](https://shengyuanpeptides.com/contact/): aaron@shengyuanpeptides.com, WhatsApp +64 2102668969.
 
-Optional:
+## Knowledge Base (9 guides)
 
-- [Policies](https://shengyuanpeptides.com/research-use-disclaimer/): Research-use disclaimer, shipping policy, privacy, terms.
+- [Custom Peptide Synthesis: A Step-by-Step Guide from Sequence to Delivered Product](https://shengyuanpeptides.com/knowledge-base/custom-peptide-synthesis-guide/)
+- [How to Audit a Peptide Supplier: A Practical Buyer's Guide](https://shengyuanpeptides.com/knowledge-base/how-to-audit-a-peptide-supplier/)
+- [How to Evaluate a Peptide Supplier: A Practical Guide for B2B Buyers](https://shengyuanpeptides.com/knowledge-base/how-to-evaluate-a-peptide-supplier/)
+- [How to Verify Independent Peptide Testing Records](https://shengyuanpeptides.com/knowledge-base/how-to-verify-independent-peptide-testing-records/)
+- [Peptide Batch Traceability: How to Connect a Product to Its Quality Records](https://shengyuanpeptides.com/knowledge-base/peptide-batch-traceability/)
+- [Understanding Peptide Purity: HPLC, Mass Spectrometry and How to Read a COA](https://shengyuanpeptides.com/knowledge-base/peptide-purity-guide/)
+- [Quality Systems vs. Certifications: What Peptide Buyers Need to Know](https://shengyuanpeptides.com/knowledge-base/peptide-quality-systems-vs-certifications/)
+- [Peptide Supplier Due Diligence Checklist: What Buyers Should Verify Before Ordering](https://shengyuanpeptides.com/knowledge-base/peptide-supplier-due-diligence-checklist/)
+- [How to Source Research Peptides from China: A Buyer's Due-Diligence Checklist](https://shengyuanpeptides.com/knowledge-base/sourcing-peptides-from-china/)
+
+## Policies
+
+- [Research Use Disclaimer](https://shengyuanpeptides.com/research-use-disclaimer/)
+- [Shipping Policy](https://shengyuanpeptides.com/shipping/)
+- [Privacy Policy](https://shengyuanpeptides.com/privacy-policy/)
+- [Terms & Conditions](https://shengyuanpeptides.com/terms/)

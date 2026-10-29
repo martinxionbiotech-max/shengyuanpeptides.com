@@ -18,6 +18,13 @@ const jsonLd = {
   description: product.summary,
   brand: { '@type': 'Brand', name: 'Shandong Shengyuan Peptide' },
   category: product.category,
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    lowPrice: '40',
+    highPrice: '180',
+    availability: 'https://schema.org/InStock',
+  },
   ...(coaEntries[0]
     ? { identifier: { '@type': 'PropertyValue', name: 'CAS', value: coaEntries[0].cas } }
     : {}),

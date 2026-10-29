@@ -3,6 +3,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Knowledge Base — Peptide Research and Procurement Guides',
+  description: 'Technical guides on peptide purity, custom synthesis, supplier evaluation, and sourcing from China.',
+  url: 'https://shengyuanpeptides.com/knowledge-base/',
+};
+
 const KB_DIR = path.join(process.cwd(), 'src/content/kb');
 const files = readdirSync(KB_DIR).filter((f) => f.endsWith('.md'));
 const articles = files
@@ -56,8 +64,9 @@ function mdToHtml(md) {
 }
 ---
 
-<script type="application/ld+json" set:html={"{'@context':'https://schema.org','@type':'WebPage',name:'Knowledge Base',description:'Technical guides on peptide purity, custom synthesis, and sourcing from China',url:'https://shengyuanpeptides.com/knowledge-base/'}"} />
+
 <BaseLayout
+  jsonLd={jsonLd}
   title="Knowledge Base | Shandong Shengyuan Peptide"
   description="Technical guides on peptide purity, custom synthesis, and sourcing research peptides from China — written by the Shandong Shengyuan Peptide team."
 >
