@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/generate-markdown.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "images": "node scripts/process-images.mjs"
@@ -16,5 +16,8 @@
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.4.2",
     "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "node-html-markdown": "^2.0.0"
   }
 }
