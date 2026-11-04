@@ -1,5 +1,5 @@
 ---
-title: "Peptide Supplier Due Diligence Checklist: What Buyers Should Verify Before Ordering"
+title: "Peptide Supplier Due Diligence: A Buyer's Checklist"
 description: "A working due diligence checklist for peptide buyers: business identity, quality documentation, CoA verification, batch traceability, independent testing, and pre-order approval."
 pubDate: 2026-10-28
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Peptide Batch Traceability: How to Connect a Product to Its Quality Records"
+title: "Peptide Batch Traceability: Connecting Product to Records"
 description: "How batch traceability works in peptide procurement: batch numbers, sample identifiers, test documents, labels, and shipping records — and how to check the chain end to end."
 pubDate: 2026-10-28
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Quality Systems vs. Certifications: What Peptide Buyers Need to Know"
+title: "Quality Systems vs Certifications: What Buyers Should Know"
 description: "ISO 9001, GMP, ISO/IEC 17025 accreditation, quality manuals, and certificates of analysis — what each document actually proves when evaluating a peptide supplier."
 pubDate: 2026-10-28
 draft: false

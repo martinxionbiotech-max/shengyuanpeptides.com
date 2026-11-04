@@ -1,5 +1,5 @@
 ---
-title: "How to Source Research Peptides from China: A Buyer's Due-Diligence Checklist"
+title: "Sourcing Research Peptides from China: A Buyer's Guide"
 description: "A practical checklist for laboratories buying research peptides from Chinese suppliers: supplier tiers, COA and spectral verification, quality-system audits, shipping and customs, and red flags."
 pubDate: 2026-10-25
 draft: false

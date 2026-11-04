@@ -1,5 +1,5 @@
 ---
-title: "How to Evaluate a Peptide Supplier: A Practical Guide for B2B Buyers"
+title: "Evaluating a Peptide Supplier: What to Check First"
 description: "A B2B buyer's framework for evaluating peptide suppliers: business identity, quality systems, batch-specific documentation, traceability, independent testing, and supply continuity."
 pubDate: 2026-10-28
 draft: false

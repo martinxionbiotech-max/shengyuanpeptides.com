@@ -1,5 +1,5 @@
 ---
-title: "Custom Peptide Synthesis: A Step-by-Step Guide from Sequence to Delivered Product"
+title: "Custom Peptide Synthesis: From Sequence to Delivery"
 description: "How a custom peptide moves from sequence review through solid-phase synthesis, purification, and QC to a lyophilized research product — including modifications, scale, and turnaround."
 pubDate: 2026-10-22
 draft: false
