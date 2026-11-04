@@ -1,6 +1,6 @@
 ---
 title: "Peptide Quality Documentation and Batch Verification"
-description: "The document set that survives scrutiny: identity, purity, content, method and batch traceability — how to read it, what it proves, and where certificates routinely fail."
+description: "Identity, purity, content, method and batch traceability: how to read the peptide document set, what it proves, and where certificates routinely fail."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

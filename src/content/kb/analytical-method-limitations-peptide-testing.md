@@ -1,6 +1,6 @@
 ---
 title: "Analytical Method Limitations in Peptide Quality Testing"
-description: "Where HPLC and mass spectrometry are blind: co-elution, non-UV-absorbing impurities, overloaded injections, gradient artefacts and isobaric species. What a 98% figure can and cannot mean."
+description: "Where HPLC and MS are blind: co-elution, non-UV-absorbing impurities, overloaded injections and isobars. What a 98% purity figure can and cannot mean."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

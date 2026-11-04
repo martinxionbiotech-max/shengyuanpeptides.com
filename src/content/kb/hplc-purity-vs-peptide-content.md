@@ -1,6 +1,6 @@
 ---
 title: "HPLC Purity vs Peptide Content: What Is the Difference?"
-description: "Area-percent purity and net peptide content are different measurements, and confusing them causes systematic weighing errors. The definitions, the arithmetic, and how to use each number correctly."
+description: "Area-percent purity and net peptide content measure different things; confusing them causes weighing errors. Definitions, arithmetic and how to use each."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

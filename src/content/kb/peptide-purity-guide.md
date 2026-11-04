@@ -1,6 +1,6 @@
 ---
 title: "Peptide Purity: HPLC, Mass Spec and Reading a COA"
-description: "A researcher's guide to how peptide purity is measured by reverse-phase HPLC and mass spectrometry, why purity differs from peptide content, and how to interpret every field of a certificate of analysis."
+description: "How peptide purity is measured by RP-HPLC and mass spec, why purity differs from peptide content, and how to read every field of a certificate of analysis."
 pubDate: 2026-10-20
 draft: false
 ---

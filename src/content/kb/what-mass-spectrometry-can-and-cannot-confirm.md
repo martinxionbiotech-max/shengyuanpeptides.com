@@ -1,6 +1,6 @@
 ---
 title: "What Mass Spectrometry Can and Cannot Confirm"
-description: "MS confirms molecular identity, not purity — and it cannot distinguish isomers, epimers or disulfide pairings. Where the technique is decisive, where it is silent, and how certificates overstate it."
+description: "MS confirms identity, not purity, and cannot separate isomers or disulfide pairings. Where it is decisive, where it is silent, and why COAs overstate it."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

@@ -1,6 +1,6 @@
 ---
 title: "Custom Peptide Synthesis: From Sequence to Delivery"
-description: "How a custom peptide moves from sequence review through solid-phase synthesis, purification, and QC to a lyophilized research product — including modifications, scale, and turnaround."
+description: "From sequence review through solid-phase synthesis, purification and QC to a lyophilised research product — with modifications, scale and turnaround times."
 pubDate: 2026-10-22
 draft: false
 ---

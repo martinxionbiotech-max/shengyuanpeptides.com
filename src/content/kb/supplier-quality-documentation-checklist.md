@@ -1,6 +1,6 @@
 ---
 title: "A Supplier Quality Documentation Checklist"
-description: "The printable version: what to request before quoting, what to check when the certificate arrives, and what to verify when the vial lands — with the failures that should stop an order."
+description: "What to request before quoting, what to check when the certificate arrives, and what to verify on delivery — plus the failures that should stop an order."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

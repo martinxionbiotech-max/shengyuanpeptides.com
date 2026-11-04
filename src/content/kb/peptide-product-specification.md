@@ -1,6 +1,6 @@
 ---
 title: "What Should a Peptide Product Specification Include?"
-description: "How to build a specification from attributes rather than from habit: identity, purity, content, impurities, counter-ion, water and endotoxin — with acceptance criteria you can defend."
+description: "How to build a peptide specification: identity, purity, content, impurities, counter-ion, water and endotoxin, with acceptance criteria you can defend."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

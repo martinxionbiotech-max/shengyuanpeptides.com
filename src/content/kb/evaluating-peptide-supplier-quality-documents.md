@@ -1,6 +1,6 @@
 ---
 title: "How to Evaluate a Peptide Supplier's Quality Documents"
-description: "A scored method for auditing a supplier's documentation in one afternoon: five dimensions, what to request, how to score, and the patterns that separate a manufacturer from a reseller."
+description: "A scored method for auditing a supplier's documentation in one afternoon: five dimensions, what to request, how to score, manufacturer versus reseller."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation

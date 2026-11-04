@@ -1,6 +1,6 @@
 ---
 title: "How to Verify Independent Peptide Testing Records"
-description: "Laboratory identity, report authenticity, sample provenance, analytical methods, and the limits of a test report — how to verify independent peptide testing records."
+description: "Laboratory identity, report authenticity, sample provenance, methods and the limits of a test report — how to verify independent peptide testing records."
 pubDate: 2026-10-28
 draft: false
 ---

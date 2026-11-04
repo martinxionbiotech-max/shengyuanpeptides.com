@@ -1,6 +1,6 @@
 ---
 title: "Batch-Specific COA: Why Traceability Matters"
-description: "A certificate without a batch number is a datasheet. What a batch identifier has to link to — manufacturing record, release data, retained sample — and how to test whether the link is real."
+description: "A COA without a batch number is a datasheet. What a batch identifier must link to — manufacturing record, release data, retained sample — and how to test it."
 pubDate: 2026-11-05
 draft: false
 pillar: peptide-quality-documentation
