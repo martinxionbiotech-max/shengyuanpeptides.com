@@ -72,7 +72,7 @@ A Certificate of Analysis is one of the most important documents in peptide proc
 
 **Keep identity, purity, and quantity separate.** Identity asks whether the material matches the intended structure. Purity describes the proportion of measured material attributed to the principal component under a defined method — for chromatographic purity, the result reflects relative detector response and should not be read as the mass fraction of the entire sample. Quantity or content addresses how much of the relevant material is present, and cannot always be inferred from a purity percentage. A peptide reported as 99% chromatographic purity is not necessarily 99% peptide by weight: water, counterions, and residual solvents all count. For the same reason, a purity result does not establish sterility, endotoxin status, biological activity, or suitability for human administration.
 
-On our own catalog pages — [Tirzepatide](/products/tirzepatide/), for example — purity, peptide content, and identity are reported as separate metrics, and the batch [COA lookup](/coa/) returns release data for the specific batch rather than a generic product statement.
+On our own catalog pages — [Tirzepatide](/products/tirzepatide/), for example — purity, peptide content, and identity are reported as separate metrics, and the [batch certificate](/coa/) is issued for the specific batch rather than as a generic product statement.
 
 ## 4. Check Batch Traceability from Production to Delivery
 

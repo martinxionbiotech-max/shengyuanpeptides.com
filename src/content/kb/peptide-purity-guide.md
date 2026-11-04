@@ -74,8 +74,7 @@ requires. The full decision framework is in [how to evaluate a peptide supplier]
 the certificate categories in [quality systems vs. certifications](/knowledge-base/peptide-quality-systems-vs-certifications/),
 and the laboratory-report checks in [how to verify independent peptide testing records](/knowledge-base/how-to-verify-independent-peptide-testing-records/).
 
-On this site, release data is batch-specific: the [COA lookup](/coa/) returns purity, peptide
-content, and identity for the verification code on the label — the same fields this guide explains,
+On this site, release data is batch-specific: the [batch certificate](/coa/) records purity, peptide content and identity against the batch number on the label — the same fields this guide explains,
 reported separately for products such as [Tirzepatide](/products/tirzepatide/).
 
 ## References

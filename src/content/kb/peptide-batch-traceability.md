@@ -94,8 +94,7 @@ There is no universal rule for research materials; regulated applications set th
 **What should I do if the batch number on the label does not match the CoA?**
 Stop and investigate before using the material. A mismatch means the documentation no longer describes the delivered goods. Ask the supplier to reconcile the discrepancy or provide the correct batch records.
 
-**Does an online COA lookup improve traceability?**
-It can. A lookup that returns the release data for the exact verification code on the label closes the loop between label and test record in one step — for example, our [COA lookup](/coa/) returns the batch's purity, peptide content, and identity from the code on the label, as used for products like [Tirzepatide](/products/tirzepatide/). The lookup is a convenience on top of the underlying batch records, not a substitute for them.
+**Does a batch certificate improve traceability?** It can. A certificate that states the batch number, the analytical method and the testing laboratory closes the loop between label and test record in one step — the [certificates page](/coa/) shows the fields a Shengyuan batch certificate records, and the certificate itself is issued with the batch, carrying the label, as used for products like [Tirzepatide](/products/tirzepatide/). The lookup is a convenience on top of the underlying batch records, not a substitute for them.
 
 ## Conclusion
 

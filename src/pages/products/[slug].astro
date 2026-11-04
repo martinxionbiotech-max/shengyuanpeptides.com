@@ -77,7 +77,7 @@ const breadcrumbLd = {
 
         <div style="display:flex; flex-wrap:wrap; gap:0.7rem;">
           <a class="btn" href="/contact/">Request a Quote</a>
-          {coaEntries.length > 0 && <a class="btn btn-ghost" href={`/coa/?code=${encodeURIComponent(coaEntries[0].verifyCode)}`}>View Batch COA Data</a>}
+          {coaEntries.length > 0 && <a class="btn btn-ghost" href="/coa/">Certificate of analysis</a>}
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@ const breadcrumbLd = {
         Every batch of {product.name} is manufactured under our documented quality system and released
         with a Certificate of Analysis covering HPLC purity, mass spectrometry identity, peptide content,
         water content, and endotoxin. The batch code on your vial can be verified online in the
-        <a href="/coa/"> COA lookup section</a> of this site.
+        <a href="/coa/">certificates of analysis</a> section of this site.
       </p>
     </article>
 

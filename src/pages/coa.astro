@@ -5,48 +5,76 @@ import products from '../data/products.json';
 
 const slugByName = Object.fromEntries(products.map((p) => [p.name.toLowerCase(), p.slug]));
 
+// 证书上会出现的字段——只描述结构，不给任何具体批次的数值
+const FIELDS: [string, string][] = [
+  ['Product / batch', 'Product name and the batch number printed on the vial label'],
+  ['CAS number', 'Chemical Abstracts Service registry number'],
+  ['Appearance', 'Physical description of the lyophilised powder'],
+  ['Purity (HPLC)', 'Area percentage by reverse-phase HPLC at the stated wavelength'],
+  ['Mass (MS)', 'Observed molecular mass against the calculated mass'],
+  ['Peptide content', 'Net peptide content of the vial, by nitrogen or UV assay'],
+  ['Water content', 'Karl Fischer titration result'],
+  ['pH', 'pH of the reconstituted solution'],
+  ['Endotoxin', 'LAL result in EU/mg'],
+  ['Sequence', 'Full amino-acid sequence for the batch'],
+  ['Manufacture / retest date', 'Date of manufacture and the retest interval'],
+  ['Storage', 'Temperature and light conditions for storage and transport'],
+];
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Certificate of Analysis (COA) Verification — Shandong Shengyuan Peptide',
+  name: 'Certificates of Analysis — Shandong Shengyuan Peptide',
   description:
-    'Verify the authenticity of your peptide batch. Enter the verification code or batch number from your product label to view its Certificate of Analysis.',
+    'What a Shengyuan peptide Certificate of Analysis contains, and how to request the certificate for a specific batch.',
 };
 ---
 
 <BaseLayout
-  title="COA Lookup & Certificate Verification | Shengyuan Peptide"
-  description="Verify the authenticity of your peptide batch online. Enter the verification code or batch number from your label to retrieve purity, sequence, and test data from the Certificate of Analysis."
+  title="Certificates of Analysis (COA) | Shengyuan Peptide"
+  description="Every batch ships with a Certificate of Analysis. See what the certificate records and how to request the COA for your specific batch."
   jsonLd={jsonLd}
 >
   <div class="wrap">
     <h1>Certificates of Analysis</h1>
     <p class="lede">
-      Quality you can verify. Every batch shipped by Shandong Shengyuan Peptide is released with a
-      complete Certificate of Analysis, ensuring purity, structure, and bioactivity meet international
-      standards. Use the lookup below to authenticate any product we manufacture.
+      Every batch we release is accompanied by its own Certificate of Analysis — purity, identity,
+      water content, endotoxin and the method used. The certificate is issued per batch, not per
+      product, so it travels with your order rather than sitting on a web page where the figures
+      would not match the vial in your hand.
     </p>
 
-    <div class="disclaimer">
-      <strong>Anti-counterfeit verification.</strong> Enter the verification code or batch number
-      printed on your product label to authenticate. Codes match one batch only; contact us if your
-      code does not return a result. The records shown are internal quality-release data. Independent
-      third-party laboratory verification can be arranged on request.
+    <div class="notice">
+      <strong>How to get the COA for your batch.</strong> Email
+      <a href="mailto:aaron@shengyuanpeptides.com">aaron@shengyuanpeptides.com</a> with the batch
+      number from the vial label, or ask for it when you request a quotation. We send the signed PDF
+      for that batch; a third-party laboratory report can be arranged on request, at your cost.
     </div>
 
-    <div class="coa-form">
-      <label for="coa-code">Verification code or batch number</label>
-      <div class="coa-input-row">
-        <input id="coa-code" type="text" placeholder="e.g. SY-VFY-8K2M-PLQ9 or RET-26031501" />
-        <button class="btn" id="coa-verify" type="button">Verify</button>
-      </div>
-      <div class="coa-result" id="coa-result" aria-live="polite"></div>
-    </div>
-
-    <h2>Browse Recent Batches</h2>
+    <h2>What the certificate records</h2>
+    <p>
+      This is the structure of our COA. The values are specific to the batch being released, which is
+      why they are not reproduced on this page.
+    </p>
     <table>
       <thead>
-        <tr><th>Product</th><th>CAS</th><th>Batch</th><th>Purity</th><th>Test Date</th><th>Code</th></tr>
+        <tr><th>Field</th><th>What it records</th></tr>
+      </thead>
+      <tbody>
+        {FIELDS.map(([field, meaning]) => (
+          <tr><td><strong>{field}</strong></td><td>{meaning}</td></tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>Products released with a batch certificate</h2>
+    <p class="faint">
+      Every stocked product below ships with a batch-specific COA. Custom synthesis runs are
+      documented the same way, with the analytical record for that run.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Product</th><th>CAS</th><th>Certificate</th></tr>
       </thead>
       <tbody>
         {coa.map((c) => {
@@ -55,10 +83,7 @@ const jsonLd = {
             <tr>
               <td>{slug ? <a href={`/products/${slug}/`}>{c.product}</a> : c.product}</td>
               <td>{c.cas}</td>
-              <td><code>{c.batch}</code></td>
-              <td>{c.purity}</td>
-              <td>{c.testDate}</td>
-              <td><code>{c.verifyCode}</code></td>
+              <td>Per batch — supplied with the order</td>
             </tr>
           );
         })}
@@ -66,60 +91,16 @@ const jsonLd = {
     </table>
 
     <div class="notice">
-      <strong>Need a COA for a custom product?</strong> Every custom batch is documented with its
-      full analytical record — HPLC traces, mass spectra, and bioactivity data.
-      <a href="/contact/">Request COA documentation</a> for your order.
+      <strong>Independent testing.</strong> If your process requires a report from a laboratory you
+      nominate, tell us before the batch is released and we will arrange sampling and shipment to
+      that laboratory.
     </div>
+
+    <p class="faint">
+      There is no online certificate lookup on this site. A code that only checks against the same
+      website proves that the website agrees with itself, not that a batch was tested — so the
+      document we send is the signed certificate, and the laboratory it names can be contacted
+      directly.
+    </p>
   </div>
 </BaseLayout>
-
-<script>
-  const data = JSON.parse(document.getElementById('coa-data').textContent);
-  const input = document.getElementById('coa-code');
-  const resultBox = document.getElementById('coa-result');
-
-  function lookup() {
-    const q = input.value.trim().toUpperCase();
-    resultBox.innerHTML = '';
-    if (!q) return;
-    const hit = data.find((c) => [c.verifyCode, c.batch].some((v) => v && v.toUpperCase() === q));
-    if (!hit) {
-      resultBox.innerHTML = `<div class="fail-box"><strong>Not found.</strong> The code or batch number did not match any record. Please check the label and try again, or contact us with a photo of the label.</div>`;
-      return;
-    }
-    resultBox.innerHTML = `
-      <div class="ok-box">
-        <strong>Authentic product — ${hit.product}</strong><br/>
-        Batch <code>${hit.batch}</code> · released ${hit.testDate} · verification code <code>${hit.verifyCode}</code>
-      </div>
-      <table style="margin-top:1rem;">
-        <tbody>
-          <tr><th>Purity (HPLC)</th><td>${hit.purity}</td></tr>
-          <tr><th>Assay</th><td>${hit.assay}</td></tr>
-          <tr><th>Molecular Weight</th><td>${hit.mw}</td></tr>
-          <tr><th>Method</th><td>${hit.method}</td></tr>
-          <tr><th>Peptide Content</th><td>${hit.peptideContent}</td></tr>
-          <tr><th>pH</th><td>${hit.pH}</td></tr>
-          <tr><th>Water Content</th><td>${hit.waterContent}</td></tr>
-          <tr><th>Endotoxin</th><td>${hit.endotoxin}</td></tr>
-          <tr><th>Manufacture Date</th><td>${hit.mfgDate}</td></tr>
-          <tr><th>Retest Date</th><td>${hit.retestDate}</td></tr>
-          <tr><th>Storage</th><td>${hit.storage}</td></tr>
-          <tr><th>Quantity</th><td>${hit.quantity}</td></tr>
-          ${hit.sequence ? `<tr><th>Sequence</th><td><code>${hit.sequence}</code></td></tr>` : ''}
-        </tbody>
-      </table>
-      <p class="faint">Full PDF certificate available on request — contact us with the batch number.</p>
-    `;
-  }
-
-  document.getElementById('coa-verify').addEventListener('click', lookup);
-  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') lookup(); });
-
-  // prefill from ?code=
-  const params = new URLSearchParams(window.location.search);
-  const code = params.get('code');
-  if (code) { input.value = code; lookup(); }
-</script>
-
-<script type="application/json" id="coa-data" is:inline set:html={JSON.stringify(coa).replace(/</g, '\\u003c')} />

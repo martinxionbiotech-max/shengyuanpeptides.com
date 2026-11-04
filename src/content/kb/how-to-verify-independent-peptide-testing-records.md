@@ -79,7 +79,7 @@ For each third-party report a supplier presents:
 
 If any of the five checks fails, document the gap and decide whether additional verification is needed before approving the supplier — a decision framework covered in the [due diligence checklist](/knowledge-base/peptide-supplier-due-diligence-checklist/).
 
-On our own platform, release data is tied to the batch rather than floating free: the [COA lookup](/coa/) returns the purity, peptide content, and identity for the verification code on the label, and we state plainly when a record is internal quality-release data and when independent verification is available on request. The same separation between internal release and independent confirmation is the standard you should apply to any supplier's records.
+On our own platform, release data is tied to the batch rather than floating free: the [batch certificate](/coa/) is issued against the batch number on the label and records purity, peptide content and identity, and we state plainly when a record is internal quality-release data and when independent verification is available on request. The same separation between internal release and independent confirmation is the standard you should apply to any supplier's records.
 
 ## Frequently Asked Questions
 

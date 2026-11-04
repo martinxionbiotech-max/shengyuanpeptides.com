@@ -92,7 +92,7 @@ A supplier cannot substitute a CoA for a quality system certification, and a cer
 
 When reviewing a CoA, check what the certificate actually covers: the product identity, the batch or sample identifier, the stated methods, the reported results and units, the acceptance criteria, and who issued and approved the report. Compare the CoA's batch number against the material label and the purchase documents. A CoA that cannot be matched to the delivered batch provides limited assurance about that shipment, however complete it looks.
 
-The same discipline applies to our own documentation: on this site, the [COA lookup](/coa/) returns release data for the batch identified by the verification code on the label — purity, peptide content, identity, and test dates reported separately, as they are for individual products such as [Tirzepatide](/products/tirzepatide/). A CoA is evidence about a batch, not a statement about the organization, and it should be read that way.
+The same discipline applies to our own documentation: on this site, the [batch certificate](/coa/) is issued for the batch identified on the label — purity, peptide content, identity, and test dates reported separately, as they are for individual products such as [Tirzepatide](/products/tirzepatide/). A CoA is evidence about a batch, not a statement about the organization, and it should be read that way.
 
 ## 7. Putting the Documents Together
 

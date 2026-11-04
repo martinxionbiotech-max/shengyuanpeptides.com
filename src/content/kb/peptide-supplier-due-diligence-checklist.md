@@ -68,7 +68,7 @@ CoA verification checklist:
 
 Purity, identity, and quantity are different attributes. A chromatographic purity result describes the relative signal attributed to the principal component under the stated method; it does not necessarily establish the mass fraction of the entire sample. Water, counterions, and residual solvents affect the actual material composition. A purity result also does not establish sterility, endotoxin status, or suitability for a specific biological application. Define required tests according to the material and intended use rather than treating one purity percentage as a complete quality assessment.
 
-On our catalog, batch records are checked through the [COA lookup](/coa/) — the batch code on a product label returns that batch's release data, including purity, peptide content, and identity as separate metrics. For example, see the [Tirzepatide](/products/tirzepatide/) listing, where these fields are reported individually.
+On our catalog, batch records are issued per batch: the [certificates page](/coa/) explains what each certificate records — batch number, purity, peptide content and identity as separate metrics — and the signed document is supplied with the order. For example, see the [Tirzepatide](/products/tirzepatide/) listing, where these fields are reported individually.
 
 ## 4. Establish Batch Traceability
 

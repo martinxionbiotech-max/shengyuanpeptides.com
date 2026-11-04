@@ -27,7 +27,7 @@ A printed "95% purity" is a claim; an integrated chromatogram is evidence. Reque
 
 ## Verify Authenticity Codes and Batch Traceability
 
-Some manufacturers print scratch-off verification codes on the COA or vial label that can be checked on their website. If present, verify them — they confirm the product came from the claimed source. Equally important is batch traceability: the lot number should connect to a synthesis record, raw-material lots, QC data, and a retained sample. Ask how long records and retention samples are kept, and record the lot number in your laboratory notebook so any later question can be traced.
+Some manufacturers print scratch-off verification codes on the COA or vial label that can be checked on their website. If present, verify them — they confirm the product came from the claimed source. Note what such a code proves: a code that resolves only against the seller's own website shows the seller still stands behind the batch, not that an independent laboratory tested it — so ask for the certificate that names the laboratory, and check that laboratory yourself. Equally important is batch traceability: the lot number should connect to a synthesis record, raw-material lots, QC data, and a retained sample. Ask how long records and retention samples are kept, and record the lot number in your laboratory notebook so any later question can be traced.
 
 ## Audit the Quality System Behind the Batch
 

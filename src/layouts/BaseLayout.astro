@@ -10,7 +10,7 @@ const nav = [
   { href: '/', label: 'Home' },
   { href: '/products/', label: 'Products' },
   { href: '/oem/', label: 'OEM' },
-  { href: '/coa/', label: 'COA Lookup' },
+  { href: '/coa/', label: 'Certificates (COA)' },
   { href: '/quality/', label: 'Quality' },
   { href: '/about/', label: 'About' },
   { href: '/faq/', label: 'FAQ' },
@@ -297,7 +297,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       article a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--accent-soft); }
       article a:hover { text-decoration-color: var(--accent); }
 
-      /* ---------- COA lookup ---------- */
+      /* ---------- COA page ---------- */
       .coa-form {
         background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
         padding: 1.4rem 1.5rem; box-shadow: var(--shadow-md); margin: 1.3rem 0; max-width: 640px;
@@ -389,7 +389,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
               <li><a href="/products/">Product Catalog</a></li>
               <li><a href="/custom-peptide-synthesis/">Custom Synthesis</a></li>
               <li><a href="/oem/">OEM & Private Label</a></li>
-              <li><a href="/coa/">COA Lookup</a></li>
+              <li><a href="/coa/">Certificates (COA)</a></li>
               <li><a href="/quality/">Quality Control</a></li>
             </ul>
           </div>
