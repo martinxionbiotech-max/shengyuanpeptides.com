@@ -75,7 +75,11 @@ const breadcrumbLd = {
 };
 ---
 
-<BaseLayout title={`${meta.title} | Shengyuan Peptide`} description={meta.description} jsonLd={[jsonLd, breadcrumbLd]}>
+<BaseLayout
+  title={meta.title.length + 20 <= 60 ? `${meta.title} | Shengyuan Peptide` : meta.title}
+  description={meta.description}
+  jsonLd={[jsonLd, breadcrumbLd]}
+>
   <div class="wrap article-shell">
     <p class="crumbs"><a href="/knowledge-base/">Knowledge Base</a> / {meta.title}</p>
     <p class="byline">

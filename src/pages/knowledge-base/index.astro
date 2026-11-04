@@ -30,6 +30,13 @@ const articles = files
   .filter((a) => !a.draft || a.draft === 'false')
   .sort((a, b) => (a.pubDate < b.pubDate ? 1 : -1));
 
+// 主柱子与章节：按 order 排序，其余文章走「全部指南」
+const pillar = articles.find((a) => a.pillar === 'peptide-quality-documentation' && String(a.order) === '0');
+const cluster = articles
+  .filter((a) => a.pillar === 'peptide-quality-documentation' && String(a.order) !== '0')
+  .sort((a, b) => Number(a.order) - Number(b.order));
+const others = articles.filter((a) => a.pillar !== 'peptide-quality-documentation');
+
 function mdToHtml(md) {
   // minimal markdown: headings, lists, bold, links, code, paragraphs
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -74,8 +81,30 @@ function mdToHtml(md) {
     <h1>Knowledge Base</h1>
     <p class="lede">Technical guides for researchers and buyers, written by our laboratory and quality teams.</p>
 
+    {pillar && (
+      <section style="margin:2rem 0 2.5rem;">
+        <a class="card" href={`/knowledge-base/${pillar.slug}/`} style="display:block;border-color:rgba(0,0,0,.25);">
+          <span class="badge">Pillar guide</span>
+          <strong class="card-title" style="font-size:1.15rem;">{pillar.title}</strong>
+          <span class="meta">{pillar.description}</span>
+          <span class="faint">Start here · {cluster.length} chapters</span>
+        </a>
+        {cluster.length > 0 && (
+          <ol style="margin:1rem 0 0 1.2rem;line-height:1.8;">
+            {cluster.map((a) => (
+              <li>
+                <a href={`/knowledge-base/${a.slug}/`}>{a.title}</a>
+                {a.order ? <span class="faint"> — chapter {a.order}</span> : null}
+              </li>
+            ))}
+          </ol>
+        )}
+      </section>
+    )}
+
+    <h2>All guides</h2>
     <div class="grid">
-      {articles.map((a) => (
+      {others.map((a) => (
         <a class="card" href={`/knowledge-base/${a.slug}/`}>
           <span class="badge">Guide</span>
           <strong class="card-title">{a.title}</strong>
