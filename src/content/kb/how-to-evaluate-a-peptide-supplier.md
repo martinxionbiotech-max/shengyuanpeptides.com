@@ -3,6 +3,8 @@ title: "Evaluating a Peptide Supplier: What to Check First"
 description: "A B2B framework for evaluating peptide suppliers: business identity, quality systems, batch documentation, traceability, independent testing and continuity."
 pubDate: 2026-10-28
 draft: false
+pillar: peptide-supplier-evaluation
+order: 1
 ---
 
 Selecting a peptide supplier is not a matter of comparing prices, advertised purity, or delivery times. For research laboratories, biotechnology companies, and distributors, supplier selection is a process of verifying identity, reviewing technical capability, checking quality evidence, and confirming the supplier can meet the requirements of a specific project.

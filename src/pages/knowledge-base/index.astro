@@ -30,12 +30,16 @@ const articles = files
   .filter((a) => !a.draft || a.draft === 'false')
   .sort((a, b) => (a.pubDate < b.pubDate ? 1 : -1));
 
-// 主柱子与章节：按 order 排序，其余文章走「全部指南」
-const pillar = articles.find((a) => a.pillar === 'peptide-quality-documentation' && String(a.order) === '0');
-const cluster = articles
-  .filter((a) => a.pillar === 'peptide-quality-documentation' && String(a.order) !== '0')
-  .sort((a, b) => Number(a.order) - Number(b.order));
-const others = articles.filter((a) => a.pillar !== 'peptide-quality-documentation');
+// 多根柱子：按 pillar 分组，order 0 为柱子本身，其余按 order 排序
+const groups = [...new Set(articles.filter((a) => a.pillar).map((a) => a.pillar))].map((id) => {
+  const items = articles.filter((a) => a.pillar === id);
+  const pillar = items.find((a) => String(a.order) === '0') ?? items[0];
+  const cluster = items
+    .filter((a) => a.slug !== pillar.slug)
+    .sort((a, b) => Number(a.order) - Number(b.order));
+  return { pillar, cluster };
+});
+const others = articles.filter((a) => !a.pillar);
 
 function mdToHtml(md) {
   // minimal markdown: headings, lists, bold, links, code, paragraphs
@@ -81,7 +85,7 @@ function mdToHtml(md) {
     <h1>Knowledge Base</h1>
     <p class="lede">Technical guides for researchers and buyers, written by our laboratory and quality teams.</p>
 
-    {pillar && (
+    {groups.map(({ pillar, cluster }) => (
       <section style="margin:2rem 0 2.5rem;">
         <a class="card" href={`/knowledge-base/${pillar.slug}/`} style="display:block;border-color:rgba(0,0,0,.25);">
           <span class="badge">Pillar guide</span>
@@ -100,7 +104,7 @@ function mdToHtml(md) {
           </ol>
         )}
       </section>
-    )}
+    ))}
 
     <h2>All guides</h2>
     <div class="grid">
