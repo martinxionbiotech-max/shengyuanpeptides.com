@@ -14,7 +14,9 @@ Last updated: 2026-11-09
 |---|---|---|
 | 2026-11-16 | Peptide Quality, COA & Batch Traceability pillar + Batch-Specific COA cluster | next |
 
-## Blocked / Needs input
+## Deferred (not blocking)
 
-- Named team CVs and certificate scopes are not available; do not invent them.
+- Named team CVs, certificate scopes and public sample COA: deferred by owner.
+  Continue with role-based team descriptions and qualified claim language.
+  Do not invent names, certificates, clients, statistics or reviewer credentials.
 - Product schema no longer claims fixed price or InStock.
