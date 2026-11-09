@@ -1,87 +1,297 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import services from '../data/services.json';
-
-const qc = services.find((s) => s.id === 'gmp-manufacturing');
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'WebPage',
-  name: 'Quality Control — Shandong Shengyuan Peptide',
+  '@type': 'Article',
+  headline: 'Peptide Quality, COA and Batch Traceability',
   description:
-    'How Shandong Shengyuan Peptide controls quality: HPLC, LC-MS/MS, peptide content, water content, endotoxin testing, batch records, and QA-reviewed release for every batch.',
+    'How batch-specific COAs, HPLC purity, mass identity, peptide content and release records fit together, and what buyers should verify before accepting a batch.',
+  author: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+  publisher: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
+  datePublished: '2026-11-09',
+  dateModified: '2026-11-09',
 };
 ---
 
 <BaseLayout
-  title="Peptide Quality Control | Shengyuan Peptide"
-  description="Our quality system: HPLC purity, MS identity, peptide content, water content and endotoxin testing on every batch, with QA-reviewed release and full documentation."
+  title="Peptide Quality & Batch COA | Shengyuan Peptide"
+  description="How batch-specific COAs, HPLC purity, mass identity and peptide content fit together — and what buyers should verify before release."
   jsonLd={jsonLd}
 >
   <div class="wrap article-shell">
     <div class="article-header">
-      <h1>Quality Control &amp; Analytical Standards</h1>
-      <p class="lede">Quality you can verify — the analytical program behind every batch we ship.</p>
+      <h1>Peptide Quality, COA and Batch Traceability</h1>
+      <p class="lede">
+        A certificate is not a decoration. It is a chain of evidence connecting a specific batch to
+        the methods, results and release decision behind it.
+      </p>
     </div>
 
     <article>
       <p>
-        A peptide's certificate is only as credible as the laboratory behind it. Our quality system is
-        built around a simple rule: <strong>no batch ships without a complete, traceable analytical
-        record</strong>. Every release undergoes the full panel below, and the results are printed on
-        the Certificate of Analysis that travels with your order.
+        Peptide quality is often reduced to one number: “99% pure”. That number is not enough to
+        evaluate a batch. A useful Certificate of Analysis (COA) separates identity, chromatographic
+        purity, peptide content, water, counterions, endotoxin and the batch record. Each answers a
+        different question, and each has limits.
+      </p>
+      <p>
+        This guide explains how those measurements fit together and what a buyer can reasonably verify
+        before accepting a research peptide batch. It is written for procurement and technical review,
+        not as a substitute for a supplier audit or a laboratory's own quality agreement.
       </p>
 
-      <h2 id="the-standard-release-panel">The Standard Release Panel</h2>
+      <h2 id="what-is-a-coa">What a Batch-Specific COA Should Contain</h2>
+      <p>
+        A batch-specific COA should identify the material, the batch, the methods and the results. A
+        generic catalogue certificate is not the same document.
+      </p>
       <table>
         <thead>
-          <tr><th>Test</th><th>Method</th><th>What It Confirms</th></tr>
+          <tr><th>Field</th><th>What it should tell you</th><th>Common weakness</th></tr>
         </thead>
         <tbody>
-          <tr><td>Appearance</td><td>Visual inspection</td><td>Lyophilized cake integrity, no discoloration or foreign matter</td></tr>
-          <tr><td>Identity</td><td>ESI-MS / MALDI-TOF</td><td>Molecular weight matches the theoretical mass of the sequence</td></tr>
-          <tr><td>Purity</td><td>RP-HPLC (C18, 214/220 nm)</td><td>Target peak ≥99% of integrated UV-absorbing material</td></tr>
-          <tr><td>Peptide content</td><td>Nitrogen / amino acid analysis</td><td>Net peptide weight, distinct from purity</td></tr>
-          <tr><td>Water content</td><td>Karl Fischer titration</td><td>Residual moisture after lyophilization</td></tr>
-          <tr><td>Endotoxin</td><td>LAL assay</td><td>Below specification (typically &lt;3 EU/mg)</td></tr>
-          <tr><td>pH</td><td>Potentiometry</td><td>Reconstitution behavior within specification</td></tr>
+          <tr><td>Product identity</td><td>Name, sequence or identifier, CAS where applicable</td><td>Name only, no sequence or batch link</td></tr>
+          <tr><td>Batch / lot number</td><td>The unique batch the results belong to</td><td>Same certificate reused across batches</td></tr>
+          <tr><td>Manufacture / retest date</td><td>When the batch was made and when it should be re-evaluated</td><td>No date or an unexplained retest period</td></tr>
+          <tr><td>Appearance</td><td>Physical description of the lyophilised material</td><td>“White powder” with no batch-specific observation</td></tr>
+          <tr><td>Identity method</td><td>Mass spectrometry or another defined method</td><td>“MS confirmed” with no method or result</td></tr>
+          <tr><td>Purity method</td><td>HPLC column, gradient, wavelength and integration basis</td><td>“HPLC 99%” with no method detail</td></tr>
+          <tr><td>Peptide content</td><td>Net peptide content, separate from chromatographic purity</td><td>Purity reported as if it were content</td></tr>
+          <tr><td>Water / counterion</td><td>Residual water and salt form where relevant</td><td>Not reported, so the mass balance is unclear</td></tr>
+          <tr><td>Release decision</td><td>Specification and acceptance status</td><td>Results listed without a specification</td></tr>
+        </tbody>
+      </table>
+      <p>
+        The document should be readable without a sales explanation. If the batch number, method and
+        result cannot be connected on the page, the certificate is not yet a traceability record.
+      </p>
+
+      <h2 id="identity-purity-content">Identity, Purity and Peptide Content Are Different</h2>
+      <p>
+        These three measurements are often conflated:
+      </p>
+      <ul>
+        <li><strong>Identity</strong> asks whether the material has the expected molecular mass or structure.</li>
+        <li><strong>Purity</strong> asks what proportion of the detected material is the target peak under a defined analytical method.</li>
+        <li><strong>Peptide content</strong> asks how much of the powder is actually peptide, rather than water or counterions.</li>
+      </ul>
+      <p>
+        A peptide can be 99% pure by HPLC area and still have a peptide content well below 99% because
+        the powder contains water and acetate or TFA. For research planning, both numbers matter. A
+        certificate that reports only “purity” leaves the composition incomplete.
+      </p>
+      <p>
+        The <a href="/knowledge-base/peptide-purity-guide/">purity guide</a> explains why the same
+        sample can produce different area percentages under different gradients, wavelengths and
+        integration settings.
+      </p>
+
+      <h2 id="hplc-method">HPLC Method Details That Change the Number</h2>
+      <p>
+        “99% by HPLC” is not a complete statement. The result depends on:
+      </p>
+      <ul>
+        <li>column chemistry and dimensions;</li>
+        <li>mobile-phase composition and gradient;</li>
+        <li>detection wavelength (for example 214 nm or 220 nm);</li>
+        <li>flow rate and column temperature;</li>
+        <li>sample preparation and injection load;</li>
+        <li>integration rules, including how small peaks are treated;</li>
+        <li>whether the purity is area percent or a calibrated assay.</li>
+      </ul>
+      <p>
+        A buyer does not need to reproduce every method detail, but the COA should state enough that a
+        technical reviewer can understand what the number means. A method that hides small impurity
+        peaks, or a wavelength chosen to make the target look cleaner, is not a useful release method.
+      </p>
+
+      <h2 id="mass-spec">Mass Spectrometry: What It Confirms and What It Does Not</h2>
+      <p>
+        Mass spectrometry is an identity test. It can show that a molecular ion consistent with the
+        expected mass is present. It does not, by itself, prove:
+      </p>
+      <ul>
+        <li>that the sequence is correct at every position;</li>
+        <li>that the material is pure;</li>
+        <li>that the peptide content is adequate;</li>
+        <li>that the counterion or water content is within specification.</li>
+      </ul>
+      <p>
+        For modified or isobaric peptides, mass alone can be ambiguous. Sequence confirmation,
+        peptide mapping or a second analytical method may be needed. The certificate should state the
+        method and the observed result, not only “MS confirmed”.
+      </p>
+
+      <h2 id="water-counterions">Water, Counterions and Net Peptide Content</h2>
+      <p>
+        Lyophilised peptides are not 100% dry peptide. Residual water and the salt form are part of the
+        product.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Measurement</th><th>Why it matters</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Water content (Karl Fischer)</td><td>Affects weighing, stability and the net peptide calculation</td></tr>
+          <tr><td>Counterion (acetate, TFA, other)</td><td>Changes mass, pH behaviour and handling</td></tr>
+          <tr><td>Net peptide content</td><td>Supports accurate research use and mass balance</td></tr>
+          <tr><td>Residual solvent</td><td>Relevant where the synthesis or purification route requires a limit</td></tr>
+        </tbody>
+      </table>
+      <p>
+        If the certificate reports a purity percentage but not the salt form and water content, the
+        buyer cannot calculate the peptide mass in the vial. That is a documentation gap, not a minor
+        formatting issue.
+      </p>
+
+      <h2 id="release-panel">Endotoxin and Other Release Tests</h2>
+      <p>
+        Not every research peptide requires the same release panel. The specification should explain
+        which tests are relevant to the intended research use.
+      </p>
+      <ul>
+        <li><strong>Endotoxin</strong> — reported where the research system requires a stated limit; the method and unit should be clear.</li>
+        <li><strong>Appearance</strong> — a batch-specific observation, not a generic description.</li>
+        <li><strong>pH</strong> — where reconstitution behaviour is part of the specification.</li>
+        <li><strong>Residual solvents</strong> — where the process route or customer requirement calls for it.</li>
+        <li><strong>Sterility</strong> — only where the product is supplied under a validated sterile process; do not assume it from a research-grade label.</li>
+      </ul>
+      <p>
+        A certificate should not imply a test was performed when the method is not listed. “Endotoxin
+        controlled” without a result, method and limit is a marketing phrase, not release data.
+      </p>
+
+      <h2 id="batch-records">Batch Records and Traceability</h2>
+      <p>
+        The COA is the summary. The batch record is the underlying manufacturing and review trail.
+      </p>
+      <p>
+        A traceability package should allow the buyer to connect:
+      </p>
+      <ol>
+        <li>the purchase order and product specification;</li>
+        <li>the batch or lot identifier on the vial;</li>
+        <li>the batch record and release decision;</li>
+        <li>the analytical results and raw data;</li>
+        <li>the storage and retest conditions;</li>
+        <li>any deviation, rework or change-control record that affects the batch.</li>
+      </ol>
+      <p>
+        The <a href="/knowledge-base/peptide-quality-documentation/">quality documentation guide</a>
+        lists the documents buyers commonly request during supplier qualification.
+      </p>
+
+      <h2 id="supplier-vs-independent">Supplier Testing vs Independent Testing</h2>
+      <p>
+        Supplier testing is the normal release path. Independent testing can add confidence, but it
+        does not automatically make a batch “verified”.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>What it can show</th><th>What to check</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Supplier release</td><td>Batch results against the supplier's specification</td><td>Method detail, raw data, batch link</td></tr>
+          <tr><td>Independent laboratory</td><td>A second laboratory's result on a sample</td><td>Sample identity, chain of custody, method, report</td></tr>
+          <tr><td>Customer audit</td><td>Whether the quality system and records exist in practice</td><td>Scope, access, findings and corrective actions</td></tr>
+        </tbody>
+      </table>
+      <p>
+        An independent report on a sample that cannot be tied to the purchased batch is not batch
+        verification. Ask how the sample was selected, shipped and identified.
+      </p>
+
+      <h2 id="review-coa">How to Review a COA Before Accepting a Batch</h2>
+      <p>
+        A practical review sequence:
+      </p>
+      <ol>
+        <li>Match the product name, sequence/identifier and batch number to the order.</li>
+        <li>Check the manufacture and retest dates.</li>
+        <li>Read the identity method and result.</li>
+        <li>Read the HPLC method and purity result.</li>
+        <li>Check peptide content, water and counterion.</li>
+        <li>Check any additional release tests against the specification.</li>
+        <li>Confirm the release decision and responsible function.</li>
+        <li>Request raw data or batch records where the risk justifies it.</li>
+      </ol>
+      <p>
+        If a result is missing, do not fill it in with an assumption. Ask for the missing record or
+        treat the batch as incomplete for the intended use.
+      </p>
+
+      <h2 id="red-flags">Documentation Checklist and Red Flags</h2>
+      <table>
+        <thead>
+          <tr><th>Check</th><th>Red flag</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Batch identity</td><td>Certificate has no batch number, or the number does not match the vial</td></tr>
+          <tr><td>Methods</td><td>Results without method, column, wavelength or integration basis</td></tr>
+          <tr><td>Purity vs content</td><td>Only “purity” is reported; no peptide content or water</td></tr>
+          <tr><td>Identity</td><td>“MS confirmed” with no observed mass or spectrum</td></tr>
+          <tr><td>Dates</td><td>No manufacture date, retest date or release date</td></tr>
+          <tr><td>Traceability</td><td>Certificate cannot be linked to a batch record or order</td></tr>
+          <tr><td>Claims</td><td>“Certified”, “GMP” or “99%” without a scope, method or certificate reference</td></tr>
         </tbody>
       </table>
 
-      <h2>Why Purity and Content Are Both Reported</h2>
+      <h2 id="faq">Frequently Asked Questions</h2>
+      <h3>Is a 99% HPLC purity result enough to accept a batch?</h3>
       <p>
-        HPLC purity describes the proportion of UV-absorbing material that is the target peptide; it
-        does not describe how much of the powder is peptide. Counter-ions (such as acetate or TFA) and
-        residual water account for the difference. That is why our COAs report purity, peptide content,
-        and water content side by side — so your dosing and budgeting calculations for research use
-        rest on complete data.
+        No. Purity is one measurement. Check identity, peptide content, water, counterion, batch
+        traceability and any additional tests required by the specification.
+      </p>
+      <h3>What is the difference between purity and peptide content?</h3>
+      <p>
+        HPLC purity describes the proportion of detected material represented by the target peak.
+        Peptide content describes how much of the powder is peptide after accounting for water and
+        counterions.
+      </p>
+      <h3>Does a batch-specific COA prove the peptide is sterile?</h3>
+      <p>
+        No. Sterility is a separate claim that requires a validated sterile process and testing. A
+        research-grade COA should not be read as a sterility certificate.
+      </p>
+      <h3>Can I use a catalogue COA for my batch?</h3>
+      <p>
+        Only if it is clearly linked to the batch you received. A generic certificate does not provide
+        batch traceability.
+      </p>
+      <h3>What should I request if the COA is incomplete?</h3>
+      <p>
+        Request the missing method, result, raw data or batch record. If the supplier cannot provide a
+        traceable record, treat that as a qualification finding.
+      </p>
+      <h3>Does independent testing replace a supplier audit?</h3>
+      <p>
+        No. Independent testing checks a sample; an audit evaluates the quality system and records.
+        They answer different questions.
+      </p>
+      <h3>Are all release tests required for every research peptide?</h3>
+      <p>
+        No. The specification should define the tests relevant to the intended research use and the
+        supplier's process. Do not assume a test was performed because a page uses a generic phrase.
       </p>
 
-      <h2>Batch Records and QA-Reviewed Release</h2>
+      <h2 id="next-step">Next Step</h2>
       <p>
-        {qc.description}
+        Review the <a href="/knowledge-base/batch-specific-coa-fields-buyers-should-check/">batch-specific
+        COA field guide</a> for a document-by-document checklist. For a specific batch, compare the
+        certificate with the specification and request the underlying records where needed.
       </p>
-
-      <h2>Analytical Instrumentation</h2>
-      <ul>
-        <li>High-resolution HPLC systems with diode-array detection, C18 columns, and validated gradient methods</li>
-        <li>LC-MS/MS and MALDI-TOF mass spectrometers for sequence and molecular-weight confirmation</li>
-        <li>Karl Fischer titrators for residual water determination</li>
-        <li>LAL endotoxin testing capability on every production batch</li>
-      </ul>
-
-      <h2>Certificates and batch records</h2>
       <p>
-        Every batch is released against its own Certificate of Analysis, supplied with the order and
-        available before you buy. It records purity by HPLC, assay, peptide content, water content,
-        endotoxin and the analytical method used — the figures belong to that batch, which is why
-        they are not published as a catalogue number.
+        See the <a href="/coa/">COA page</a> for the fields recorded on a certificate, or
+        <a href="/contact/">contact the technical team</a> with a batch number and specification for
+        document review.
       </p>
     </article>
 
-    <p style="margin-top:1.5rem;">
-      <a class="btn" href="/coa/">What the COA records</a>
-      <a class="btn btn-ghost" href="/knowledge-base/peptide-purity-guide/" style="margin-left:0.6rem;">Read the Purity Guide</a>
-    </p>
+    <div class="notice">
+      <strong>Research use only.</strong> Peptides supplied by Shandong Shengyuan Peptide Technology
+      Co., Ltd. are research materials. They are not medicines and are not intended for human or
+      veterinary use.
+    </div>
   </div>
 </BaseLayout>
