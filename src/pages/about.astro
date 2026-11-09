@@ -8,13 +8,13 @@ const jsonLd = {
   '@type': 'AboutPage',
   name: `About ${site.company}`,
   description:
-    'Founded in 2003, Shandong Shengyuan Peptide Technology Co., Ltd. is a peptide CDMO in Shandong, China — 200+ scientists, 500+ institutions served, ≥99% HPLC purity on every batch.',
+    'Founded in 2003, Shandong Shengyuan Peptide Technology Co., Ltd. is a peptide CDMO in Shandong, China. Company-reported figures; supporting quality documents are available during supplier qualification.',
 };
 ---
 
 <BaseLayout
   title={`About Us | ${site.company}`}
-  description="Shandong Shengyuan Peptide Technology Co., Ltd. — a Shandong-based peptide CDMO founded in 2003, with 200+ scientists serving 500+ research institutions worldwide."
+  description="Shandong Shengyuan Peptide Technology Co., Ltd. — a Shandong-based peptide CDMO founded in 2003, serving research and OEM customers worldwide."
   jsonLd={jsonLd}
 >
   <div class="wrap article-shell">
@@ -50,6 +50,7 @@ const jsonLd = {
       </p>
 
       <h2>Our Team</h2>
+      <p class="faint">Team profiles are role-based. Named CVs, qualification records, and quality contacts are shared during supplier qualification.</p>
       <p class="lede">
         Scientists behind every batch: over 200 chemists, analysts, and regulatory specialists working
         across synthesis, QC, and global compliance.

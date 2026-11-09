@@ -1,5 +1,5 @@
 ---
-title: "How to Audit a Peptide Supplier: A Practical Buyer's Guide"
+title: "How to Audit a Peptide Supplier"
 description: "Document review, remote audits, on-site audits, findings, corrective actions, and requalification — a practical method for auditing peptide suppliers."
 pubDate: 2026-10-28
 draft: false

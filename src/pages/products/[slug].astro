@@ -18,13 +18,6 @@ const jsonLd = {
   description: product.summary,
   brand: { '@type': 'Brand', name: 'Shandong Shengyuan Peptide' },
   category: product.category,
-  offers: {
-    '@type': 'AggregateOffer',
-    priceCurrency: 'USD',
-    lowPrice: '40',
-    highPrice: '180',
-    availability: 'https://schema.org/InStock',
-  },
   ...(coaEntries[0]
     ? { identifier: { '@type': 'PropertyValue', name: 'CAS', value: coaEntries[0].cas } }
     : {}),
@@ -42,7 +35,7 @@ const breadcrumbLd = {
 ---
 
 <BaseLayout
-  title={`${product.name} (${product.cas}) | Shengyuan Peptide`}
+  title={`${product.name}${product.cas && product.cas !== 'N/A' ? ` (${product.cas})` : ''} | Shengyuan Peptide`}
   description={product.summary}
   jsonLd={[jsonLd, breadcrumbLd]}
 >

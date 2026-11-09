@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import services from '../data/services.json';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -8,72 +7,266 @@ const jsonLd = {
   name: 'Custom Peptide Synthesis',
   provider: { '@type': 'Organization', name: 'Shandong Shengyuan Peptide Technology Co., Ltd.' },
   description:
-    'From milligram to kilogram scale, high-purity custom peptides with purity ≥99%, supporting diverse modification types with fast turnaround.',
+    'Custom peptide synthesis from milligram to kilogram scale — sequence feasibility review, modifications, HPLC purification, mass-spectrometry identity and batch-specific documentation.',
 };
 ---
 
 <BaseLayout
-  title="Custom Peptide Synthesis Services | Shandong Shengyuan Peptide"
-  description="Custom peptide synthesis from milligram to kilogram scale — linear, cyclic and modified peptides at ≥99% HPLC purity, with HPLC + MS documentation on every batch."
+  title="Custom Peptide Synthesis | Shengyuan Peptide"
+  description="Custom peptide synthesis from milligrams to kilograms — sequence review, modifications, HPLC purification, MS identity and batch-specific documentation."
   jsonLd={jsonLd}
 >
   <div class="wrap article-shell">
     <div class="article-header">
       <h1>Custom Peptide Synthesis</h1>
       <p class="lede">
-        Research milligrams or production kilograms — custom peptides at ≥99% purity, with a
-        broad modification toolkit and rapid cycle times.
+        From a sequence file to a released batch: feasibility review, synthesis, purification,
+        analytics and documentation. Research milligrams to multi-gram and kilogram programs.
       </p>
     </div>
 
     <article>
       <p>
-        Custom synthesis at Shandong Shengyuan Peptide begins with a free feasibility review of your
-        sequence. Our chemists assess synthesis difficulty, recommend a purity grade and timeline, and
-        confirm pricing before any work begins — so there are no surprises later in the project.
+        Custom peptide synthesis is a specification-driven service, not a catalogue order. The
+        sequence, scale, purity target, salt form, modification set and documentation requirements
+        all change the chemistry and the analytical work behind a batch. A useful quotation therefore
+        starts with a review of the sequence and the intended use — not with a price per milligram.
       </p>
 
-      <h2 id="what-we-synthesize">What We Synthesize</h2>
+      <p>
+        This page explains what our synthesis platform covers, how a project moves from inquiry to
+        release, and which details a buyer should settle before the first coupling. All products
+        described here are research materials supplied for laboratory use only. They are not
+        medicinal products and are not intended for human or veterinary use.
+      </p>
+
+      <h2 id="what-we-synthesize">What Custom Synthesis Covers</h2>
+      <p>
+        The platform is built around solid-phase peptide synthesis (SPPS), with purification and
+        analytical release configured around the target sequence. Typical projects include:
+      </p>
       <ul>
-        <li><strong>Linear peptides</strong> from 2 to 100+ residues</li>
-        <li><strong>Cyclic peptides</strong> — head-to-tail, disulfide-bridged, and stapled structures</li>
-        <li><strong>Difficult sequences</strong> — aggregation-prone, hydrophobic, and long-chain peptides</li>
-        <li><strong>Modified peptides</strong> — N-terminal acetylation, C-terminal amidation, D-amino acid substitution</li>
-        <li><strong>Conjugates and labels</strong> — PEGylation, biotinylation, fluorescent dyes, isotopic labels</li>
+        <li><strong>Linear peptides</strong> — standard sequences, long chains and hydrophobic or aggregation-prone regions.</li>
+        <li><strong>Cyclic peptides</strong> — head-to-tail, disulfide-bridged and stapled structures.</li>
+        <li><strong>Modified peptides</strong> — N-terminal acetylation, C-terminal amidation, D-amino acid substitution, non-natural residues and terminal labels.</li>
+        <li><strong>Conjugates</strong> — PEGylation, biotinylation, fluorescent dyes and carrier-protein conjugation.</li>
+        <li><strong>Isotopically labelled peptides</strong> — where the label position and enrichment are specified.</li>
+        <li><strong>Salt forms</strong> — acetate, TFA and other counterions by agreement.</li>
+        <li><strong>Scale-up</strong> — from feasibility milligrams to pilot and larger production batches.</li>
       </ul>
 
-      <h2>The Workflow</h2>
-      <ol class="steps">
-        <li><strong>Feasibility review</strong> — sequence analysis, difficulty scoring, purity target, timeline, and quotation.</li>
-        <li><strong>Synthesis</strong> — automated SPPS with real-time coupling monitoring.</li>
-        <li><strong>Purification</strong> — preparative HPLC to your purity grade (crude to ≥99%).</li>
-        <li><strong>Analysis</strong> — RP-HPLC purity, ESI-MS identity, peptide content, water content.</li>
-        <li><strong>Lyophilization &amp; packaging</strong> — lyophilized to stable dry powder, packed to your vial specification.</li>
-        <li><strong>Release</strong> — QA-reviewed Certificate of Analysis with raw HPLC and MS data on request.</li>
-      </ol>
+      <h2 id="feasibility">Sequence Feasibility Review</h2>
+      <p>
+        The first technical step is a review of the sequence, not a promise that every sequence will
+        behave the same way. The review considers length, hydrophobicity, charge distribution,
+        aggregation-prone motifs, cysteine content, proline-rich regions and residues that are slow to
+        couple. It also considers the requested purity, quantity, salt form and modification set.
+      </p>
+      <p>
+        A realistic feasibility response should tell you:
+      </p>
+      <ul>
+        <li>whether the sequence is routine, difficult or uncertain;</li>
+        <li>which synthesis strategy is proposed;</li>
+        <li>what purity grade is realistic for the sequence;</li>
+        <li>which analytical methods will be used;</li>
+        <li>the expected timeline and the assumptions behind it.</li>
+      </ul>
+      <p>
+        If a supplier quotes every sequence at the same purity and the same lead time without asking
+        about the sequence, the quotation is not yet a technical plan. Our
+        <a href="/knowledge-base/custom-peptide-synthesis-guide/">sequence-to-delivery guide</a>
+        explains the chemistry in more detail.
+      </p>
 
-      <h2>Scale and Turnaround</h2>
+      <h2 id="chemistry">The Synthesis Chemistry</h2>
+      <p>
+        Most custom peptides are produced by Fmoc/tBu solid-phase synthesis. The C-terminal residue is
+        anchored to a resin, and the chain is extended residue by residue. Each cycle includes
+        deprotection, washing, activation and coupling, followed by capping of unreacted chains so
+        they do not become deletion sequences in the final product.
+      </p>
+      <p>
+        Difficult sequences may require double coupling, elevated temperature, microwave assistance,
+        pseudoproline dipeptides, backbone protection, lower resin loading or fragment strategies.
+        The choice is sequence-specific. A supplier should be able to explain why a particular
+        strategy was selected, not only report that the synthesis was “successful”.
+      </p>
+      <p>
+        After chain assembly, the peptide is cleaved from the resin and the side-chain protecting
+        groups are removed. The crude material is then purified, usually by preparative reverse-phase
+        HPLC, and the fractions are checked before pooling.
+      </p>
+
+      <h2 id="modifications">Modifications and Conjugates</h2>
+      <p>
+        Modifications are not cosmetic. They change mass, charge, hydrophobicity, stability and the
+        analytical method needed to confirm identity. Common requests include:
+      </p>
       <table>
+        <thead>
+          <tr><th>Modification</th><th>Typical purpose</th><th>Analytical check</th></tr>
+        </thead>
         <tbody>
-          <tr><th>Research scale</th><td>1–100 mg, typically delivered in 2–3 weeks</td></tr>
-          <tr><th>Pilot scale</th><td>1–50 g, typically delivered in 4–6 weeks</td></tr>
-          <tr><th>Commercial scale</th><td>50 g–multi-kg, timeline agreed in the project plan</td></tr>
+          <tr><td>N-terminal acetylation</td><td>Block the N-terminus; reduce charge</td><td>Mass shift and sequence coverage</td></tr>
+          <tr><td>C-terminal amidation</td><td>Remove the terminal acid; adjust charge</td><td>Mass shift and terminal fragment</td></tr>
+          <tr><td>Disulfide cyclization</td><td>Constrain conformation</td><td>Mass, reduced/oxidized forms, HPLC profile</td></tr>
+          <tr><td>D-amino acid substitution</td><td>Change proteolytic stability or conformation</td><td>Mass, retention time, sequence confirmation</td></tr>
+          <tr><td>PEGylation</td><td>Increase hydrodynamic size; alter clearance in research models</td><td>Conjugate mass distribution and purity</td></tr>
+          <tr><td>Biotinylation</td><td>Capture or detection</td><td>Mass shift and biotin functional check</td></tr>
+          <tr><td>Fluorescent labelling</td><td>Imaging or binding assays</td><td>Dye-to-peptide ratio and mass</td></tr>
         </tbody>
       </table>
-
-      <h2>How to Request a Quote</h2>
       <p>
-        Send your <strong>sequence, quantity, purity grade, modifications, and target date</strong> via
-        the <a href="/contact/">contact form</a>. Include any special requirements — salt form
-        (acetate/TFA), vial filling spec, or private labeling — and we will respond with a technical
-        quotation within 24 hours.
+        Each modification should be written into the specification, including the expected mass and
+        the position of the label. The
+        <a href="/knowledge-base/custom-peptide-modifications/">custom modifications guide</a>
+        covers the practical differences and the questions to ask before ordering.
+      </p>
+
+      <h2 id="purification">Purification and Analytical Release</h2>
+      <p>
+        A synthesis result is not a released batch until the analytical package supports the
+        specification. Typical release tests include:
+      </p>
+      <ul>
+        <li><strong>Appearance</strong> — colour and cake integrity of the lyophilised powder;</li>
+        <li><strong>Identity</strong> — ESI-MS or MALDI-TOF against the calculated mass;</li>
+        <li><strong>Purity</strong> — RP-HPLC area percentage at a stated wavelength and method;</li>
+        <li><strong>Peptide content</strong> — net peptide content, not only chromatographic purity;</li>
+        <li><strong>Water content</strong> — Karl Fischer where relevant;</li>
+        <li><strong>Counterion / salt form</strong> — acetate, TFA or other agreed form;</li>
+        <li><strong>Endotoxin</strong> — where the research program requires a stated limit.</li>
+      </ul>
+      <p>
+        Purity is method-dependent. A “≥99%” figure should always be read with the HPLC method,
+        wavelength, integration rules and sample preparation. The
+        <a href="/quality/">quality page</a> describes the release panel; the
+        <a href="/coa/">COA page</a> explains what a batch certificate records.
+      </p>
+
+      <h2 id="scale">Scale and Turnaround</h2>
+      <p>
+        Scale changes the project, not just the quantity. A milligram feasibility batch and a
+        multi-gram production batch may use different resin loading, purification and lyophilisation
+        conditions.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Stage</th><th>Typical scope</th><th>Planning note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Feasibility</td><td>Milligram quantities</td><td>Used to confirm synthesis and analytical behaviour</td></tr>
+          <tr><td>Research batch</td><td>1–100 mg</td><td>Sequence and purity determine the timeline</td></tr>
+          <tr><td>Pilot batch</td><td>1–50 g</td><td>Process and analytical parameters are fixed</td></tr>
+          <tr><td>Larger production</td><td>50 g and above</td><td>Project plan, batch records and delivery schedule agreed in writing</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Lead time is sequence- and queue-dependent. A standard sequence may be routine; a difficult
+        or heavily modified sequence may require optimization before a reliable delivery date can be
+        confirmed. Treat a quotation without assumptions as provisional.
+      </p>
+
+      <h2 id="documentation">Documentation and Batch Release</h2>
+      <p>
+        For procurement, the analytical result and the batch record are separate questions. The
+        certificate states what was tested and what was found. The batch record shows how the batch
+        was made, reviewed and released. A complete documentation package should allow a buyer to
+        connect:
+      </p>
+      <ul>
+        <li>the product identity and sequence;</li>
+        <li>the batch or lot identifier;</li>
+        <li>the analytical methods and results;</li>
+        <li>the specification and acceptance criteria;</li>
+        <li>the release decision and date;</li>
+        <li>the storage and retest information.</li>
+      </ul>
+      <p>
+        Additional documents — quality dossier, raw HPLC/MS data, method summaries or change-control
+        records — should be requested during supplier qualification, not after a problem appears.
+        See the <a href="/knowledge-base/peptide-quality-documentation/">quality documentation guide</a>
+        for the document set buyers commonly request.
+      </p>
+
+      <h2 id="confidentiality">Sequence Confidentiality and Project Boundaries</h2>
+      <p>
+        Custom sequences can be commercially sensitive. Before sending a sequence, confirm:
+      </p>
+      <ul>
+        <li>who will see the sequence and the project details;</li>
+        <li>whether a confidentiality agreement is required;</li>
+        <li>how long project records are retained;</li>
+        <li>whether the supplier will use the sequence for any other purpose;</li>
+        <li>who owns the project data and any resulting materials.</li>
+      </ul>
+      <p>
+        A clear project boundary is part of the technical service. It is not an administrative
+        afterthought.
+      </p>
+
+      <h2 id="rfq">What to Include in an RFQ</h2>
+      <p>
+        A complete request shortens the feasibility review and reduces revision cycles. Include:
+      </p>
+      <ol>
+        <li>the full sequence, including unusual residues and terminal groups;</li>
+        <li>the required quantity and number of aliquots;</li>
+        <li>the target purity and the analytical method you expect;</li>
+        <li>the salt form and any counterion requirement;</li>
+        <li>the modification set and expected mass;</li>
+        <li>the required documentation package;</li>
+        <li>the destination country and any shipping constraints;</li>
+        <li>the target date and whether it is fixed or flexible.</li>
+      </ol>
+      <p>
+        If you do not yet know the right purity or scale, say so. A feasibility discussion is more
+        useful than a guessed specification.
+      </p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+      <h3>Can you synthesize peptides longer than 50 residues?</h3>
+      <p>
+        Yes, but long sequences are reviewed individually. Fragment strategies or alternative
+        conditions may be required, and the feasible purity and timeline depend on the sequence.
+      </p>
+      <h3>Is ≥99% purity available for every peptide?</h3>
+      <p>
+        No. Purity grades are sequence- and method-dependent. A high-purity target may be realistic
+        for a routine sequence and difficult for an aggregation-prone or heavily modified one. The
+        specification should match the analytical method and the intended use.
+      </p>
+      <h3>Can you keep my sequence confidential?</h3>
+      <p>
+        Confidentiality terms can be agreed before a sequence is shared. Discuss the scope, record
+        retention and project data ownership with the technical contact.
+      </p>
+      <h3>Do you provide a batch-specific COA?</h3>
+      <p>
+        The release package is built around the batch. The certificate fields and the available raw
+        data should be confirmed for the specific project and specification.
+      </p>
+      <h3>Can you handle OEM and private-label projects?</h3>
+      <p>
+        Yes. OEM projects add packaging, labelling, quality-agreement and responsibility-split
+        requirements. See the <a href="/oem/">OEM page</a> for the collaboration model.
+      </p>
+
+      <h2 id="next-step">Next Step</h2>
+      <p>
+        Send the sequence, quantity, purity target, modification set and required documentation to
+        <a href="/contact/">our technical team</a>. We will review feasibility and respond with the
+        assumptions behind the quotation. If you are still defining the specification, start with the
+        <a href="/knowledge-base/custom-peptide-synthesis-guide/">sequence-to-delivery guide</a> or the
+        <a href="/knowledge-base/custom-peptide-modifications/">modifications guide</a>.
       </p>
     </article>
 
     <div class="notice">
-      <strong>Not sure about your sequence?</strong> Our chemists will review it free of charge and
-      flag any feasibility concerns before you commit.
-      <a href="/contact/" style="margin-left:0.5rem;">Get a free review →</a>
+      <strong>Research use only.</strong> Custom peptides supplied by Shandong Shengyuan Peptide
+      Technology Co., Ltd. are for laboratory research. They are not medicines, not for human or
+      veterinary use, and not for diagnostic or therapeutic applications.
     </div>
   </div>
 </BaseLayout>

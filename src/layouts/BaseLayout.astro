@@ -5,6 +5,8 @@ interface Props {
   jsonLd?: object;
 }
 const { title, description, jsonLd } = Astro.props;
+const rawDescription = description || title;
+const metaDescription = rawDescription.length > 160 ? `${rawDescription.slice(0, 157).replace(/\s+\S*$/, '')}…` : rawDescription;
 const path = Astro.url.pathname;
 const nav = [
   { href: '/', label: 'Home' },
@@ -26,12 +28,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <meta name="description" content={description || title} />
+    <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description || title} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="Shandong Shengyuan Peptide Technology Co., Ltd." />

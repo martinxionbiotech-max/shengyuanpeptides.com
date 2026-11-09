@@ -20,6 +20,9 @@ if (fm) {
     if (m) meta[m[1]] = m[2].replace(/^["']|["']$/g, '');
   }
 }
+const bodyClean = body.replace(/^#\s+(.*)$/gm, (m, heading) =>
+  heading.trim().toLowerCase() === (meta.title || '').trim().toLowerCase() ? '' : `## ${heading}`
+);
 
 function mdToHtml(md) {
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -27,7 +30,7 @@ function mdToHtml(md) {
     .replace(/^#### (.*)$/gm, '<h4>$1</h4>')
     .replace(/^### (.*)$/gm, '<h3>$1</h3>')
     .replace(/^## (.*)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.*)$/gm, '<h1>$1</h1>')
+    .replace(/^# (.*)$/gm, '<h2>$1</h2>')
     .replace(/^\- (.*)$/gm, '<li>$1</li>')
     .replace(/^\d+\. (.*)$/gm, '<li>$1</li>')
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -92,7 +95,7 @@ const breadcrumbLd = {
         <p class="lede">{meta.description}</p>
         <p class="faint">Published {meta.pubDate} · Shandong Shengyuan Peptide Technology Co., Ltd.</p>
       </div>
-      <div set:html={mdToHtml(body)} />
+      <div set:html={mdToHtml(bodyClean)} />
     </article>
     <div class="disclaimer">
       This article is provided for informational purposes for researchers and procurement
